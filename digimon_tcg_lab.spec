@@ -17,6 +17,7 @@ datas = [
     (str(ROOT / "data" / "version.json"), "data"),
     (str(ROOT / "data" / "history.json"), "data"),
     (str(ROOT / "assets" / "style.qss"), "assets"),
+    (str(ROOT / "assets" / "app_icon.ico"), "assets"),
 ]
 
 # cards/ may be empty on a fresh checkout; PyInstaller needs at least one file to
@@ -61,4 +62,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=str(ROOT / "assets" / "app_icon.ico"),
 )

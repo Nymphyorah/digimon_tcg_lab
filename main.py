@@ -6,6 +6,7 @@ Each installation keeps its own SQLite database under %LOCALAPPDATA%.
 import sys
 
 from PySide6.QtCore import QTimer
+from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QApplication
 
 from core.paths import USER_DB_PATH, USER_SETTINGS_PATH, ensure_app_data_seeded, APP_ASSETS_DIR
@@ -19,6 +20,10 @@ def main():
     app = QApplication(sys.argv)
     app.setApplicationName("Digimon TCG Lab")
     app.setOrganizationName("DigimonTCGLab")
+
+    icon_path = APP_ASSETS_DIR / "app_icon.ico"
+    if icon_path.exists():
+        app.setWindowIcon(QIcon(str(icon_path)))
 
     style_path = APP_ASSETS_DIR / "style.qss"
     if style_path.exists():
