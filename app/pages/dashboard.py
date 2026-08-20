@@ -6,9 +6,10 @@ from PySide6.QtWidgets import (
 from app.components.kpi_card import KpiCard
 from app.components.charts import TrendChart
 from app.components.card_detail_dialog import CardDetailDialog
-from app.components.image_loader import load_card_pixmap
+from app.components.image_loader import load_card_pixmap, invalidate_card_pixmap_cache
 from core.ban_score import compute_ban_score, risk_for_score
 from core.banlist_manager import RESTRICTION_META, RESTRICTIONS
+from core.image_cache import get_image_cache_manager
 
 # Purely presentational bucketing of numbers the app already computes
 # (critical candidates vs. total) — no new scoring logic, just a qualitative
@@ -248,8 +249,13 @@ class DashboardPage(QWidget):
         row_layout.setContentsMargins(12, 12, 12, 12)
         row_layout.setSpacing(12)
 
+        img_size = QSize(64, 90)
         img = QLabel()
-        img.setPixmap(load_card_pixmap(card["card_id"], QSize(64, 90)))
+        img.setPixmap(load_card_pixmap(card["card_id"], img_size))
+        img.card_id = card["card_id"]
+        get_image_cache_manager().image_ready.connect(
+            lambda card_id, lbl=img, size=img_size: self._on_candidate_image_ready(card_id, lbl, size)
+        )
         row_layout.addWidget(img)
 
         info = QVBoxLayout()
@@ -283,6 +289,16 @@ class DashboardPage(QWidget):
 
         row_layout.addLayout(info, 1)
         return row
+
+    @staticmethod
+    def _on_candidate_image_ready(card_id, label, size):
+        if getattr(label, "card_id", None) != card_id:
+            return
+        try:
+            invalidate_card_pixmap_cache(card_id)
+            label.setPixmap(load_card_pixmap(card_id, size))
+        except RuntimeError:
+            pass  # label was already torn down by a later refresh()
 
     @staticmethod
     def _risk_chip_object_name(label):
