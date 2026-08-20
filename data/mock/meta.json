@@ -1,0 +1,409 @@
+{
+  "generated_at": "2026-08-20",
+  "format": "English",
+  "period_days": 30,
+  "decks_analyzed": 955,
+  "tournaments": 32,
+  "top8_total": 256,
+  "avg_win_rate": 55.0,
+  "deck_ranking": [
+    {
+      "rank": 1,
+      "deck_id": "deck-016",
+      "name": "Gaiomon",
+      "meta_usage": 18.6,
+      "top8": 29.8,
+      "win_rate": 58.1
+    },
+    {
+      "rank": 2,
+      "deck_id": "deck-022",
+      "name": "Beelstar",
+      "meta_usage": 17.5,
+      "top8": 22.6,
+      "win_rate": 55.4
+    },
+    {
+      "rank": 3,
+      "deck_id": "deck-011",
+      "name": "Black Fenriloogamon",
+      "meta_usage": 14.2,
+      "top8": 15.3,
+      "win_rate": 45.0
+    },
+    {
+      "rank": 4,
+      "deck_id": "deck-013",
+      "name": "Machinedramon",
+      "meta_usage": 12.2,
+      "top8": 16.7,
+      "win_rate": 60.3
+    },
+    {
+      "rank": 5,
+      "deck_id": "deck-018",
+      "name": "Ordinemon",
+      "meta_usage": 11.4,
+      "top8": 15.2,
+      "win_rate": 46.0
+    },
+    {
+      "rank": 6,
+      "deck_id": "deck-007",
+      "name": "Blue Flare",
+      "meta_usage": 11.1,
+      "top8": 15.5,
+      "win_rate": 45.4
+    },
+    {
+      "rank": 7,
+      "deck_id": "deck-009",
+      "name": "Green Security",
+      "meta_usage": 10.3,
+      "top8": 15.0,
+      "win_rate": 58.5
+    },
+    {
+      "rank": 8,
+      "deck_id": "deck-006",
+      "name": "Aegisdramon",
+      "meta_usage": 10.0,
+      "top8": 10.7,
+      "win_rate": 63.9
+    },
+    {
+      "rank": 9,
+      "deck_id": "deck-010",
+      "name": "Purple Curse",
+      "meta_usage": 9.7,
+      "top8": 11.5,
+      "win_rate": 48.8
+    },
+    {
+      "rank": 10,
+      "deck_id": "deck-017",
+      "name": "Justimon",
+      "meta_usage": 9.7,
+      "top8": 11.5,
+      "win_rate": 50.8
+    },
+    {
+      "rank": 11,
+      "deck_id": "deck-014",
+      "name": "Belphemon",
+      "meta_usage": 9.6,
+      "top8": 13.0,
+      "win_rate": 50.1
+    },
+    {
+      "rank": 12,
+      "deck_id": "deck-002",
+      "name": "Beelstar",
+      "meta_usage": 9.5,
+      "top8": 10.4,
+      "win_rate": 62.1
+    },
+    {
+      "rank": 13,
+      "deck_id": "deck-003",
+      "name": "Imperialdramon",
+      "meta_usage": 9.0,
+      "top8": 10.1,
+      "win_rate": 52.8
+    },
+    {
+      "rank": 14,
+      "deck_id": "deck-008",
+      "name": "Yellow Hybrid",
+      "meta_usage": 8.3,
+      "top8": 8.4,
+      "win_rate": 61.9
+    },
+    {
+      "rank": 15,
+      "deck_id": "deck-020",
+      "name": "Susanoomon",
+      "meta_usage": 7.7,
+      "top8": 10.2,
+      "win_rate": 55.4
+    }
+  ],
+  "trends": [
+    {
+      "week": "Semana 1",
+      "date": "2026-07-30",
+      "cards": [
+        {
+          "card_id": "BT24-086",
+          "usage": 38.7
+        },
+        {
+          "card_id": "BT24-035",
+          "usage": 37.4
+        },
+        {
+          "card_id": "BT22-091",
+          "usage": 26.8
+        },
+        {
+          "card_id": "BT23-025",
+          "usage": 40.3
+        },
+        {
+          "card_id": "BT24-075",
+          "usage": 46.9
+        },
+        {
+          "card_id": "BT22-006",
+          "usage": 63.1
+        },
+        {
+          "card_id": "BT23-085",
+          "usage": 37.4
+        },
+        {
+          "card_id": "BT25-099",
+          "usage": 80.6
+        },
+        {
+          "card_id": "BT21-084",
+          "usage": 31.2
+        },
+        {
+          "card_id": "BT22-049",
+          "usage": 42.9
+        }
+      ]
+    },
+    {
+      "week": "Semana 2",
+      "date": "2026-08-06",
+      "cards": [
+        {
+          "card_id": "BT24-086",
+          "usage": 60.4
+        },
+        {
+          "card_id": "BT24-035",
+          "usage": 41.9
+        },
+        {
+          "card_id": "BT22-091",
+          "usage": 73.4
+        },
+        {
+          "card_id": "BT23-025",
+          "usage": 54.9
+        },
+        {
+          "card_id": "BT24-075",
+          "usage": 56.0
+        },
+        {
+          "card_id": "BT22-006",
+          "usage": 54.9
+        },
+        {
+          "card_id": "BT23-085",
+          "usage": 41.6
+        },
+        {
+          "card_id": "BT25-099",
+          "usage": 21.6
+        },
+        {
+          "card_id": "BT21-084",
+          "usage": 86.2
+        },
+        {
+          "card_id": "BT22-049",
+          "usage": 55.4
+        }
+      ]
+    },
+    {
+      "week": "Semana 3",
+      "date": "2026-08-13",
+      "cards": [
+        {
+          "card_id": "BT24-086",
+          "usage": 87.7
+        },
+        {
+          "card_id": "BT24-035",
+          "usage": 35.1
+        },
+        {
+          "card_id": "BT22-091",
+          "usage": 44.7
+        },
+        {
+          "card_id": "BT23-025",
+          "usage": 23.5
+        },
+        {
+          "card_id": "BT24-075",
+          "usage": 54.6
+        },
+        {
+          "card_id": "BT22-006",
+          "usage": 81.8
+        },
+        {
+          "card_id": "BT23-085",
+          "usage": 65.8
+        },
+        {
+          "card_id": "BT25-099",
+          "usage": 52.9
+        },
+        {
+          "card_id": "BT21-084",
+          "usage": 57.6
+        },
+        {
+          "card_id": "BT22-049",
+          "usage": 79.3
+        }
+      ]
+    },
+    {
+      "week": "Semana 4",
+      "date": "2026-08-20",
+      "cards": [
+        {
+          "card_id": "BT24-086",
+          "usage": 50.2
+        },
+        {
+          "card_id": "BT24-035",
+          "usage": 81.8
+        },
+        {
+          "card_id": "BT22-091",
+          "usage": 70.9
+        },
+        {
+          "card_id": "BT23-025",
+          "usage": 73.5
+        },
+        {
+          "card_id": "BT24-075",
+          "usage": 45.6
+        },
+        {
+          "card_id": "BT22-006",
+          "usage": 48.0
+        },
+        {
+          "card_id": "BT23-085",
+          "usage": 59.9
+        },
+        {
+          "card_id": "BT25-099",
+          "usage": 33.6
+        },
+        {
+          "card_id": "BT21-084",
+          "usage": 58.7
+        },
+        {
+          "card_id": "BT22-049",
+          "usage": 25.1
+        }
+      ]
+    }
+  ],
+  "ban_candidates": [
+    {
+      "card_id": "BT24-035",
+      "meta_usage": 90.6,
+      "top_cut": 99.0,
+      "avg_copies": 3.5,
+      "growth": 7.0,
+      "dominance": 99.0,
+      "ban_score": 88
+    },
+    {
+      "card_id": "BT23-085",
+      "meta_usage": 90.9,
+      "top_cut": 99.0,
+      "avg_copies": 3.5,
+      "growth": 26.3,
+      "dominance": 99.0,
+      "ban_score": 86
+    },
+    {
+      "card_id": "BT25-099",
+      "meta_usage": 62.1,
+      "top_cut": 80.1,
+      "avg_copies": 3.5,
+      "growth": 28.8,
+      "dominance": 69.3,
+      "ban_score": 76
+    },
+    {
+      "card_id": "BT22-049",
+      "meta_usage": 73.8,
+      "top_cut": 74.5,
+      "avg_copies": 3.9,
+      "growth": -4.5,
+      "dominance": 74.1,
+      "ban_score": 76
+    },
+    {
+      "card_id": "BT21-084",
+      "meta_usage": 68.3,
+      "top_cut": 71.8,
+      "avg_copies": 3.1,
+      "growth": 21.0,
+      "dominance": 79.8,
+      "ban_score": 70
+    },
+    {
+      "card_id": "BT23-025",
+      "meta_usage": 62.0,
+      "top_cut": 70.5,
+      "avg_copies": 3.0,
+      "growth": 15.8,
+      "dominance": 66.1,
+      "ban_score": 68
+    },
+    {
+      "card_id": "BT22-006",
+      "meta_usage": 65.3,
+      "top_cut": 79.2,
+      "avg_copies": 2.2,
+      "growth": 30.8,
+      "dominance": 70.1,
+      "ban_score": 67
+    },
+    {
+      "card_id": "BT24-086",
+      "meta_usage": 63.7,
+      "top_cut": 78.3,
+      "avg_copies": 2.2,
+      "growth": 39.5,
+      "dominance": 72.4,
+      "ban_score": 65
+    },
+    {
+      "card_id": "BT24-075",
+      "meta_usage": 44.3,
+      "top_cut": 57.5,
+      "avg_copies": 3.3,
+      "growth": 5.0,
+      "dominance": 47.3,
+      "ban_score": 62
+    },
+    {
+      "card_id": "BT22-091",
+      "meta_usage": 46.3,
+      "top_cut": 53.4,
+      "avg_copies": 2.8,
+      "growth": -7.7,
+      "dominance": 47.6,
+      "ban_score": 54
+    }
+  ]
+}

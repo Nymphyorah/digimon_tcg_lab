@@ -1,0 +1,1154 @@
+[
+  {
+    "deck_id": "deck-001",
+    "name": "AlterS #1",
+    "archetype": "AlterS",
+    "colors": [
+      "White"
+    ],
+    "cards": [
+      {
+        "card_id": "EX9-011",
+        "copies": 4
+      },
+      {
+        "card_id": "EX8-036",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-059",
+        "copies": 2
+      },
+      {
+        "card_id": "BT22-006",
+        "copies": 4
+      },
+      {
+        "card_id": "BT21-050",
+        "copies": 4
+      },
+      {
+        "card_id": "ST20-012",
+        "copies": 3
+      },
+      {
+        "card_id": "BT21-012",
+        "copies": 3
+      },
+      {
+        "card_id": "BT21-084",
+        "copies": 3
+      },
+      {
+        "card_id": "EX8-045",
+        "copies": 2
+      }
+    ],
+    "meta_usage": 4.2,
+    "top8": 5.9,
+    "win_rate": 62.7
+  },
+  {
+    "deck_id": "deck-002",
+    "name": "Beelstar #2",
+    "archetype": "Beelstar",
+    "colors": [
+      "White"
+    ],
+    "cards": [
+      {
+        "card_id": "BT22-006",
+        "copies": 4
+      },
+      {
+        "card_id": "EX9-011",
+        "copies": 3
+      },
+      {
+        "card_id": "BT21-012",
+        "copies": 3
+      },
+      {
+        "card_id": "BT21-050",
+        "copies": 3
+      },
+      {
+        "card_id": "EX8-036",
+        "copies": 2
+      },
+      {
+        "card_id": "ST20-012",
+        "copies": 3
+      },
+      {
+        "card_id": "EX8-045",
+        "copies": 3
+      },
+      {
+        "card_id": "BT21-084",
+        "copies": 4
+      },
+      {
+        "card_id": "EX9-094",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-052",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-059",
+        "copies": 3
+      }
+    ],
+    "meta_usage": 9.5,
+    "top8": 10.4,
+    "win_rate": 62.1
+  },
+  {
+    "deck_id": "deck-003",
+    "name": "Imperialdramon #3",
+    "archetype": "Imperialdramon",
+    "colors": [
+      "Yellow",
+      "Blue"
+    ],
+    "cards": [
+      {
+        "card_id": "BT23-053",
+        "copies": 2
+      },
+      {
+        "card_id": "EX9-071",
+        "copies": 2
+      },
+      {
+        "card_id": "BT23-082",
+        "copies": 2
+      },
+      {
+        "card_id": "BT21-093",
+        "copies": 3
+      },
+      {
+        "card_id": "BT25-082",
+        "copies": 4
+      },
+      {
+        "card_id": "BT24-061",
+        "copies": 2
+      },
+      {
+        "card_id": "EX9-005",
+        "copies": 4
+      },
+      {
+        "card_id": "EX8-004",
+        "copies": 2
+      },
+      {
+        "card_id": "EX9-045",
+        "copies": 1
+      },
+      {
+        "card_id": "BT24-065",
+        "copies": 3
+      },
+      {
+        "card_id": "EX9-029",
+        "copies": 3
+      },
+      {
+        "card_id": "BT22-091",
+        "copies": 2
+      },
+      {
+        "card_id": "BT23-056",
+        "copies": 3
+      },
+      {
+        "card_id": "BT22-004",
+        "copies": 3
+      }
+    ],
+    "meta_usage": 9.0,
+    "top8": 10.1,
+    "win_rate": 52.8
+  },
+  {
+    "deck_id": "deck-004",
+    "name": "Metalgarurumon #4",
+    "archetype": "Metalgarurumon",
+    "colors": [
+      "White"
+    ],
+    "cards": [
+      {
+        "card_id": "BT24-059",
+        "copies": 2
+      },
+      {
+        "card_id": "BT21-084",
+        "copies": 2
+      },
+      {
+        "card_id": "BT21-050",
+        "copies": 3
+      },
+      {
+        "card_id": "EX8-036",
+        "copies": 3
+      },
+      {
+        "card_id": "EX9-011",
+        "copies": 1
+      },
+      {
+        "card_id": "BT24-052",
+        "copies": 3
+      },
+      {
+        "card_id": "BT22-006",
+        "copies": 2
+      },
+      {
+        "card_id": "ST20-012",
+        "copies": 4
+      },
+      {
+        "card_id": "EX9-094",
+        "copies": 4
+      },
+      {
+        "card_id": "BT21-012",
+        "copies": 3
+      },
+      {
+        "card_id": "EX8-045",
+        "copies": 4
+      }
+    ],
+    "meta_usage": 4.5,
+    "top8": 5.8,
+    "win_rate": 46.7
+  },
+  {
+    "deck_id": "deck-005",
+    "name": "Ulforce #5",
+    "archetype": "Ulforce",
+    "colors": [
+      "Green"
+    ],
+    "cards": [
+      {
+        "card_id": "BT24-033",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-005",
+        "copies": 2
+      },
+      {
+        "card_id": "BT25-086",
+        "copies": 1
+      },
+      {
+        "card_id": "BT23-055",
+        "copies": 2
+      },
+      {
+        "card_id": "BT22-050",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-041",
+        "copies": 2
+      }
+    ],
+    "meta_usage": 5.3,
+    "top8": 6.3,
+    "win_rate": 60.0
+  },
+  {
+    "deck_id": "deck-006",
+    "name": "Aegisdramon #6",
+    "archetype": "Aegisdramon",
+    "colors": [
+      "Yellow",
+      "Green"
+    ],
+    "cards": [
+      {
+        "card_id": "BT25-086",
+        "copies": 4
+      },
+      {
+        "card_id": "BT24-005",
+        "copies": 1
+      },
+      {
+        "card_id": "BT24-065",
+        "copies": 1
+      },
+      {
+        "card_id": "EX9-029",
+        "copies": 2
+      },
+      {
+        "card_id": "BT23-056",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-033",
+        "copies": 1
+      },
+      {
+        "card_id": "BT23-055",
+        "copies": 3
+      },
+      {
+        "card_id": "BT21-093",
+        "copies": 2
+      },
+      {
+        "card_id": "EX9-045",
+        "copies": 2
+      },
+      {
+        "card_id": "EX8-004",
+        "copies": 2
+      }
+    ],
+    "meta_usage": 10.0,
+    "top8": 10.7,
+    "win_rate": 63.9
+  },
+  {
+    "deck_id": "deck-007",
+    "name": "Blue Flare #7",
+    "archetype": "Blue Flare",
+    "colors": [
+      "Purple",
+      "Yellow"
+    ],
+    "cards": [
+      {
+        "card_id": "BT23-057",
+        "copies": 1
+      },
+      {
+        "card_id": "BT21-093",
+        "copies": 3
+      },
+      {
+        "card_id": "BT23-060",
+        "copies": 4
+      },
+      {
+        "card_id": "EX9-086",
+        "copies": 4
+      },
+      {
+        "card_id": "EX9-053",
+        "copies": 2
+      },
+      {
+        "card_id": "EX9-009",
+        "copies": 1
+      },
+      {
+        "card_id": "EX8-004",
+        "copies": 4
+      },
+      {
+        "card_id": "EX9-029",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-084",
+        "copies": 4
+      },
+      {
+        "card_id": "BT23-056",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-065",
+        "copies": 1
+      },
+      {
+        "card_id": "ST20-003",
+        "copies": 3
+      },
+      {
+        "card_id": "EX9-071",
+        "copies": 1
+      },
+      {
+        "card_id": "BT24-035",
+        "copies": 2
+      }
+    ],
+    "meta_usage": 11.1,
+    "top8": 15.5,
+    "win_rate": 45.4
+  },
+  {
+    "deck_id": "deck-008",
+    "name": "Yellow Hybrid #8",
+    "archetype": "Yellow Hybrid",
+    "colors": [
+      "Red",
+      "Green"
+    ],
+    "cards": [
+      {
+        "card_id": "BT22-024",
+        "copies": 3
+      },
+      {
+        "card_id": "BT22-050",
+        "copies": 4
+      },
+      {
+        "card_id": "BT23-025",
+        "copies": 3
+      },
+      {
+        "card_id": "BT23-055",
+        "copies": 2
+      },
+      {
+        "card_id": "BT25-086",
+        "copies": 2
+      },
+      {
+        "card_id": "BT25-099",
+        "copies": 2
+      },
+      {
+        "card_id": "BT23-023",
+        "copies": 1
+      },
+      {
+        "card_id": "BT24-033",
+        "copies": 2
+      },
+      {
+        "card_id": "BT22-018",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-029",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-041",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-073",
+        "copies": 3
+      },
+      {
+        "card_id": "EX8-097",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-005",
+        "copies": 4
+      }
+    ],
+    "meta_usage": 8.3,
+    "top8": 8.4,
+    "win_rate": 61.9
+  },
+  {
+    "deck_id": "deck-009",
+    "name": "Green Security #9",
+    "archetype": "Green Security",
+    "colors": [
+      "Green"
+    ],
+    "cards": [
+      {
+        "card_id": "BT23-055",
+        "copies": 3
+      },
+      {
+        "card_id": "BT25-086",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-033",
+        "copies": 1
+      },
+      {
+        "card_id": "BT22-050",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-041",
+        "copies": 4
+      },
+      {
+        "card_id": "BT24-005",
+        "copies": 3
+      }
+    ],
+    "meta_usage": 10.3,
+    "top8": 15.0,
+    "win_rate": 58.5
+  },
+  {
+    "deck_id": "deck-010",
+    "name": "Purple Curse #10",
+    "archetype": "Purple Curse",
+    "colors": [
+      "Green",
+      "Red"
+    ],
+    "cards": [
+      {
+        "card_id": "BT24-029",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-073",
+        "copies": 2
+      },
+      {
+        "card_id": "BT23-025",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-033",
+        "copies": 4
+      },
+      {
+        "card_id": "BT25-086",
+        "copies": 3
+      },
+      {
+        "card_id": "BT23-055",
+        "copies": 2
+      },
+      {
+        "card_id": "BT22-024",
+        "copies": 2
+      },
+      {
+        "card_id": "EX8-097",
+        "copies": 4
+      }
+    ],
+    "meta_usage": 9.7,
+    "top8": 11.5,
+    "win_rate": 48.8
+  },
+  {
+    "deck_id": "deck-011",
+    "name": "Black Fenriloogamon #11",
+    "archetype": "Black Fenriloogamon",
+    "colors": [
+      "Yellow"
+    ],
+    "cards": [
+      {
+        "card_id": "EX9-071",
+        "copies": 1
+      },
+      {
+        "card_id": "ST20-003",
+        "copies": 2
+      },
+      {
+        "card_id": "BT21-093",
+        "copies": 2
+      },
+      {
+        "card_id": "EX9-045",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-065",
+        "copies": 2
+      },
+      {
+        "card_id": "EX9-009",
+        "copies": 2
+      },
+      {
+        "card_id": "BT23-056",
+        "copies": 2
+      },
+      {
+        "card_id": "EX8-004",
+        "copies": 1
+      }
+    ],
+    "meta_usage": 14.2,
+    "top8": 15.3,
+    "win_rate": 45.0
+  },
+  {
+    "deck_id": "deck-012",
+    "name": "Ragnaloardmon #12",
+    "archetype": "Ragnaloardmon",
+    "colors": [
+      "Black"
+    ],
+    "cards": [
+      {
+        "card_id": "BT25-066",
+        "copies": 3
+      },
+      {
+        "card_id": "BT23-085",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-075",
+        "copies": 3
+      },
+      {
+        "card_id": "BT25-096",
+        "copies": 2
+      },
+      {
+        "card_id": "BT21-007",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-014",
+        "copies": 1
+      }
+    ],
+    "meta_usage": 6.0,
+    "top8": 9.1,
+    "win_rate": 46.4
+  },
+  {
+    "deck_id": "deck-013",
+    "name": "Machinedramon #13",
+    "archetype": "Machinedramon",
+    "colors": [
+      "Green"
+    ],
+    "cards": [
+      {
+        "card_id": "BT24-005",
+        "copies": 1
+      },
+      {
+        "card_id": "BT24-033",
+        "copies": 2
+      },
+      {
+        "card_id": "BT25-086",
+        "copies": 1
+      },
+      {
+        "card_id": "BT24-041",
+        "copies": 3
+      },
+      {
+        "card_id": "BT23-055",
+        "copies": 3
+      },
+      {
+        "card_id": "BT22-050",
+        "copies": 3
+      }
+    ],
+    "meta_usage": 12.2,
+    "top8": 16.7,
+    "win_rate": 60.3
+  },
+  {
+    "deck_id": "deck-014",
+    "name": "Belphemon #14",
+    "archetype": "Belphemon",
+    "colors": [
+      "Green",
+      "White"
+    ],
+    "cards": [
+      {
+        "card_id": "BT24-059",
+        "copies": 4
+      },
+      {
+        "card_id": "BT21-084",
+        "copies": 1
+      },
+      {
+        "card_id": "BT24-033",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-052",
+        "copies": 2
+      },
+      {
+        "card_id": "EX8-036",
+        "copies": 2
+      },
+      {
+        "card_id": "BT25-086",
+        "copies": 3
+      },
+      {
+        "card_id": "EX8-045",
+        "copies": 1
+      },
+      {
+        "card_id": "BT22-006",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-041",
+        "copies": 1
+      },
+      {
+        "card_id": "BT24-005",
+        "copies": 3
+      }
+    ],
+    "meta_usage": 9.6,
+    "top8": 13.0,
+    "win_rate": 50.1
+  },
+  {
+    "deck_id": "deck-015",
+    "name": "Argreomon #15",
+    "archetype": "Argreomon",
+    "colors": [
+      "Yellow"
+    ],
+    "cards": [
+      {
+        "card_id": "BT23-056",
+        "copies": 1
+      },
+      {
+        "card_id": "EX9-009",
+        "copies": 3
+      },
+      {
+        "card_id": "EX9-029",
+        "copies": 2
+      },
+      {
+        "card_id": "EX8-004",
+        "copies": 4
+      },
+      {
+        "card_id": "BT21-093",
+        "copies": 2
+      },
+      {
+        "card_id": "ST20-003",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-065",
+        "copies": 2
+      },
+      {
+        "card_id": "EX9-045",
+        "copies": 1
+      },
+      {
+        "card_id": "EX9-071",
+        "copies": 1
+      }
+    ],
+    "meta_usage": 4.5,
+    "top8": 5.3,
+    "win_rate": 59.7
+  },
+  {
+    "deck_id": "deck-016",
+    "name": "Gaiomon #16",
+    "archetype": "Gaiomon",
+    "colors": [
+      "Green",
+      "Red"
+    ],
+    "cards": [
+      {
+        "card_id": "BT23-023",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-029",
+        "copies": 4
+      },
+      {
+        "card_id": "BT25-086",
+        "copies": 2
+      },
+      {
+        "card_id": "BT23-025",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-033",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-041",
+        "copies": 1
+      },
+      {
+        "card_id": "BT22-024",
+        "copies": 1
+      },
+      {
+        "card_id": "BT24-073",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-005",
+        "copies": 4
+      },
+      {
+        "card_id": "EX8-097",
+        "copies": 3
+      },
+      {
+        "card_id": "BT23-055",
+        "copies": 3
+      }
+    ],
+    "meta_usage": 18.6,
+    "top8": 29.8,
+    "win_rate": 58.1
+  },
+  {
+    "deck_id": "deck-017",
+    "name": "Justimon #17",
+    "archetype": "Justimon",
+    "colors": [
+      "Black",
+      "Red"
+    ],
+    "cards": [
+      {
+        "card_id": "BT23-023",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-073",
+        "copies": 2
+      },
+      {
+        "card_id": "BT22-024",
+        "copies": 4
+      },
+      {
+        "card_id": "BT24-075",
+        "copies": 1
+      },
+      {
+        "card_id": "BT24-014",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-029",
+        "copies": 2
+      },
+      {
+        "card_id": "BT25-066",
+        "copies": 3
+      },
+      {
+        "card_id": "BT22-018",
+        "copies": 4
+      },
+      {
+        "card_id": "BT23-085",
+        "copies": 3
+      },
+      {
+        "card_id": "BT23-025",
+        "copies": 2
+      },
+      {
+        "card_id": "BT25-096",
+        "copies": 4
+      },
+      {
+        "card_id": "BT25-099",
+        "copies": 3
+      },
+      {
+        "card_id": "EX8-097",
+        "copies": 3
+      },
+      {
+        "card_id": "BT21-007",
+        "copies": 1
+      }
+    ],
+    "meta_usage": 9.7,
+    "top8": 11.5,
+    "win_rate": 50.8
+  },
+  {
+    "deck_id": "deck-018",
+    "name": "Ordinemon #18",
+    "archetype": "Ordinemon",
+    "colors": [
+      "White",
+      "Black"
+    ],
+    "cards": [
+      {
+        "card_id": "EX8-036",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-059",
+        "copies": 2
+      },
+      {
+        "card_id": "BT23-085",
+        "copies": 2
+      },
+      {
+        "card_id": "BT25-066",
+        "copies": 3
+      },
+      {
+        "card_id": "BT22-006",
+        "copies": 4
+      },
+      {
+        "card_id": "BT21-084",
+        "copies": 3
+      },
+      {
+        "card_id": "ST20-012",
+        "copies": 1
+      },
+      {
+        "card_id": "BT21-050",
+        "copies": 1
+      },
+      {
+        "card_id": "EX9-094",
+        "copies": 4
+      },
+      {
+        "card_id": "BT24-075",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-052",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-014",
+        "copies": 4
+      },
+      {
+        "card_id": "EX8-045",
+        "copies": 2
+      },
+      {
+        "card_id": "EX9-011",
+        "copies": 2
+      }
+    ],
+    "meta_usage": 11.4,
+    "top8": 15.2,
+    "win_rate": 46.0
+  },
+  {
+    "deck_id": "deck-019",
+    "name": "Arresterdramon #19",
+    "archetype": "Arresterdramon",
+    "colors": [
+      "Green"
+    ],
+    "cards": [
+      {
+        "card_id": "BT25-086",
+        "copies": 3
+      },
+      {
+        "card_id": "BT22-050",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-041",
+        "copies": 3
+      },
+      {
+        "card_id": "BT23-055",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-033",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-005",
+        "copies": 3
+      }
+    ],
+    "meta_usage": 4.1,
+    "top8": 4.6,
+    "win_rate": 56.6
+  },
+  {
+    "deck_id": "deck-020",
+    "name": "Susanoomon #20",
+    "archetype": "Susanoomon",
+    "colors": [
+      "White"
+    ],
+    "cards": [
+      {
+        "card_id": "ST20-012",
+        "copies": 3
+      },
+      {
+        "card_id": "BT21-084",
+        "copies": 3
+      },
+      {
+        "card_id": "EX9-094",
+        "copies": 4
+      },
+      {
+        "card_id": "BT24-052",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-059",
+        "copies": 2
+      },
+      {
+        "card_id": "EX8-036",
+        "copies": 3
+      },
+      {
+        "card_id": "EX9-011",
+        "copies": 3
+      },
+      {
+        "card_id": "BT21-050",
+        "copies": 3
+      }
+    ],
+    "meta_usage": 7.7,
+    "top8": 10.2,
+    "win_rate": 55.4
+  },
+  {
+    "deck_id": "deck-021",
+    "name": "AlterS #21",
+    "archetype": "AlterS",
+    "colors": [
+      "Yellow",
+      "Blue"
+    ],
+    "cards": [
+      {
+        "card_id": "BT24-061",
+        "copies": 3
+      },
+      {
+        "card_id": "EX8-004",
+        "copies": 1
+      },
+      {
+        "card_id": "BT21-093",
+        "copies": 2
+      },
+      {
+        "card_id": "EX9-045",
+        "copies": 3
+      },
+      {
+        "card_id": "EX9-071",
+        "copies": 3
+      },
+      {
+        "card_id": "BT22-091",
+        "copies": 2
+      },
+      {
+        "card_id": "BT22-004",
+        "copies": 1
+      },
+      {
+        "card_id": "ST20-003",
+        "copies": 3
+      },
+      {
+        "card_id": "ST20-057",
+        "copies": 1
+      },
+      {
+        "card_id": "BT23-056",
+        "copies": 3
+      },
+      {
+        "card_id": "EX9-009",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-065",
+        "copies": 1
+      },
+      {
+        "card_id": "EX9-005",
+        "copies": 4
+      }
+    ],
+    "meta_usage": 4.1,
+    "top8": 6.2,
+    "win_rate": 64.4
+  },
+  {
+    "deck_id": "deck-022",
+    "name": "Beelstar #22",
+    "archetype": "Beelstar",
+    "colors": [
+      "Green"
+    ],
+    "cards": [
+      {
+        "card_id": "BT23-055",
+        "copies": 4
+      },
+      {
+        "card_id": "BT25-086",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-041",
+        "copies": 3
+      },
+      {
+        "card_id": "BT24-033",
+        "copies": 2
+      },
+      {
+        "card_id": "BT24-005",
+        "copies": 4
+      },
+      {
+        "card_id": "BT22-050",
+        "copies": 4
+      }
+    ],
+    "meta_usage": 17.5,
+    "top8": 22.6,
+    "win_rate": 55.4
+  }
+]

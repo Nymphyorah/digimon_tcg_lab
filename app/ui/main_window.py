@@ -1,0 +1,116 @@
+from PySide6.QtCore import Qt, QTimer
+from PySide6.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QVBoxLayout, QStackedWidget
+
+from app.ui.sidebar import Sidebar
+from app.ui.header import Header
+from core.database import Database
+from core.data_repository import get_repository
+from core.banlist_manager import BanListManager
+from core.settings_manager import SettingsManager
+from core.meta_analyzer import MetaAnalyzer
+from core.update_manager import UpdateManager
+from core.deckbuilder import DeckBuilder
+
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Digimon TCG Lab — Meta Analysis & Personal Ban List Manager")
+        self.resize(1440, 900)
+        self.setMinimumSize(1180, 700)
+
+        # ---- Core services (shared across pages) ----
+        self.db = Database()
+        self.repo = get_repository()
+        self.banlist = BanListManager(self.db)
+        self.settings = SettingsManager()
+        self.analyzer = MetaAnalyzer(self.repo)
+        self.updater = UpdateManager()
+        self.deckbuilder = DeckBuilder(self.db, self.repo, self.banlist)
+
+        central = QWidget()
+        central.setObjectName("centralArea")
+        root = QHBoxLayout(central)
+        root.setContentsMargins(0, 0, 0, 0)
+        root.setSpacing(0)
+
+        self.sidebar = Sidebar()
+        self.sidebar.page_selected.connect(self.show_page)
+        root.addWidget(self.sidebar)
+
+        right_col = QVBoxLayout()
+        right_col.setContentsMargins(0, 0, 0, 0)
+        right_col.setSpacing(0)
+
+        self.header = Header()
+        right_col.addWidget(self.header)
+
+        self.stack = QStackedWidget()
+        self.stack.setContentsMargins(0, 0, 0, 0)
+        right_col.addWidget(self.stack, 1)
+
+        right_wrap = QWidget()
+        right_wrap.setLayout(right_col)
+        root.addWidget(right_wrap, 1)
+
+        self.setCentralWidget(central)
+
+        self.pages = {}
+        self._page_order = [
+            "dashboard", "ban_list", "collection",
+            "meta", "analysis", "history", "settings",
+        ]
+        self._build_pages()
+        self.show_page("dashboard")
+
+        QTimer.singleShot(300, self._check_online_status)
+
+    def _build_pages(self):
+        from app.pages.dashboard import DashboardPage
+        from app.pages.ban_list import BanListPage
+        from app.pages.collection import CollectionPage
+        from app.pages.meta import MetaPage
+        from app.pages.analysis import AnalysisPage
+        from app.pages.history import HistoryPage
+        from app.pages.settings import SettingsPage
+
+        ctx = dict(
+            repo=self.repo, banlist=self.banlist, settings=self.settings,
+            analyzer=self.analyzer, db=self.db, updater=self.updater,
+            deckbuilder=self.deckbuilder,
+        )
+
+        page_classes = {
+            "dashboard": DashboardPage,
+            "ban_list": BanListPage,
+            "collection": CollectionPage,
+            "meta": MetaPage,
+            "analysis": AnalysisPage,
+            "history": HistoryPage,
+            "settings": SettingsPage,
+        }
+        for key, cls in page_classes.items():
+            page = cls(**ctx)
+            if hasattr(page, "navigate_requested"):
+                page.navigate_requested.connect(self.show_page)
+            self.pages[key] = page
+            self.stack.addWidget(page)
+
+    def show_page(self, key: str):
+        if key not in self.pages:
+            return
+        page = self.pages[key]
+        self.stack.setCurrentWidget(page)
+        if hasattr(page, "refresh"):
+            page.refresh()
+        self.header.set_page(key)
+        self.sidebar.set_active(key)
+        version = self.repo.version
+        self.header.set_last_updated(version.get("meta_version", "--"))
+
+    def _check_online_status(self):
+        try:
+            online = self.updater.is_online()
+        except Exception:
+            online = False
+        self.header.set_status(online)

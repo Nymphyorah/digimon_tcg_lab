@@ -1,0 +1,602 @@
+[
+  {
+    "card_id": "BT22-004",
+    "name": "UltraAngemon",
+    "color": "Blue",
+    "type": "Option",
+    "rarity": "C",
+    "level": null,
+    "set": "BT22",
+    "image": "cards/BT22-004.webp"
+  },
+  {
+    "card_id": "EX9-005",
+    "name": "AlphaRenamon",
+    "color": "Blue",
+    "type": "Digimon",
+    "rarity": "C",
+    "level": 6,
+    "set": "EX9",
+    "image": "cards/EX9-005.webp"
+  },
+  {
+    "card_id": "EX9-029",
+    "name": "BlueLopmon",
+    "color": "Yellow",
+    "type": "Digimon",
+    "rarity": "SR",
+    "level": 2,
+    "set": "EX9",
+    "image": "cards/EX9-029.webp"
+  },
+  {
+    "card_id": "EX8-036",
+    "name": "ChronoDevimon",
+    "color": "White",
+    "type": "Digimon",
+    "rarity": "C",
+    "level": 2,
+    "set": "EX8",
+    "image": "cards/EX8-036.webp"
+  },
+  {
+    "card_id": "EX8-045",
+    "name": "HolyDevimon",
+    "color": "White",
+    "type": "Tamer",
+    "rarity": "C",
+    "level": null,
+    "set": "EX8",
+    "image": "cards/EX8-045.webp"
+  },
+  {
+    "card_id": "EX9-011",
+    "name": "AncientRenamon",
+    "color": "White",
+    "type": "Tamer",
+    "rarity": "R",
+    "level": null,
+    "set": "EX9",
+    "image": "cards/EX9-011.webp"
+  },
+  {
+    "card_id": "BT22-006",
+    "name": "OmegaGuilmon",
+    "color": "White",
+    "type": "Tamer",
+    "rarity": "C",
+    "level": null,
+    "set": "BT22",
+    "image": "cards/BT22-006.webp"
+  },
+  {
+    "card_id": "BT22-049",
+    "name": "AncientGatomon",
+    "color": "Purple",
+    "type": "Digimon",
+    "rarity": "SR",
+    "level": 3,
+    "set": "BT22",
+    "image": "cards/BT22-049.webp"
+  },
+  {
+    "card_id": "BT24-086",
+    "name": "BlueGuilmon",
+    "color": "Purple",
+    "type": "Digimon",
+    "rarity": "R",
+    "level": 6,
+    "set": "BT24",
+    "image": "cards/BT24-086.webp"
+  },
+  {
+    "card_id": "BT23-060",
+    "name": "SteelGarurumon",
+    "color": "Purple",
+    "type": "Digimon",
+    "rarity": "R",
+    "level": 3,
+    "set": "BT23",
+    "image": "cards/BT23-060.webp"
+  },
+  {
+    "card_id": "BT24-005",
+    "name": "CrimsonPatamon",
+    "color": "Green",
+    "type": "Option",
+    "rarity": "C",
+    "level": null,
+    "set": "BT24",
+    "image": "cards/BT24-005.webp"
+  },
+  {
+    "card_id": "BT24-084",
+    "name": "ShadowGuilmon",
+    "color": "Purple",
+    "type": "Digimon",
+    "rarity": "U",
+    "level": 4,
+    "set": "BT24",
+    "image": "cards/BT24-084.webp"
+  },
+  {
+    "card_id": "BT25-096",
+    "name": "GoldenGabumon",
+    "color": "Black",
+    "type": "Tamer",
+    "rarity": "U",
+    "level": null,
+    "set": "BT25",
+    "image": "cards/BT25-096.webp"
+  },
+  {
+    "card_id": "ST20-012",
+    "name": "BlueLopmon",
+    "color": "White",
+    "type": "Option",
+    "rarity": "C",
+    "level": null,
+    "set": "ST20",
+    "image": "cards/ST20-012.webp"
+  },
+  {
+    "card_id": "BT22-050",
+    "name": "AlphaDevimon",
+    "color": "Green",
+    "type": "Digimon",
+    "rarity": "U",
+    "level": 6,
+    "set": "BT22",
+    "image": "cards/BT22-050.webp"
+  },
+  {
+    "card_id": "BT25-099",
+    "name": "BlueImpmon",
+    "color": "Red",
+    "type": "Tamer",
+    "rarity": "C",
+    "level": null,
+    "set": "BT25",
+    "image": "cards/BT25-099.webp"
+  },
+  {
+    "card_id": "BT21-093",
+    "name": "BlueDevimon",
+    "color": "Yellow",
+    "type": "Option",
+    "rarity": "SEC",
+    "level": null,
+    "set": "BT21",
+    "image": "cards/BT21-093.webp"
+  },
+  {
+    "card_id": "BT25-082",
+    "name": "AlphaPatamon",
+    "color": "Blue",
+    "type": "Digimon",
+    "rarity": "C",
+    "level": 3,
+    "set": "BT25",
+    "image": "cards/BT25-082.webp"
+  },
+  {
+    "card_id": "ST20-003",
+    "name": "GoldenGarurumon",
+    "color": "Yellow",
+    "type": "Digimon",
+    "rarity": "SR",
+    "level": 4,
+    "set": "ST20",
+    "image": "cards/ST20-003.webp"
+  },
+  {
+    "card_id": "BT24-073",
+    "name": "OmegaGabumon",
+    "color": "Red",
+    "type": "Digi-Egg",
+    "rarity": "R",
+    "level": null,
+    "set": "BT24",
+    "image": "cards/BT24-073.webp"
+  },
+  {
+    "card_id": "BT23-085",
+    "name": "DarkRenamon",
+    "color": "Black",
+    "type": "Digimon",
+    "rarity": "C",
+    "level": 6,
+    "set": "BT23",
+    "image": "cards/BT23-085.webp"
+  },
+  {
+    "card_id": "BT24-092",
+    "name": "HolyDevimon",
+    "color": "Purple",
+    "type": "Digimon",
+    "rarity": "R",
+    "level": 5,
+    "set": "BT24",
+    "image": "cards/BT24-092.webp"
+  },
+  {
+    "card_id": "BT24-029",
+    "name": "GoldenGreymon",
+    "color": "Red",
+    "type": "Digimon",
+    "rarity": "U",
+    "level": 3,
+    "set": "BT24",
+    "image": "cards/BT24-029.webp"
+  },
+  {
+    "card_id": "BT22-091",
+    "name": "BetaPatamon",
+    "color": "Blue",
+    "type": "Tamer",
+    "rarity": "C",
+    "level": null,
+    "set": "BT22",
+    "image": "cards/BT22-091.webp"
+  },
+  {
+    "card_id": "BT22-066",
+    "name": "ShadowGomamon",
+    "color": "Purple",
+    "type": "Digimon",
+    "rarity": "U",
+    "level": 6,
+    "set": "BT22",
+    "image": "cards/BT22-066.webp"
+  },
+  {
+    "card_id": "BT24-061",
+    "name": "DarkGatomon",
+    "color": "Blue",
+    "type": "Option",
+    "rarity": "C",
+    "level": null,
+    "set": "BT24",
+    "image": "cards/BT24-061.webp"
+  },
+  {
+    "card_id": "EX9-053",
+    "name": "UltraGarurumon",
+    "color": "Purple",
+    "type": "Digimon",
+    "rarity": "C",
+    "level": 7,
+    "set": "EX9",
+    "image": "cards/EX9-053.webp"
+  },
+  {
+    "card_id": "EX9-094",
+    "name": "CrimsonImpmon",
+    "color": "White",
+    "type": "Digimon",
+    "rarity": "C",
+    "level": 3,
+    "set": "EX9",
+    "image": "cards/EX9-094.webp"
+  },
+  {
+    "card_id": "BT23-055",
+    "name": "HolyDevimon",
+    "color": "Green",
+    "type": "Digimon",
+    "rarity": "C",
+    "level": 2,
+    "set": "BT23",
+    "image": "cards/BT23-055.webp"
+  },
+  {
+    "card_id": "BT21-084",
+    "name": "OmegaGuilmon",
+    "color": "White",
+    "type": "Digi-Egg",
+    "rarity": "C",
+    "level": null,
+    "set": "BT21",
+    "image": "cards/BT21-084.webp"
+  },
+  {
+    "card_id": "BT23-053",
+    "name": "BlueTerriermon",
+    "color": "Blue",
+    "type": "Digimon",
+    "rarity": "SR",
+    "level": 2,
+    "set": "BT23",
+    "image": "cards/BT23-053.webp"
+  },
+  {
+    "card_id": "BT21-050",
+    "name": "DarkGomamon",
+    "color": "White",
+    "type": "Digimon",
+    "rarity": "R",
+    "level": 4,
+    "set": "BT21",
+    "image": "cards/BT21-050.webp"
+  },
+  {
+    "card_id": "BT23-025",
+    "name": "BetaPatamon",
+    "color": "Red",
+    "type": "Digimon",
+    "rarity": "U",
+    "level": 6,
+    "set": "BT23",
+    "image": "cards/BT23-025.webp"
+  },
+  {
+    "card_id": "BT21-007",
+    "name": "BlueGarurumon",
+    "color": "Black",
+    "type": "Tamer",
+    "rarity": "SR",
+    "level": null,
+    "set": "BT21",
+    "image": "cards/BT21-007.webp"
+  },
+  {
+    "card_id": "BT22-024",
+    "name": "ChronoDevimon",
+    "color": "Red",
+    "type": "Digimon",
+    "rarity": "R",
+    "level": 3,
+    "set": "BT22",
+    "image": "cards/BT22-024.webp"
+  },
+  {
+    "card_id": "BT24-075",
+    "name": "SteelVeemon",
+    "color": "Black",
+    "type": "Tamer",
+    "rarity": "C",
+    "level": null,
+    "set": "BT24",
+    "image": "cards/BT24-075.webp"
+  },
+  {
+    "card_id": "BT24-041",
+    "name": "IronImpmon",
+    "color": "Green",
+    "type": "Digimon",
+    "rarity": "C",
+    "level": 7,
+    "set": "BT24",
+    "image": "cards/BT24-041.webp"
+  },
+  {
+    "card_id": "EX8-097",
+    "name": "UltraAngemon",
+    "color": "Red",
+    "type": "Digi-Egg",
+    "rarity": "U",
+    "level": null,
+    "set": "EX8",
+    "image": "cards/EX8-097.webp"
+  },
+  {
+    "card_id": "BT24-065",
+    "name": "AncientWormmon",
+    "color": "Yellow",
+    "type": "Digimon",
+    "rarity": "SR",
+    "level": 3,
+    "set": "BT24",
+    "image": "cards/BT24-065.webp"
+  },
+  {
+    "card_id": "BT23-057",
+    "name": "AlphaWormmon",
+    "color": "Purple",
+    "type": "Option",
+    "rarity": "C",
+    "level": null,
+    "set": "BT23",
+    "image": "cards/BT23-057.webp"
+  },
+  {
+    "card_id": "BT22-018",
+    "name": "SilverWormmon",
+    "color": "Red",
+    "type": "Digimon",
+    "rarity": "R",
+    "level": 3,
+    "set": "BT22",
+    "image": "cards/BT22-018.webp"
+  },
+  {
+    "card_id": "BT24-044",
+    "name": "SkyVeemon",
+    "color": "Purple",
+    "type": "Digimon",
+    "rarity": "SR",
+    "level": 6,
+    "set": "BT24",
+    "image": "cards/BT24-044.webp"
+  },
+  {
+    "card_id": "BT21-012",
+    "name": "AlphaPatamon",
+    "color": "White",
+    "type": "Tamer",
+    "rarity": "C",
+    "level": null,
+    "set": "BT21",
+    "image": "cards/BT21-012.webp"
+  },
+  {
+    "card_id": "BT23-082",
+    "name": "DarkGreymon",
+    "color": "Blue",
+    "type": "Digi-Egg",
+    "rarity": "R",
+    "level": null,
+    "set": "BT23",
+    "image": "cards/BT23-082.webp"
+  },
+  {
+    "card_id": "BT22-010",
+    "name": "BetaGatomon",
+    "color": "Purple",
+    "type": "Digi-Egg",
+    "rarity": "SR",
+    "level": null,
+    "set": "BT22",
+    "image": "cards/BT22-010.webp"
+  },
+  {
+    "card_id": "BT23-056",
+    "name": "AncientRenamon",
+    "color": "Yellow",
+    "type": "Digimon",
+    "rarity": "U",
+    "level": 2,
+    "set": "BT23",
+    "image": "cards/BT23-056.webp"
+  },
+  {
+    "card_id": "BT24-014",
+    "name": "ShadowGuilmon",
+    "color": "Black",
+    "type": "Digimon",
+    "rarity": "SR",
+    "level": 5,
+    "set": "BT24",
+    "image": "cards/BT24-014.webp"
+  },
+  {
+    "card_id": "BT23-023",
+    "name": "SteelLopmon",
+    "color": "Red",
+    "type": "Option",
+    "rarity": "C",
+    "level": null,
+    "set": "BT23",
+    "image": "cards/BT23-023.webp"
+  },
+  {
+    "card_id": "BT24-035",
+    "name": "SkyGuilmon",
+    "color": "Purple",
+    "type": "Digimon",
+    "rarity": "C",
+    "level": 2,
+    "set": "BT24",
+    "image": "cards/BT24-035.webp"
+  },
+  {
+    "card_id": "BT24-059",
+    "name": "GoldenGreymon",
+    "color": "White",
+    "type": "Digimon",
+    "rarity": "R",
+    "level": 3,
+    "set": "BT24",
+    "image": "cards/BT24-059.webp"
+  },
+  {
+    "card_id": "BT24-052",
+    "name": "AncientTerriermon",
+    "color": "White",
+    "type": "Digimon",
+    "rarity": "C",
+    "level": 4,
+    "set": "BT24",
+    "image": "cards/BT24-052.webp"
+  },
+  {
+    "card_id": "EX8-004",
+    "name": "BetaDevimon",
+    "color": "Yellow",
+    "type": "Digimon",
+    "rarity": "C",
+    "level": 4,
+    "set": "EX8",
+    "image": "cards/EX8-004.webp"
+  },
+  {
+    "card_id": "EX9-045",
+    "name": "UltraTerriermon",
+    "color": "Yellow",
+    "type": "Option",
+    "rarity": "U",
+    "level": null,
+    "set": "EX9",
+    "image": "cards/EX9-045.webp"
+  },
+  {
+    "card_id": "BT24-033",
+    "name": "CrimsonGatomon",
+    "color": "Green",
+    "type": "Digimon",
+    "rarity": "C",
+    "level": 6,
+    "set": "BT24",
+    "image": "cards/BT24-033.webp"
+  },
+  {
+    "card_id": "EX9-009",
+    "name": "UltraWormmon",
+    "color": "Yellow",
+    "type": "Digi-Egg",
+    "rarity": "R",
+    "level": null,
+    "set": "EX9",
+    "image": "cards/EX9-009.webp"
+  },
+  {
+    "card_id": "BT25-086",
+    "name": "ShadowRenamon",
+    "color": "Green",
+    "type": "Digimon",
+    "rarity": "R",
+    "level": 6,
+    "set": "BT25",
+    "image": "cards/BT25-086.webp"
+  },
+  {
+    "card_id": "EX9-086",
+    "name": "BlueWormmon",
+    "color": "Purple",
+    "type": "Digi-Egg",
+    "rarity": "R",
+    "level": null,
+    "set": "EX9",
+    "image": "cards/EX9-086.webp"
+  },
+  {
+    "card_id": "EX9-071",
+    "name": "DarkPatamon",
+    "color": "Yellow",
+    "type": "Option",
+    "rarity": "C",
+    "level": null,
+    "set": "EX9",
+    "image": "cards/EX9-071.webp"
+  },
+  {
+    "card_id": "ST20-057",
+    "name": "BlueAngemon",
+    "color": "Blue",
+    "type": "Digimon",
+    "rarity": "U",
+    "level": 7,
+    "set": "ST20",
+    "image": "cards/ST20-057.webp"
+  },
+  {
+    "card_id": "BT25-066",
+    "name": "GoldenWormmon",
+    "color": "Black",
+    "type": "Tamer",
+    "rarity": "C",
+    "level": null,
+    "set": "BT25",
+    "image": "cards/BT25-066.webp"
+  }
+]

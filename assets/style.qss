@@ -1,0 +1,379 @@
+/* Digimon TCG Lab — Dark Analytics Theme */
+
+* {
+    font-family: "Segoe UI", "Inter", sans-serif;
+    outline: none;
+}
+
+QWidget {
+    background-color: #070B12;
+    color: #F8FAFC;
+    font-size: 13px;
+}
+
+QMainWindow, #centralArea {
+    background-color: #070B12;
+}
+
+/* ---------- Sidebar ---------- */
+#sidebar {
+    background-color: #0B111B;
+    border-right: 1px solid #1B2A3A;
+}
+
+#sidebarTitle {
+    color: #F8FAFC;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#sidebarSubtitle {
+    color: #2388FF;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+QPushButton#navButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    padding: 11px 16px;
+    color: #8494A8;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+QPushButton#navButton:hover {
+    background-color: #101B29;
+    color: #E8EEF6;
+}
+
+QPushButton#navButton:checked {
+    background-color: rgba(35, 136, 255, 0.12);
+    color: #F8FAFC;
+    border-left: 3px solid #2388FF;
+    font-weight: 700;
+}
+
+#sidebarDivider {
+    background-color: #1B2A3A;
+    max-height: 1px;
+    min-height: 1px;
+}
+
+/* ---------- Header ---------- */
+#header {
+    background-color: #0B111B;
+    border-bottom: 1px solid #1B2A3A;
+}
+
+#headerTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #F8FAFC;
+}
+
+#headerSubtitle {
+    font-size: 11px;
+    color: #94A3B8;
+}
+
+#statusOnline {
+    color: #22C55E;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+#statusOffline {
+    color: #94A3B8;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+/* ---------- Surfaces / Cards ---------- */
+QFrame#surface, QWidget#surface {
+    background-color: #0D1622;
+    border: 1px solid #1B2A3A;
+    border-radius: 14px;
+}
+
+QFrame#surface:hover, QWidget#surfaceHoverable:hover {
+    background-color: #12202E;
+}
+
+QFrame#surfaceRaised, QWidget#surfaceRaised {
+    background-color: #101B29;
+    border: 1px solid #22374C;
+    border-radius: 14px;
+}
+
+/* ---------- Section labels (used above every panel/group) ---------- */
+#sectionLabel {
+    color: #6B7F97;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+#sectionHint {
+    color: #4B5A6E;
+    font-size: 10.5px;
+}
+
+/* ---------- Empty states (columns / lists with no content yet) ---------- */
+#emptyState {
+    color: #4B5A6E;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#emptyStateHint {
+    color: #37475A;
+    font-size: 10.5px;
+}
+
+/* ---------- Risk / status chips ---------- */
+#riskChipCritical {
+    background-color: rgba(239, 68, 68, 0.14);
+    color: #F87171;
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    border-radius: 999px;
+    font-size: 10.5px;
+    font-weight: 800;
+    padding: 3px 10px;
+}
+#riskChipHigh {
+    background-color: rgba(249, 115, 22, 0.14);
+    color: #FB923C;
+    border: 1px solid rgba(249, 115, 22, 0.35);
+    border-radius: 999px;
+    font-size: 10.5px;
+    font-weight: 800;
+    padding: 3px 10px;
+}
+#riskChipModerate {
+    background-color: rgba(234, 179, 8, 0.14);
+    color: #FACC15;
+    border: 1px solid rgba(234, 179, 8, 0.35);
+    border-radius: 999px;
+    font-size: 10.5px;
+    font-weight: 800;
+    padding: 3px 10px;
+}
+#riskChipLow {
+    background-color: rgba(35, 136, 255, 0.14);
+    color: #5EA8FF;
+    border: 1px solid rgba(35, 136, 255, 0.35);
+    border-radius: 999px;
+    font-size: 10.5px;
+    font-weight: 800;
+    padding: 3px 10px;
+}
+#riskChipNormal {
+    background-color: rgba(148, 163, 184, 0.12);
+    color: #94A3B8;
+    border: 1px solid rgba(148, 163, 184, 0.28);
+    border-radius: 999px;
+    font-size: 10.5px;
+    font-weight: 800;
+    padding: 3px 10px;
+}
+#riskChipHealthy {
+    background-color: rgba(34, 197, 94, 0.14);
+    color: #4ADE80;
+    border: 1px solid rgba(34, 197, 94, 0.35);
+    border-radius: 999px;
+    font-size: 10.5px;
+    font-weight: 800;
+    padding: 3px 10px;
+}
+
+/* ---------- KPI Card ---------- */
+#kpiValue {
+    font-size: 26px;
+    font-weight: 800;
+    color: #F8FAFC;
+}
+
+#kpiLabel {
+    font-size: 11px;
+    color: #94A3B8;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* ---------- Buttons ---------- */
+QPushButton {
+    background-color: #0D1622;
+    border: 1px solid #1B2A3A;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #F8FAFC;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #12202E;
+    border-color: #2388FF;
+}
+
+QPushButton:pressed {
+    background-color: #0B111B;
+}
+
+QPushButton#primaryButton {
+    background-color: #2388FF;
+    border: 1px solid #2388FF;
+    color: #F8FAFC;
+}
+
+QPushButton#primaryButton:hover {
+    background-color: #4C93F2;
+}
+
+QPushButton#dangerButton {
+    background-color: #EF4444;
+    border: 1px solid #EF4444;
+    color: #F8FAFC;
+}
+
+QPushButton#dangerButton:hover {
+    background-color: #F16767;
+}
+
+/* ---------- Inputs ---------- */
+QLineEdit, QComboBox, QSpinBox, QTextEdit {
+    background-color: #0D1622;
+    border: 1px solid #1B2A3A;
+    border-radius: 8px;
+    padding: 6px 10px;
+    color: #F8FAFC;
+}
+
+QLineEdit:focus, QComboBox:focus {
+    border-color: #2388FF;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 22px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0D1622;
+    border: 1px solid #1B2A3A;
+    selection-background-color: #12202E;
+    color: #F8FAFC;
+}
+
+/* ---------- Tables ---------- */
+QTableWidget, QTableView {
+    background-color: #0D1622;
+    alternate-background-color: #0B111B;
+    border: 1px solid #1B2A3A;
+    border-radius: 10px;
+    gridline-color: #1B2A3A;
+    color: #F8FAFC;
+    selection-background-color: #12202E;
+    selection-color: #F8FAFC;
+}
+
+QHeaderView::section {
+    background-color: #0B111B;
+    color: #94A3B8;
+    border: none;
+    border-bottom: 1px solid #1B2A3A;
+    padding: 8px;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+QTableWidget::item {
+    padding: 6px;
+    border-bottom: 1px solid #1B2A3A;
+}
+
+/* ---------- Scrollbars ---------- */
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+    margin: 0;
+}
+QScrollBar::handle:vertical {
+    background: #1B2A3A;
+    border-radius: 5px;
+    min-height: 30px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #2388FF;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 10px;
+}
+QScrollBar::handle:horizontal {
+    background: #1B2A3A;
+    border-radius: 5px;
+    min-width: 30px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: #2388FF;
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0;
+}
+
+/* ---------- Tabs ---------- */
+QTabWidget::pane {
+    border: 1px solid #1B2A3A;
+    border-radius: 10px;
+    top: -1px;
+}
+
+QTabBar::tab {
+    background: #0D1622;
+    color: #94A3B8;
+    padding: 8px 16px;
+    border: 1px solid #1B2A3A;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background: #12202E;
+    color: #F8FAFC;
+    border-bottom: 2px solid #2388FF;
+}
+
+/* ---------- Ban restriction badges ---------- */
+#badgeBan { color: #EF4444; font-weight: 700; }
+#badgeLimit1 { color: #F97316; font-weight: 700; }
+#badgeLimit2 { color: #EAB308; font-weight: 700; }
+#badgeLimit3 { color: #22C55E; font-weight: 700; }
+
+QToolTip {
+    background-color: #0D1622;
+    color: #F8FAFC;
+    border: 1px solid #1B2A3A;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+QScrollArea {
+    border: none;
+    background: transparent;
+}
+
+QSplitter::handle {
+    background-color: #1B2A3A;
+}

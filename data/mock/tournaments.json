@@ -1,0 +1,1602 @@
+[
+  {
+    "tournament_id": "trn-001",
+    "name": "Winter Tournament 2026",
+    "date": "2026-06-02",
+    "region": "EU",
+    "format": "English",
+    "players": 33,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-009",
+        "player": "Player541"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-016",
+        "player": "Player249"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-015",
+        "player": "Player350"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-006",
+        "player": "Player643"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-007",
+        "player": "Player521"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-020",
+        "player": "Player679"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-017",
+        "player": "Player798"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-001",
+        "player": "Player911"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-002",
+    "name": "Digimon Championship Series 2026",
+    "date": "2026-08-10",
+    "region": "EU",
+    "format": "Japanese",
+    "players": 172,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-004",
+        "player": "Player701"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-003",
+        "player": "Player406"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-007",
+        "player": "Player754"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-010",
+        "player": "Player534"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-002",
+        "player": "Player806"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-009",
+        "player": "Player356"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-006",
+        "player": "Player567"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-012",
+        "player": "Player965"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-003",
+    "name": "Winter Tournament 2026",
+    "date": "2026-06-20",
+    "region": "NA",
+    "format": "English",
+    "players": 43,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-020",
+        "player": "Player735"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-004",
+        "player": "Player356"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-009",
+        "player": "Player794"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-006",
+        "player": "Player873"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-002",
+        "player": "Player838"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-003",
+        "player": "Player885"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-021",
+        "player": "Player775"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-022",
+        "player": "Player797"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-004",
+    "name": "ADS Cup 2026",
+    "date": "2026-07-12",
+    "region": "EU",
+    "format": "English",
+    "players": 217,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-001",
+        "player": "Player925"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-008",
+        "player": "Player402"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-011",
+        "player": "Player864"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-021",
+        "player": "Player991"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-016",
+        "player": "Player446"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-013",
+        "player": "Player923"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-018",
+        "player": "Player217"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-022",
+        "player": "Player579"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-005",
+    "name": "Digimon Championship Series 2026",
+    "date": "2026-05-26",
+    "region": "LATAM",
+    "format": "English",
+    "players": 201,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-020",
+        "player": "Player724"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-010",
+        "player": "Player326"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-014",
+        "player": "Player763"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-004",
+        "player": "Player164"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-017",
+        "player": "Player750"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-019",
+        "player": "Player943"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-016",
+        "player": "Player575"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-011",
+        "player": "Player817"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-006",
+    "name": "ADS Cup 2026",
+    "date": "2026-08-03",
+    "region": "APAC",
+    "format": "Japanese",
+    "players": 27,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-012",
+        "player": "Player806"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-014",
+        "player": "Player479"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-022",
+        "player": "Player322"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-020",
+        "player": "Player554"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-018",
+        "player": "Player555"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-001",
+        "player": "Player341"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-013",
+        "player": "Player975"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-021",
+        "player": "Player471"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-007",
+    "name": "Winter Tournament 2026",
+    "date": "2026-08-13",
+    "region": "Global",
+    "format": "Japanese",
+    "players": 117,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-011",
+        "player": "Player892"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-022",
+        "player": "Player251"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-019",
+        "player": "Player907"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-014",
+        "player": "Player710"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-008",
+        "player": "Player102"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-005",
+        "player": "Player383"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-017",
+        "player": "Player979"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-002",
+        "player": "Player248"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-008",
+    "name": "North America Regional 2026",
+    "date": "2026-07-29",
+    "region": "APAC",
+    "format": "Japanese",
+    "players": 44,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-016",
+        "player": "Player562"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-010",
+        "player": "Player615"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-017",
+        "player": "Player326"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-013",
+        "player": "Player729"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-004",
+        "player": "Player144"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-018",
+        "player": "Player844"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-006",
+        "player": "Player902"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-002",
+        "player": "Player987"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-009",
+    "name": "North America Regional 2026",
+    "date": "2026-05-30",
+    "region": "EU",
+    "format": "Japanese",
+    "players": 23,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-001",
+        "player": "Player564"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-018",
+        "player": "Player617"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-012",
+        "player": "Player719"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-009",
+        "player": "Player540"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-007",
+        "player": "Player201"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-020",
+        "player": "Player912"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-008",
+        "player": "Player818"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-005",
+        "player": "Player217"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-010",
+    "name": "North America Regional 2026",
+    "date": "2026-06-24",
+    "region": "Global",
+    "format": "Japanese",
+    "players": 243,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-009",
+        "player": "Player862"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-016",
+        "player": "Player856"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-002",
+        "player": "Player481"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-012",
+        "player": "Player931"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-010",
+        "player": "Player233"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-017",
+        "player": "Player669"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-001",
+        "player": "Player161"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-022",
+        "player": "Player700"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-011",
+    "name": "North America Regional 2026",
+    "date": "2026-05-27",
+    "region": "NA",
+    "format": "Japanese",
+    "players": 47,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-006",
+        "player": "Player926"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-013",
+        "player": "Player539"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-020",
+        "player": "Player965"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-001",
+        "player": "Player674"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-007",
+        "player": "Player885"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-005",
+        "player": "Player938"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-011",
+        "player": "Player736"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-015",
+        "player": "Player728"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-012",
+    "name": "Winter Tournament 2026",
+    "date": "2026-08-17",
+    "region": "EU",
+    "format": "English",
+    "players": 62,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-016",
+        "player": "Player419"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-022",
+        "player": "Player838"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-015",
+        "player": "Player432"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-014",
+        "player": "Player895"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-017",
+        "player": "Player681"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-013",
+        "player": "Player710"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-008",
+        "player": "Player186"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-004",
+        "player": "Player153"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-013",
+    "name": "Local Store League 2026",
+    "date": "2026-05-26",
+    "region": "EU",
+    "format": "Japanese",
+    "players": 36,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-001",
+        "player": "Player146"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-017",
+        "player": "Player325"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-003",
+        "player": "Player504"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-018",
+        "player": "Player713"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-008",
+        "player": "Player156"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-010",
+        "player": "Player107"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-011",
+        "player": "Player309"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-005",
+        "player": "Player408"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-014",
+    "name": "Asia Invitational 2026",
+    "date": "2026-07-14",
+    "region": "APAC",
+    "format": "English",
+    "players": 99,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-003",
+        "player": "Player179"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-011",
+        "player": "Player982"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-017",
+        "player": "Player420"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-020",
+        "player": "Player689"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-021",
+        "player": "Player539"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-010",
+        "player": "Player687"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-008",
+        "player": "Player514"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-007",
+        "player": "Player826"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-015",
+    "name": "Online Ranked Cup 2026",
+    "date": "2026-06-30",
+    "region": "APAC",
+    "format": "English",
+    "players": 21,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-005",
+        "player": "Player178"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-001",
+        "player": "Player622"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-022",
+        "player": "Player748"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-008",
+        "player": "Player216"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-021",
+        "player": "Player643"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-017",
+        "player": "Player622"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-013",
+        "player": "Player298"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-019",
+        "player": "Player894"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-016",
+    "name": "Online Ranked Cup 2026",
+    "date": "2026-07-21",
+    "region": "Global",
+    "format": "English",
+    "players": 42,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-018",
+        "player": "Player580"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-001",
+        "player": "Player552"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-004",
+        "player": "Player746"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-002",
+        "player": "Player410"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-017",
+        "player": "Player915"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-021",
+        "player": "Player381"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-020",
+        "player": "Player705"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-016",
+        "player": "Player157"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-017",
+    "name": "ADS Cup 2026",
+    "date": "2026-07-12",
+    "region": "Global",
+    "format": "English",
+    "players": 134,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-011",
+        "player": "Player613"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-006",
+        "player": "Player254"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-019",
+        "player": "Player163"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-016",
+        "player": "Player561"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-020",
+        "player": "Player205"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-005",
+        "player": "Player930"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-004",
+        "player": "Player957"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-001",
+        "player": "Player451"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-018",
+    "name": "World Qualifier 2026",
+    "date": "2026-08-15",
+    "region": "EU",
+    "format": "Japanese",
+    "players": 79,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-014",
+        "player": "Player841"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-008",
+        "player": "Player972"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-002",
+        "player": "Player772"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-004",
+        "player": "Player717"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-016",
+        "player": "Player994"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-003",
+        "player": "Player253"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-009",
+        "player": "Player441"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-011",
+        "player": "Player183"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-019",
+    "name": "ADS Cup 2026",
+    "date": "2026-07-12",
+    "region": "APAC",
+    "format": "English",
+    "players": 183,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-004",
+        "player": "Player319"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-008",
+        "player": "Player449"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-018",
+        "player": "Player884"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-006",
+        "player": "Player597"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-001",
+        "player": "Player296"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-015",
+        "player": "Player331"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-020",
+        "player": "Player240"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-007",
+        "player": "Player258"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-020",
+    "name": "Europe Regional 2026",
+    "date": "2026-06-17",
+    "region": "EU",
+    "format": "Japanese",
+    "players": 213,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-009",
+        "player": "Player870"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-016",
+        "player": "Player866"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-021",
+        "player": "Player902"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-004",
+        "player": "Player559"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-020",
+        "player": "Player339"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-006",
+        "player": "Player646"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-019",
+        "player": "Player344"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-007",
+        "player": "Player416"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-021",
+    "name": "Asia Invitational 2026",
+    "date": "2026-05-26",
+    "region": "NA",
+    "format": "English",
+    "players": 162,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-002",
+        "player": "Player391"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-019",
+        "player": "Player185"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-006",
+        "player": "Player881"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-009",
+        "player": "Player264"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-012",
+        "player": "Player379"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-011",
+        "player": "Player560"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-007",
+        "player": "Player625"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-008",
+        "player": "Player250"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-022",
+    "name": "Europe Regional 2026",
+    "date": "2026-06-24",
+    "region": "LATAM",
+    "format": "English",
+    "players": 242,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-011",
+        "player": "Player393"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-005",
+        "player": "Player949"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-010",
+        "player": "Player583"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-008",
+        "player": "Player812"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-003",
+        "player": "Player951"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-009",
+        "player": "Player242"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-020",
+        "player": "Player877"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-018",
+        "player": "Player822"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-023",
+    "name": "Winter Tournament 2026",
+    "date": "2026-08-10",
+    "region": "APAC",
+    "format": "Japanese",
+    "players": 20,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-003",
+        "player": "Player711"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-011",
+        "player": "Player648"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-008",
+        "player": "Player116"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-010",
+        "player": "Player747"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-022",
+        "player": "Player627"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-012",
+        "player": "Player688"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-006",
+        "player": "Player347"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-021",
+        "player": "Player835"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-024",
+    "name": "ADS Cup 2026",
+    "date": "2026-08-20",
+    "region": "Global",
+    "format": "Japanese",
+    "players": 173,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-005",
+        "player": "Player865"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-017",
+        "player": "Player116"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-015",
+        "player": "Player465"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-018",
+        "player": "Player907"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-010",
+        "player": "Player169"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-004",
+        "player": "Player453"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-021",
+        "player": "Player346"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-007",
+        "player": "Player850"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-025",
+    "name": "Digimon Championship Series 2026",
+    "date": "2026-08-03",
+    "region": "APAC",
+    "format": "English",
+    "players": 27,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-009",
+        "player": "Player934"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-020",
+        "player": "Player656"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-017",
+        "player": "Player584"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-014",
+        "player": "Player359"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-007",
+        "player": "Player137"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-021",
+        "player": "Player871"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-010",
+        "player": "Player762"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-004",
+        "player": "Player295"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-026",
+    "name": "Digimon Championship Series 2026",
+    "date": "2026-05-29",
+    "region": "LATAM",
+    "format": "Japanese",
+    "players": 100,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-019",
+        "player": "Player658"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-011",
+        "player": "Player400"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-002",
+        "player": "Player428"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-010",
+        "player": "Player205"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-021",
+        "player": "Player181"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-001",
+        "player": "Player435"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-007",
+        "player": "Player776"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-005",
+        "player": "Player402"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-027",
+    "name": "Regional Championship 2026",
+    "date": "2026-07-30",
+    "region": "Global",
+    "format": "English",
+    "players": 192,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-016",
+        "player": "Player168"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-008",
+        "player": "Player341"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-010",
+        "player": "Player897"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-004",
+        "player": "Player760"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-005",
+        "player": "Player475"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-018",
+        "player": "Player470"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-017",
+        "player": "Player492"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-003",
+        "player": "Player680"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-028",
+    "name": "ADS Cup 2026",
+    "date": "2026-05-26",
+    "region": "EU",
+    "format": "English",
+    "players": 131,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-014",
+        "player": "Player820"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-008",
+        "player": "Player556"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-010",
+        "player": "Player319"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-009",
+        "player": "Player726"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-020",
+        "player": "Player392"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-016",
+        "player": "Player810"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-013",
+        "player": "Player602"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-019",
+        "player": "Player304"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-029",
+    "name": "World Qualifier 2026",
+    "date": "2026-06-24",
+    "region": "NA",
+    "format": "English",
+    "players": 60,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-016",
+        "player": "Player469"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-007",
+        "player": "Player667"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-008",
+        "player": "Player686"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-005",
+        "player": "Player477"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-009",
+        "player": "Player578"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-002",
+        "player": "Player922"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-001",
+        "player": "Player664"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-004",
+        "player": "Player232"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-030",
+    "name": "Winter Tournament 2026",
+    "date": "2026-07-12",
+    "region": "EU",
+    "format": "Japanese",
+    "players": 117,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-012",
+        "player": "Player614"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-004",
+        "player": "Player989"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-001",
+        "player": "Player156"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-019",
+        "player": "Player951"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-010",
+        "player": "Player227"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-021",
+        "player": "Player630"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-007",
+        "player": "Player256"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-018",
+        "player": "Player411"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-031",
+    "name": "World Qualifier 2026",
+    "date": "2026-05-22",
+    "region": "APAC",
+    "format": "English",
+    "players": 73,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-001",
+        "player": "Player962"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-004",
+        "player": "Player677"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-008",
+        "player": "Player142"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-006",
+        "player": "Player945"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-022",
+        "player": "Player984"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-021",
+        "player": "Player129"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-013",
+        "player": "Player183"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-015",
+        "player": "Player146"
+      }
+    ]
+  },
+  {
+    "tournament_id": "trn-032",
+    "name": "Online Ranked Cup 2026",
+    "date": "2026-06-08",
+    "region": "APAC",
+    "format": "Japanese",
+    "players": 122,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-012",
+        "player": "Player575"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-003",
+        "player": "Player308"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-019",
+        "player": "Player448"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-014",
+        "player": "Player721"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-009",
+        "player": "Player247"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-022",
+        "player": "Player420"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-006",
+        "player": "Player982"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-002",
+        "player": "Player835"
+      }
+    ]
+  }
+]

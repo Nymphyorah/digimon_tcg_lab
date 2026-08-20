@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec.bak
+.venv/
+venv/
+data_collector/_card_cache.json
+data_collector/digilab_key.txt
+data_collector/fetch_log*.txt
+debug_stdout.txt
+*.egg-info/
+

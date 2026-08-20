@@ -1,0 +1,32 @@
+[
+  {
+    "card_id": "BT25-082",
+    "restriction": "BAN",
+    "date": "2026-08-20",
+    "note": "Adicionado via análise de meta."
+  },
+  {
+    "card_id": "BT22-008",
+    "restriction": "LIMIT_1",
+    "date": "2026-08-18",
+    "note": "Adicionado via análise de meta."
+  },
+  {
+    "card_id": "EX9-021",
+    "restriction": "LIMIT_2",
+    "date": "2026-08-12",
+    "note": "Adicionado via análise de meta."
+  },
+  {
+    "card_id": "BT23-014",
+    "restriction": "LIMIT_1",
+    "date": "2026-08-05",
+    "note": "Adicionado via análise de meta."
+  },
+  {
+    "card_id": "BT21-047",
+    "restriction": "LIMIT_3",
+    "date": "2026-07-29",
+    "note": "Adicionado via análise de meta."
+  }
+]

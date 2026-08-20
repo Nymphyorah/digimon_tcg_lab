@@ -1,0 +1,3380 @@
+[
+  {
+    "tournament_id": "llt-6a232bad56b11a587a94978d",
+    "name": "Digimon Domingueo LLeida",
+    "date": "2026-06-05",
+    "region": "Global",
+    "format": "Standard",
+    "players": 3,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a22a11b56b11a587a948ea6",
+    "name": "Digital World BR #21",
+    "date": "2026-06-05",
+    "region": "Global",
+    "format": "Standard",
+    "players": 7,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "jonathan1225"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-dark-masters",
+        "player": "zaniboni"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-blue-green-imperialdramon",
+        "player": "Miguel M"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-dark-masters",
+        "player": "PF_Douglas_ofc"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Kaitooou"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-yellow-shinegreymon",
+        "player": "Matoka"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Rukasu"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a209c4156b11a587a947be1",
+    "name": "LIGA PHOENIX 2026 - (PHOENIX REBORN) CABA 20°",
+    "date": "2026-06-06",
+    "region": "Global",
+    "format": "Standard",
+    "players": 20,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-yellow-vaccine",
+        "player": "Mariano Jar [Motomel]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Pio Cattoni [Bokogod]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Dario Gomez (The Boys)"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Gonzalo \"Gono\" Delaguardia [Bokogod]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Mike Arrondo"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Paco Garcia Huidobro [Bokogod]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-millenniummon",
+        "player": "Ivan Lopez Otero [Bokogod]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-xros",
+        "player": "Leo Lopresti (MOTOMEL)"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a1d752456b11a587a94561a",
+    "name": "LIGA PHOENIX 2026 - (INVICTVS) ROSARIO 24°",
+    "date": "2026-06-06",
+    "region": "Global",
+    "format": "Standard",
+    "players": 9,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Lisandro Guara [OverBurst]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-olympos-xii",
+        "player": "Braulio Torres"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-medusa",
+        "player": "Juan Campos"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-yellow-vaccine",
+        "player": "Cristian Alcober [OverBurst]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Carlos Muiños [Modoki Army]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-olympos-xii",
+        "player": "Marcos Greppi [OverBurst]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-bt23-jesmon",
+        "player": "Yoel D.Buigues [OverBurst]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-blue-green-imperialdramon",
+        "player": "Nacho Fernandez Motta"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a22f2f456b11a587a94919f",
+    "name": "LIGA PHOENIX 2026 - (DUEL COFFEE STORE) CHACO 22°",
+    "date": "2026-06-06",
+    "region": "Global",
+    "format": "Standard",
+    "players": 12,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Alexis Gauto [DiaboroArmy]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-yellow-vaccine",
+        "player": "jose david zibelman [Exalt]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-magnamon-x-anti",
+        "player": "Ale Aguiar"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Fabrizio Ruiz Llamedo [Exalt]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-olympos-xii",
+        "player": "Rodrigo Ezequiel Lezcano [Exalt]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Agustin Espindola [DiaboroArmy]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Damian Retamozo [DogorTCG]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-xros",
+        "player": "Mateo CR"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a23110156b11a587a949522",
+    "name": "LIGA PHOENIX 2026 - SEASON 2 - SALTA 8°",
+    "date": "2026-06-06",
+    "region": "Global",
+    "format": "Standard",
+    "players": 4,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-vemmon",
+        "player": "Constanza Sehringer"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-puppets",
+        "player": "Nicolas Martinez"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-ex7-beelstarmon",
+        "player": "Nicolás Kumike"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Emanuel Gomez Castro"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a23306a56b11a587a94984c",
+    "name": "Digimon Domingueo LLeida",
+    "date": "2026-06-07",
+    "region": "Global",
+    "format": "Standard",
+    "players": 6,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a2049dc56b11a587a9475da",
+    "name": "LIGA PHOENIX 2026 - DIGIMON - PHOENIX LA PLATA 9°",
+    "date": "2026-06-07",
+    "region": "Global",
+    "format": "Standard",
+    "players": 8,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Mariano Ortelli [UzuTeam]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Pio Cattoni [Bokogod]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-medusa",
+        "player": "Rosario Di Battista [UzuTeam]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Marco Courouniotis [PokeVice]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Facundo Hernández [GigaSloth]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-olympos-xii",
+        "player": "Emma Chavez [PokeVice]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-ts-neptunemon-/-ts-abyss-sanctuary",
+        "player": "Francisco Rios"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-medusa",
+        "player": "Candela Biagetti [Capa]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a201f8047f3797bf6baab83",
+    "name": "LIGA PHOENIX 2026 - (KameHousePosadas) MISIONES 4°",
+    "date": "2026-06-07",
+    "region": "Global",
+    "format": "Standard",
+    "players": 10,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-emperorgreymon",
+        "player": "Rodrigo Rolon [Exalt]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-olympos-xii",
+        "player": "Gian Cortese (Dominio Cartonero)"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-xros",
+        "player": "Facundo Leandro Pedroso +Dominio Cartonero+"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-medusa",
+        "player": "Gonzalo Acosta (Dominio Cartonero)"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Adrian Sbardella (Dominio Cartonero)"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Anibal Galeano {Dominio Cartonero}"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-blue-green-imperialdramon",
+        "player": "Mathias Wolfman Rieckert [Dominio cartonero]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-ex7-beelstarmon",
+        "player": "Facundo Flores (Dominio Cartonero)"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a1425088c163b8097996cd1",
+    "name": "Expanse Italia Weekly Tournament",
+    "date": "2026-06-08",
+    "region": "Global",
+    "format": "Standard",
+    "players": 5,
+    "top8": [
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "TimeWalker"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "lUFT"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Pellix1206"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a25e60247f3797bf6baeaa4",
+    "name": "Eagle's Nest S9W9.0 BT25 Webcam Locals",
+    "date": "2026-06-08",
+    "region": "Global",
+    "format": "Standard",
+    "players": 16,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-olympos-xii",
+        "player": "MakoKill3r"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "marshmallowruffian"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "ArtfulFox"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Khamrad"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Blake Banter"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-medusa",
+        "player": "Michael Iafrate"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-olympos-xii",
+        "player": "Vpassion"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-olympos-xii",
+        "player": "Aomceodeadly"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a27ea7956b11a587a94cf9f",
+    "name": "Digital World BR #22",
+    "date": "2026-06-09",
+    "region": "Global",
+    "format": "Standard",
+    "players": 7,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-dark-masters",
+        "player": "zaniboni"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Victor Carvalho"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Kaitooou"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-yellow-shinegreymon",
+        "player": "Matoka"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Rukasu"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-dark-masters",
+        "player": "frogjj"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Hilha"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-69c3124fd478313a15a3215b",
+    "name": "DMV Drakes - BanchoPteromon Finale Invitational!",
+    "date": "2026-06-09",
+    "region": "Global",
+    "format": "Standard",
+    "players": 7,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "TiltedSheep"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Omnikola"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Eetherbiail"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Giodude9611"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-medusa",
+        "player": "Abnormallium"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Brandomon"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a29420ce334c3c9befd2f54",
+    "name": "Digimon",
+    "date": "2026-06-10",
+    "region": "Global",
+    "format": "Standard",
+    "players": 16,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a28b75ce334c3c9befd2adb",
+    "name": "FrikioTorneo de Digimon BT25 #4",
+    "date": "2026-06-10",
+    "region": "Global",
+    "format": "Standard",
+    "players": 10,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a29c9c2e334c3c9befd34d6",
+    "name": "Hilha's House Remote #1",
+    "date": "2026-06-10",
+    "region": "Global",
+    "format": "Standard",
+    "players": 4,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Victor Carvalho"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-creepymon-x",
+        "player": "Rafael P"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-dark-masters",
+        "player": "Hilha"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-xros",
+        "player": "gab_raw"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a28979fe334c3c9befd28cc",
+    "name": "Dcgo locals 2026 week13",
+    "date": "2026-06-10",
+    "region": "Global",
+    "format": "Standard",
+    "players": 7,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a27546e56b11a587a94ca2f",
+    "name": "DigiGalaxy Wednesday Cash Prize Tournament!",
+    "date": "2026-06-10",
+    "region": "Global",
+    "format": "Standard",
+    "players": 9,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-olympos-xii",
+        "player": "KFizzPop"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-olympos-xii",
+        "player": "Vpassion"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-olympos-xii",
+        "player": "TiBon"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-olympos-xii",
+        "player": "Bren"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-olympos-xii",
+        "player": "Aomceodeadly"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Khamrad"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-olympos-xii",
+        "player": "birdyblaze"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-olympos-xii",
+        "player": "Archer9915"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a25e9bc56b11a587a94bb04",
+    "name": "Eagle's Nest S9W9.5 BT25 Webcam Locals",
+    "date": "2026-06-12",
+    "region": "Global",
+    "format": "Standard",
+    "players": 11,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Tesero"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Blake Banter"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Khamrad"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "GammaCygni"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-yellow-shinegreymon",
+        "player": "Pyro0228"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "WizWiz"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-red-hybrid",
+        "player": "Mas"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "Wyn0nyn"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a290b23e334c3c9befd2dc3",
+    "name": "R4pt0r's DACH/TNG locals 136",
+    "date": "2026-06-12",
+    "region": "Global",
+    "format": "Standard",
+    "players": 12,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a29bc99e334c3c9befd3476",
+    "name": "LIGA PHOENIX 2026 - (PHOENIX REBORN) CABA 21°",
+    "date": "2026-06-13",
+    "region": "Global",
+    "format": "Standard",
+    "players": 25,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Ignacio Agostini [PhoeniX]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Alan Mattia"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Leandro Angeli [Bokogod]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-olympos-xii",
+        "player": "Mariano Jar [Motomel]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Itamar De Oliveira [Never Lucky]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-cs-hudiemon",
+        "player": "Ivan Lopez Otero [Bokogod]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-olympos-xii",
+        "player": "Juan Ignacio Spadoni [Motomel]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "Gonzalo \"Gono\" Delaguardia [Bokogod]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a2d9ac72d97f3b0c2615db3",
+    "name": "digimon banfield #2",
+    "date": "2026-06-13",
+    "region": "Global",
+    "format": "Standard",
+    "players": 6,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a1d757956b11a587a94561c",
+    "name": "LIGA PHOENIX 2026 - (INVICTVS) ROSARIO 25°",
+    "date": "2026-06-13",
+    "region": "Global",
+    "format": "Standard",
+    "players": 18,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-ex7-beelstarmon",
+        "player": "Lisandro Guara [OverBurst]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-rocks",
+        "player": "Marcos Greppi [OverBurst]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Franco Agustin Torrero"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-puppets",
+        "player": "Lucía Griñó [OverBurst]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Carlos Muiños [Modoki Army]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-yellow-vaccine",
+        "player": "Cristian Alcober [OverBurst]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Yoel D.Buigues [OverBurst]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-vortexdramon",
+        "player": "Ignacio Carbone [Modoki Army]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a2b0318e334c3c9befd3f27",
+    "name": "LIGA PHOENIX 2026 - SEASON 2 - SALTA 9°",
+    "date": "2026-06-13",
+    "region": "Global",
+    "format": "Standard",
+    "players": 4,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-puppets",
+        "player": "Nicolas Martinez"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-bt23-jesmon",
+        "player": "Constanza Sehringer"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Emanuel Gomez Castro"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-ex7-beelstarmon",
+        "player": "Nicolás Kumike"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a2c20f82d97f3b0c2614b85",
+    "name": "LIGA PHOENIX 2026 - DIGIMON - PHOENIX LA PLATA 10°",
+    "date": "2026-06-14",
+    "region": "Global",
+    "format": "Standard",
+    "players": 8,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-vemmon",
+        "player": "Lucas Cattoni [GigaSloth]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Pio Cattoni [Bokogod]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Facundo Hernández [GigaSloth]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Mariano Ortelli [UzuTeam]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-yellow-vaccine",
+        "player": "Rosario Di Battista [UzuTeam]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Joaquin Buscaglia"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-rocks",
+        "player": "Santiago Ferrero [PokeVice]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-olympos-xii",
+        "player": "Emma Chavez [PokeVice]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a0482c413f957d6d4b47440",
+    "name": "LIGA PHOENIX 2026 - (INVICTVS) ROSARIO 1000' 2°",
+    "date": "2026-06-14",
+    "region": "Global",
+    "format": "Standard",
+    "players": 14,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-medusa",
+        "player": "Juan Campos"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-xros",
+        "player": "Lucas Cartier [OverBurst]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Marcos Greppi [OverBurst]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Lisandro Guara [OverBurst]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-olympos-xii",
+        "player": "Braulio Torres"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-medusa",
+        "player": "Omar M Chavero [Modoki Army]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-bt23-jesmon",
+        "player": "Yoel D.Buigues [OverBurst]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "Tomás López"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a282a0047f3797bf6baff38",
+    "name": "LIGA PHOENIX 2026 1000 - (DUEL COFFEE STORE) CHACO",
+    "date": "2026-06-14",
+    "region": "Global",
+    "format": "Standard",
+    "players": 34,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "jose david zibelman [Exalt]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-maquinamon",
+        "player": "Franco Cuello"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-medusa",
+        "player": "Fran Gimenez Doglioli [Exalt]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Agustin Espindola [DiaboroArmy]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Gian Cortese (Dominio Cartonero)"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Fabrizio Ruiz Llamedo [Exalt]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-xros",
+        "player": "Rodrigo Rolon [Exalt]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-ex7-beelstarmon",
+        "player": "José Daníel Ramírez Encína [Diaboro Army]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a2a0d1ee334c3c9befd38f2",
+    "name": "Eagle's Nest S9W10.0 BT25 Webcam Locals",
+    "date": "2026-06-15",
+    "region": "Global",
+    "format": "Standard",
+    "players": 25,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-olympos-xii",
+        "player": "Vpassion"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Tesero"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Kdrazcal"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "blionel"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "AzurePKK"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Blake Banter"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-ex7-beelstarmon",
+        "player": "LowKeyMeta"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-medusa",
+        "player": "Michael Iafrate"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a312028e334c3c9befd7e80",
+    "name": "Digital World BR #23",
+    "date": "2026-06-16",
+    "region": "Global",
+    "format": "Standard",
+    "players": 10,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-appmon",
+        "player": "Miguel M"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "jonathan1225"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Kaitooou"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Victor Carvalho"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Hilha"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-dark-masters",
+        "player": "zaniboni"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-yellow-shinegreymon",
+        "player": "Matoka"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "Rukasu"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a32bb9ce334c3c9befd8976",
+    "name": "Digimon",
+    "date": "2026-06-17",
+    "region": "Global",
+    "format": "Standard",
+    "players": 8,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a27d55456b11a587a94cf4f",
+    "name": "Semanal Online Homelands - Digimon Evo Cup",
+    "date": "2026-06-17",
+    "region": "Global",
+    "format": "Standard",
+    "players": 9,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a32073f2d97f3b0c26182f2",
+    "name": "Aguante Argentina, Aguante Messi LPM",
+    "date": "2026-06-17",
+    "region": "Global",
+    "format": "Standard",
+    "players": 8,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a319b4e2d97f3b0c26180be",
+    "name": "dcgo locals 2026 week 14",
+    "date": "2026-06-17",
+    "region": "Global",
+    "format": "Standard",
+    "players": 9,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a31bcd32d97f3b0c2618120",
+    "name": "Expanse Italia Weekly Tournament",
+    "date": "2026-06-18",
+    "region": "Global",
+    "format": "Standard",
+    "players": 4,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "TimeWalker"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Pellix1206"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-green-bloomlordmon",
+        "player": "AtlasKim"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Zaffira"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a2aa07ae334c3c9befd3bd0",
+    "name": "Eagle's Nest S9W10.5 BT25 Webcam Locals",
+    "date": "2026-06-19",
+    "region": "Global",
+    "format": "Standard",
+    "players": 16,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Tesero"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Munfusion"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "LowKeyMeta"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Jorge Ballote"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Khamrad"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-vemmon",
+        "player": "MochiTabe"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "WizWiz"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "Xroic"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a3424a12d97f3b0c261931b",
+    "name": "R4pt0r's DACH/TNG locals 137",
+    "date": "2026-06-19",
+    "region": "Global",
+    "format": "Standard",
+    "players": 8,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a330ab72d97f3b0c2618b97",
+    "name": "LIGA PHOENIX 2026 - (PHOENIX REBORN) CABA 20°",
+    "date": "2026-06-20",
+    "region": "Global",
+    "format": "Standard",
+    "players": 23,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Matias Angeli [PhoeniX]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Pio Cattoni [Bokogod]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Mariano Jar [Motomel]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Leandro Angeli [Bokogod]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Juan Götz"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Alan Mattia"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Gonzalo \"Gono\" Delaguardia [Bokogod]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "Facundo Torres [DigiBanda]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a36d9f1ceacae7d6441b163",
+    "name": "digimon banfield #3",
+    "date": "2026-06-20",
+    "region": "Global",
+    "format": "Standard",
+    "players": 4,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a1d75ac47f3797bf6ba8d9e",
+    "name": "LIGA PHOENIX 2026 - (INVICTVS) ROSARIO 26°",
+    "date": "2026-06-20",
+    "region": "Global",
+    "format": "Standard",
+    "players": 14,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-blue-green-imperialdramon",
+        "player": "Nacho Fernandez Motta"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Tomás López"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Marcos Greppi [OverBurst]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Franco Agustin Torrero"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-vortexdramon",
+        "player": "Yoel D.Buigues [OverBurst]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Cristian Alcober [OverBurst]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Lisandro Guara [OverBurst]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "Carlos Muiños [Modoki Army]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a35e883ceacae7d6441a2bf",
+    "name": "LIGA PHOENIX 2026 - (DUEL COFFEE STORE) CHACO 23°",
+    "date": "2026-06-20",
+    "region": "Global",
+    "format": "Standard",
+    "players": 8,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Damian Retamozo [DogorTCG]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Rodrigo Ezequiel Lezcano [Exalt]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Agustin Espindola [DiaboroArmy]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Cristian Diaz Toledo [Exalt]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-xros",
+        "player": "Mateo CR"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-green-bloomlordmon",
+        "player": "jose david zibelman [Exalt]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Rodrigo Ivan Avila Demitroff [DogorTCG]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-appmon",
+        "player": "Alexis Gauto [DiaboroArmy]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a359763ceacae7d64419e58",
+    "name": "LIGA PHOENIX 2026 - SEASON 2 - SALTA 10° - 500 PNT",
+    "date": "2026-06-20",
+    "region": "Global",
+    "format": "Standard",
+    "players": 5,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-red-jesmon",
+        "player": "Constanza Sehringer"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-rocks",
+        "player": "Emanuel Gomez Castro"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-yellow-shinegreymon",
+        "player": "Julián ariel Ovejero di Fiori"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-ex7-beelstarmon",
+        "player": "Nicolás Kumike"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-emperorgreymon",
+        "player": "Nicolás Acosta"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a2aa09e2d97f3b0c2613bc2",
+    "name": "Eagle's Nest S9W11.0 BT25 Webcam Locals",
+    "date": "2026-06-22",
+    "region": "Global",
+    "format": "Standard",
+    "players": 20,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-medusa",
+        "player": "Michael Iafrate"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Munfusion"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-cs-mastemon",
+        "player": "AyyLmao"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "LowKeyMeta"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-olympos-xii",
+        "player": "Vpassion"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "AzurePKK"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Wyn0nyn"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "soymarcos"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a3ae2f6c87cd9ff0a30e03b",
+    "name": "Digital World BR #24",
+    "date": "2026-06-23",
+    "region": "Global",
+    "format": "Standard",
+    "players": 12,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-vemmon",
+        "player": "Crerman"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Victor Carvalho"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Rukasu"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-red-hybrid",
+        "player": "salamaleico"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-yellow-shinegreymon",
+        "player": "Matoka"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Fir3blast"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Hilha"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "jonathan1225"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a38f9acc87cd9ff0a30cf8c",
+    "name": "Semanal Online Homelands - Digimon",
+    "date": "2026-06-24",
+    "region": "Global",
+    "format": "Standard",
+    "players": 6,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a3b15d5c87cd9ff0a30e1b5",
+    "name": "Fr⭐k⭐M⭐ercoles de Digimon BT25 #6",
+    "date": "2026-06-24",
+    "region": "Global",
+    "format": "Standard",
+    "players": 10,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a35e770ceacae7d6441a2b0",
+    "name": "MGW RETURNS FREE TOURNAMENT!!!",
+    "date": "2026-06-24",
+    "region": "Global",
+    "format": "Standard",
+    "players": 10,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Tesero"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-ts-neptunemon-/-ts-abyss-sanctuary",
+        "player": "TheCrowFather"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-olympos-xii",
+        "player": "Vpassion"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Zero89"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Xanitsu"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Shogun2134"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "MochiTabe"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-ts-neptunemon-/-ts-abyss-sanctuary",
+        "player": "Spartan"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a3ae73983fd320299bcec8c",
+    "name": "dcgo locals 2026 week 15",
+    "date": "2026-06-24",
+    "region": "Global",
+    "format": "Standard",
+    "players": 6,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a3d36f7c87cd9ff0a30f0fa",
+    "name": "Hilha's House Remote #2",
+    "date": "2026-06-25",
+    "region": "Global",
+    "format": "Standard",
+    "players": 6,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Victor Carvalho"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-rocks",
+        "player": "gab_raw"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-creepymon-x",
+        "player": "Rafael P"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Jhonrocks0909"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Hilha"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-cs-mastemon",
+        "player": "deyvidSantos"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a2aa0bd2d97f3b0c2613bc3",
+    "name": "Eagle's Nest S9W11.5 BT25 Webcam Locals",
+    "date": "2026-06-26",
+    "region": "Global",
+    "format": "Standard",
+    "players": 19,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "marshmallowruffian"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "LowKeyMeta"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Wyn0nyn"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "B9wave"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Tesero"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Jorge Ballote"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Azuredo"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "DaigonRoogen"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a3d51a1c87cd9ff0a30f245",
+    "name": "R4pt0r's DACH/TNG locals 138",
+    "date": "2026-06-26",
+    "region": "Global",
+    "format": "Standard",
+    "players": 4,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a1e260647f3797bf6ba984a",
+    "name": "PHOENIX OPEN 19° 2026",
+    "date": "2026-06-27",
+    "region": "Global",
+    "format": "Standard",
+    "players": 75,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Pio Cattoni [Bokogod]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-red-jesmon",
+        "player": "Matias Carnevale"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-vemmon",
+        "player": "Constanza Sehringer"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Lisandro Guara [OverBurst]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Alexis Moragues[Bokogod]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Sergio Romussi Kobushi"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-ts-neptunemon-/-ts-abyss-sanctuary",
+        "player": "Diego Arroyo"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-medusa",
+        "player": "Agustin Buontempo [PhoeniX]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a37fde2af50e12308407b44",
+    "name": "LIGA PHOENIX 2026 - (INVICTVS) ROSARIO 27°",
+    "date": "2026-06-27",
+    "region": "Global",
+    "format": "Standard",
+    "players": 10,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Franco Agustin Torrero"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-xros",
+        "player": "Fabrizio Helmbold [Shoutmon Presidente]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-xros",
+        "player": "Lucas Cartier [OverBurst]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Lucía Griñó [OverBurst]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Santiago BUZZATTO"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-cs-mastemon",
+        "player": "Lautaro Barrios"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-gammamon",
+        "player": "Nicolás Gimenez"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-olympos-xii",
+        "player": "Braulio Torres"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a3c07e383fd320299bcf450",
+    "name": "LIGA PHOENIX 2026 - (DUEL COFFEE STORE) CHACO 24°",
+    "date": "2026-06-27",
+    "region": "Global",
+    "format": "Standard",
+    "players": 14,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Fabrizio Ruiz Llamedo [Exalt]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Rodrigo Ezequiel Lezcano [Exalt]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-magnamon-x-anti",
+        "player": "Ale Aguiar"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Agustin Espindola [DiaboroArmy]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Ramiro Pertile [DiaboroArmy]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-puppets",
+        "player": "Maximiliano Duro [Exalt]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Cristian Diaz Toledo [Exalt]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-bt23-jesmon",
+        "player": "jose david zibelman [Exalt]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a4042c483fd320299bd2856",
+    "name": "Hilha's House Remote #3",
+    "date": "2026-06-27",
+    "region": "Global",
+    "format": "Standard",
+    "players": 5,
+    "top8": [
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Victor Carvalho"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Hilha"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a40819cc87cd9ff0a311b3d",
+    "name": "Hilha's House Remote #4",
+    "date": "2026-06-28",
+    "region": "Global",
+    "format": "Standard",
+    "players": 6,
+    "top8": [
+      {
+        "rank": 3,
+        "deck_id": "deck-cs-mastemon",
+        "player": "Hilha"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a3a8cc083fd320299bce85c",
+    "name": "LIGA PHOENIX 2026 - (KameHousePosadas) MISIONES 5°",
+    "date": "2026-06-28",
+    "region": "Global",
+    "format": "Standard",
+    "players": 9,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-emperorgreymon",
+        "player": "Rodrigo Rolon [Exalt]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-yellow-shinegreymon",
+        "player": "Agustin Murciego [Kame House]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Gian Cortese (Dominio Cartonero)"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Facundo Leandro Pedroso +Dominio Cartonero+"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Franco Martinez Arrechea"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Leonardo Czajkowski"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-gallantmon-x",
+        "player": "Rodrigo Zamora"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-royal-knights",
+        "player": "Anibal Rios"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a32d8802d97f3b0c261889b",
+    "name": "Eagle's Nest Season 9 LCQ Triple-Box",
+    "date": "2026-06-29",
+    "region": "Global",
+    "format": "Standard",
+    "players": 20,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-olympos-xii",
+        "player": "Vpassion"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Sol_Nimbus"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "GammaCygni"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "marshmallowruffian"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-yellow-vaccine",
+        "player": "Khamrad"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-medusa",
+        "player": "Michael Iafrate"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Munfusion"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "LowKeyMeta"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a439668c87cd9ff0a313631",
+    "name": "Digital World BR #25",
+    "date": "2026-06-30",
+    "region": "Global",
+    "format": "Standard",
+    "players": 9,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Victor Carvalho"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-blue-green-imperialdramon",
+        "player": "GUSTAVO PACHECO"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-red-hybrid",
+        "player": "Fir3blast"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Rukasu"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-olympos-xii",
+        "player": "Mmeira"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-dark-masters",
+        "player": "zaniboni"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "jonathan1225"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-red-hybrid",
+        "player": "salamaleico"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a454f1183fd320299bd5b94",
+    "name": "Semanal Online Homelands - Digimon 2.0",
+    "date": "2026-07-01",
+    "region": "Global",
+    "format": "Standard",
+    "players": 6,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a44516cc87cd9ff0a314006",
+    "name": "FrikioTorneo de Digimon EX12 #1",
+    "date": "2026-07-01",
+    "region": "Global",
+    "format": "Standard",
+    "players": 12,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a44531bc87cd9ff0a314020",
+    "name": "dcgo locals 2026 week 16",
+    "date": "2026-07-01",
+    "region": "Global",
+    "format": "Standard",
+    "players": 10,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a32d95e2d97f3b0c26188aa",
+    "name": "Eagle's Nest PPW EX12 Webcam Locals",
+    "date": "2026-07-03",
+    "region": "Global",
+    "format": "Standard",
+    "players": 14,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "GammaCygni"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Jorge Ballote"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "KFizzPop"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-gammamon",
+        "player": "Edy V"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "AzurePKK"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "WizWiz"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "MochiTabe"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "LowKeyMeta"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a457a0083fd320299bd5def",
+    "name": "LIGA PHOENIX 2026 - (PHOENIX REBORN) CABA 21°",
+    "date": "2026-07-04",
+    "region": "Global",
+    "format": "Standard",
+    "players": 19,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Ivan Lopez Otero [Bokogod]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Alan Mattia"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Matias Angeli [PhoeniX]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Thomas Nazar [PhoeniX]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Gonzalo \"Gono\" Delaguardia [Bokogod]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-blue-green-imperialdramon",
+        "player": "Juan Götz"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Mariano Jar [Motomel]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "Agustin Toral [Phoenix]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a41b34883fd320299bd36ec",
+    "name": "LIGA PHOENIX 2026 - (INVICTVS) ROSARIO 28°",
+    "date": "2026-07-04",
+    "region": "Global",
+    "format": "Standard",
+    "players": 14,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-vemmon",
+        "player": "Marcos Greppi [OverBurst]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Cristian Alcober [OverBurst]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Nacho Fernandez Motta"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Yoel D.Buigues [OverBurst]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Cristian Prieto"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Lucía Griñó [OverBurst]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-xros",
+        "player": "Fabrizio Helmbold [Shoutmon Presidente]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-xros",
+        "player": "Lucas Cartier [OverBurst]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a45b37c83fd320299bd60dc",
+    "name": "LIGA PHOENIX 2026 - SEASON 3 - SALTA 1°",
+    "date": "2026-07-04",
+    "region": "Global",
+    "format": "Standard",
+    "players": 7,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Emanuel Gomez Castro"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-appmon",
+        "player": "Constanza Sehringer"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-adventure",
+        "player": "Julio Aramayo"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-ex7-beelstarmon",
+        "player": "Nicolás Kumike"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-millenniummon",
+        "player": "Alfon Cayata Rocha"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-royal-knights",
+        "player": "Nicolas Martinez"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-yellow-shinegreymon",
+        "player": "Julián ariel Ovejero di Fiori"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a32d9c2e334c3c9befd8b26",
+    "name": "Eagle’s Nest Season Nine Invitational!!!",
+    "date": "2026-07-05",
+    "region": "Global",
+    "format": "Standard",
+    "players": 8,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-medusa",
+        "player": "Michael Iafrate"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Tesero"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "marshmallowruffian"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "soymarcos"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-yellow-vaccine",
+        "player": "Khamrad"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "LowKeyMeta"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-olympos-xii",
+        "player": "MakoKill3r"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-olympos-xii",
+        "player": "Vpassion"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a459d0583fd320299bd5fe6",
+    "name": "LIGA PHOENIX 2026 - (CascoTCG) ROSARIO 2°",
+    "date": "2026-07-05",
+    "region": "Global",
+    "format": "Standard",
+    "players": 6,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-vemmon",
+        "player": "Damian Galinac [DigiPolice]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Lisandro Guara [OverBurst]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Yoel D.Buigues [OverBurst]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Nacho Fernandez Motta"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Cristian Prieto"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-red-hybrid",
+        "player": "Cristian Alcober [OverBurst]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a4be794063cb29d318e4e41",
+    "name": "Expanse Italia Weekly Tournament",
+    "date": "2026-07-06",
+    "region": "Global",
+    "format": "Standard",
+    "players": 5,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "NeroXyz"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "lUFT"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Pellix1206"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Zaffira"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Ansamtsod"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a4ae48b65724db9ded3da16",
+    "name": "Eagle's Nest S10W1.0 EX12 Webcam Locals",
+    "date": "2026-07-06",
+    "region": "Global",
+    "format": "Standard",
+    "players": 11,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Bren"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Tesero"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-medusa",
+        "player": "Michael Iafrate"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-vemmon",
+        "player": "soymarcos"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "KFizzPop"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-vemmon",
+        "player": "Jimbly"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-olympos-xii",
+        "player": "Vpassion"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-vemmon",
+        "player": "MochiTabe"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a4d2c8d65724db9ded3f5ce",
+    "name": "Digital World BR #26",
+    "date": "2026-07-07",
+    "region": "Global",
+    "format": "Standard",
+    "players": 5,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Victor Carvalho"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Rukasu"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-yellow-shinegreymon",
+        "player": "Matoka"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-dark-masters",
+        "player": "frogjj"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-dark-masters",
+        "player": "zaniboni"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a3b0fd883fd320299bced6d",
+    "name": "DMV Drakes EX-12 Win a Box Tournament!",
+    "date": "2026-07-07",
+    "region": "Global",
+    "format": "Standard",
+    "players": 6,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Brandomon"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "KFizzPop"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-vemmon",
+        "player": "MochiTabe"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Wyn0nyn"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a4bdad365724db9ded3e3a7",
+    "name": "Semanal Online Homelands - Digimon",
+    "date": "2026-07-08",
+    "region": "Global",
+    "format": "Standard",
+    "players": 4,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a4d3e90063cb29d318e6044",
+    "name": "Fr⭐k⭐M⭐ercoles de Digimon EX12 #2",
+    "date": "2026-07-08",
+    "region": "Global",
+    "format": "Standard",
+    "players": 8,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a4d6a46063cb29d318e62ae",
+    "name": "MGW RETURNS FREE TOURNAMENT!!! #2",
+    "date": "2026-07-08",
+    "region": "Global",
+    "format": "Standard",
+    "players": 14,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Miguelk99"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Xanitsu"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "megamen569"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-purple-metalgarurumon",
+        "player": "Bren"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-vemmon",
+        "player": "Jimbly"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "flameomega19"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-vemmon",
+        "player": "MochiTabe"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "Miles Henry"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a4d9dd865724db9ded3fe0b",
+    "name": "dcgo locals 2026 week 17",
+    "date": "2026-07-08",
+    "region": "Global",
+    "format": "Standard",
+    "players": 8,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a4cec11063cb29d318e5c78",
+    "name": "LIGA PHOENIX 2026 S3 - DUEL COFFEE STORE CHACO 25°",
+    "date": "2026-07-09",
+    "region": "Global",
+    "format": "Standard",
+    "players": 10,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Agustin Espindola [DiaboroArmy]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-olympos-xii",
+        "player": "jose david zibelman [Exalt]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Ramiro Pertile [DiaboroArmy]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-omnimon-alter-s",
+        "player": "Alexis Gauto [DiaboroArmy]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Fabrizio Ruiz Llamedo [Exalt]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Mauricio Gutierrez [Exalt]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-red-hybrid",
+        "player": "Cristian Diaz Toledo [Exalt]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-xros",
+        "player": "Rodrigo Rolon [Exalt]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a4ae55b65724db9ded3da1a",
+    "name": "Eagle's Nest S10W1.5 PPW EX12 Webcam Locals",
+    "date": "2026-07-10",
+    "region": "Global",
+    "format": "Standard",
+    "players": 16,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Munfusion"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "jjrbenis"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Bren"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "dragon_mythos"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Blake Banter"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "rjayhon"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-vortexdramon",
+        "player": "Xroic"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-olympos-xii",
+        "player": "NickName1"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a15f9f20f6c1f089986198d",
+    "name": "DigiGalaxy Friday Cash Prize Tournament!",
+    "date": "2026-07-10",
+    "region": "Global",
+    "format": "Standard",
+    "players": 8,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Blake Banter"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-medusa",
+        "player": "Michael Iafrate"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Archer9915"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "KFizzPop"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Miles Henry"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-blue-ulforceveedramon-x",
+        "player": "Spartan"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-yellow-sakuyamon",
+        "player": "LostTrain89"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "marshmallowruffian"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a4d309e063cb29d318e5f2b",
+    "name": "Neptune-Cup Juli 2026",
+    "date": "2026-07-11",
+    "region": "Global",
+    "format": "Standard",
+    "players": 24,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "WaBashbaer"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Couzalotus"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-olympos-xii",
+        "player": "MrMcYolo"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Ber0"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Trova"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "derDomino"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Kiivii"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "YNiko"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a51526165724db9ded426fa",
+    "name": "LIGA PHOENIX 2026 - (PHOENIX REBORN) CABA 22°",
+    "date": "2026-07-11",
+    "region": "Global",
+    "format": "Standard",
+    "players": 16,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Martin Braga [TheBoys]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Mariano Jar [Motomel]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Leandro Angeli [Bokogod]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-olympos-xii",
+        "player": "Juan Larzabal (The Boys)"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Alan Mattia"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Julian Soria"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Ivan Lopez Otero [Bokogod]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "Matias Angeli [PhoeniX]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a41dc2dc87cd9ff0a3127fc",
+    "name": "LIGA PHOENIX 2026 - (INVICTVS) ROSARIO 29°",
+    "date": "2026-07-11",
+    "region": "Global",
+    "format": "Standard",
+    "players": 11,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Carlos Muiños [Modoki Army]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Cristian Alcober [OverBurst]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-olympos-xii",
+        "player": "Braulio Torres"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-vemmon",
+        "player": "Damian Galinac [DigiPolice]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Santiago BUZZATTO"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-gammamon",
+        "player": "Marcos Greppi [OverBurst]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Yoel D.Buigues [OverBurst]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-leviamon",
+        "player": "Lisandro Guara [OverBurst]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a4ed5bc063cb29d318e730a",
+    "name": "LIGA PHOENIX 2026 - DIGIMON - PHOENIX LA PLATA 11°",
+    "date": "2026-07-12",
+    "region": "Global",
+    "format": "Standard",
+    "players": 5,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-olympos-xii",
+        "player": "Santiago Ferrero [PokeVice]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Pio Cattoni [Bokogod]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-vemmon",
+        "player": "Lucas Cattoni [GigaSloth]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-vortexdramon",
+        "player": "Facundo Hernández [GigaSloth]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Mariano Ortelli [UzuTeam]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a4e57ec063cb29d318e6a5d",
+    "name": "LIGA PHOENIX 2026 - (KameHousePosadas) MISIONES 6°",
+    "date": "2026-07-12",
+    "region": "Global",
+    "format": "Standard",
+    "players": 7,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Alejandro Berneri [Dominio Cartonero]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Gian Cortese (Dominio Cartonero)"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Juan pablo Berbergi [Dominio cartonero]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-bt23-jesmon",
+        "player": "Facundo Leandro Pedroso +Dominio Cartonero+"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Agustin Murciego [Kame House]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-medusa",
+        "player": "Gonzalo Acosta (Dominio Cartonero)"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Franco Martinez Arrechea"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a53f1bd3592ce392e7fb4ca",
+    "name": "digimon banfield #4",
+    "date": "2026-07-12",
+    "region": "Global",
+    "format": "Standard",
+    "players": 6,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a54fbe0232a1a55ee10b524",
+    "name": "Expanse Italia Weekly Tournament",
+    "date": "2026-07-13",
+    "region": "Global",
+    "format": "Standard",
+    "players": 7,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "AtlasKim"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "lUFT"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "NeroXyz"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Weyro"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "FuutsuFIX"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "TimeWalker"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Pellix1206"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a527a6caee205738a1a36a3",
+    "name": "Eagle's Nest S10W2.0 EX12 Webcam Locals",
+    "date": "2026-07-13",
+    "region": "Global",
+    "format": "Standard",
+    "players": 10,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "saviorkupo"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Khamrad"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-olympos-xii",
+        "player": "Shogun2134"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "LowKeyMeta"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "WizWiz"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "JunkboxSP"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "NewGuy"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-olympos-xii",
+        "player": "Vpassion"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a50f13e063cb29d318e8959",
+    "name": "Digital World BR #27",
+    "date": "2026-07-14",
+    "region": "Global",
+    "format": "Standard",
+    "players": 4,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Rukasu"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Victor Carvalho"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-yellow-shinegreymon",
+        "player": "Matoka"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Kaitooou"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a462bd2c87cd9ff0a3151bb",
+    "name": "R4pt0r's DACH/TNG locals 139",
+    "date": "2026-07-17",
+    "region": "Global",
+    "format": "Standard",
+    "players": 9,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a59321d613c9fb6b9f50fe3",
+    "name": "LIGA PHOENIX 2026 - (PHOENIX REBORN) CABA 23°",
+    "date": "2026-07-18",
+    "region": "Global",
+    "format": "Standard",
+    "players": 19,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Matias Angeli [PhoeniX]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-bees",
+        "player": "Christian di Donato [Phoenix]"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-olympos-xii",
+        "player": "Juan Larzabal (The Boys)"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Nahuel Agüero (The boys)"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Juan Ignacio Spadoni [Motomel]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Ivan Lopez Otero [Bokogod]"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Alexis Moragues[Bokogod]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "Juan Götz"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a5dcec552c24ac2da647139",
+    "name": "Expanse Italia Weekly Tournament",
+    "date": "2026-07-20",
+    "region": "Global",
+    "format": "Standard",
+    "players": 5,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "lUFT"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "NeroXyz"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Pellix1206"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "AtlasKim"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "TimeWalker"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a56c5a96355385f44dd4dde",
+    "name": "LIGA PHOENIX 2026 - (CascoTCG) ROSARIO 4°",
+    "date": "2026-07-21",
+    "region": "Global",
+    "format": "Standard",
+    "players": 6,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Marcos Greppi [OverBurst]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Tomás López"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Ignacio Carbone [Modoki Army]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-cs-mastemon",
+        "player": "Lautaro Barrios"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-xros",
+        "player": "Lucas Cartier [OverBurst]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Omar M Chavero [Modoki Army]"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a47a859063cb29d318e1b4e",
+    "name": "DMV-Drakes[Win a Box Tournament][Custom banlist]",
+    "date": "2026-07-21",
+    "region": "Global",
+    "format": "CUSTOM",
+    "players": 6,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Bren"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Kargalargus"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Christonikos"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Brandomon"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "Abnormallium"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-vemmon",
+        "player": "MochiTabe"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a5d1160937230b102d3fa5b",
+    "name": "MGW Digimon Circuit Reborn!",
+    "date": "2026-07-22",
+    "region": "Global",
+    "format": "Standard",
+    "players": 7,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "Leonardo16"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-dark-masters",
+        "player": "marshmallowruffian"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Miguelk99"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "TheFlash8989"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-blue-green-imperialdramon",
+        "player": "Spartan"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-malomyotismon",
+        "player": "TheCrowFather"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-red-phoenixmon",
+        "player": "LostTrain89"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a5d9a59937230b102d3ff54",
+    "name": "Eagle's Nest S10W3.5 PPW EX12 Webcam Locals",
+    "date": "2026-07-24",
+    "region": "Global",
+    "format": "Standard",
+    "players": 11,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-other",
+        "player": "bb2ice"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "WizWiz"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "jjrbenis"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-dark-masters",
+        "player": "marshmallowruffian"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-other",
+        "player": "AzurePKK"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Leonardo16"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Munfusion"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-other",
+        "player": "Miguelk99"
+      }
+    ]
+  },
+  {
+    "tournament_id": "llt-6a632ec452c24ac2da64a590",
+    "name": "R4pt0r's DACH/TNG locals 140",
+    "date": "2026-07-24",
+    "region": "Global",
+    "format": "Standard",
+    "players": 8,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a64714c52c24ac2da64b54b",
+    "name": "Digimon Collect a Con Tournament",
+    "date": "2026-07-25",
+    "region": "Global",
+    "format": "Standard",
+    "players": 6,
+    "top8": []
+  },
+  {
+    "tournament_id": "llt-6a41dce683fd320299bd3a50",
+    "name": "LIGA PHOENIX 2026 - (INVICTVS) ROSARIO 31°",
+    "date": "2026-07-25",
+    "region": "Global",
+    "format": "Standard",
+    "players": 10,
+    "top8": [
+      {
+        "rank": 1,
+        "deck_id": "deck-olympos-xii",
+        "player": "Marcos Greppi [OverBurst]"
+      },
+      {
+        "rank": 2,
+        "deck_id": "deck-other",
+        "player": "Eli Ledesma"
+      },
+      {
+        "rank": 3,
+        "deck_id": "deck-other",
+        "player": "Cristian Alcober [OverBurst]"
+      },
+      {
+        "rank": 4,
+        "deck_id": "deck-other",
+        "player": "Lisandro Guara [OverBurst]"
+      },
+      {
+        "rank": 5,
+        "deck_id": "deck-vortexdramon",
+        "player": "Yoel D.Buigues [OverBurst]"
+      },
+      {
+        "rank": 6,
+        "deck_id": "deck-other",
+        "player": "Franco Agustin Torrero"
+      },
+      {
+        "rank": 7,
+        "deck_id": "deck-other",
+        "player": "Ignacio Carbone [Modoki Army]"
+      },
+      {
+        "rank": 8,
+        "deck_id": "deck-ghosts",
+        "player": "Nicolás Gimenez"
+      }
+    ]
+  }
+]
