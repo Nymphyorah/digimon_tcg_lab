@@ -8,8 +8,8 @@ sem login, sem dependência de internet para o essencial.
 
 ## Rodando sem instalar nada (Windows)
 
-`dist/DigimonTCGLab.exe` já vem pronto no repositório — basta baixar (ou
-clonar) e executar, sem precisar de Python nem instalar dependências.
+`DigimonTCGLab.exe`, na raiz do repositório, já vem pronto — basta baixar
+(ou clonar) e executar, sem precisar de Python nem instalar dependências.
 
 ## Rodando em desenvolvimento
 
@@ -47,7 +47,13 @@ O app resolve a arte de cada carta em três níveis, nessa ordem:
 build.bat
 ```
 
-Gera `dist\DigimonTCGLab.exe` (build onefile via PyInstaller).
+Gera `dist\DigimonTCGLab.exe` (build onefile via PyInstaller). Para
+disponibilizar a versão atualizada no repositório, copie o resultado para a
+raiz:
+
+```bat
+copy /y dist\DigimonTCGLab.exe DigimonTCGLab.exe
+```
 
 ## Estrutura
 
