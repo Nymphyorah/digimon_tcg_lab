@@ -6,6 +6,11 @@ Ferramenta desktop local-first para consultar cartas do Digimon TCG, analisar
 o meta competitivo e manter sua própria Ban List pessoal — sem servidor,
 sem login, sem dependência de internet para o essencial.
 
+## Rodando sem instalar nada (Windows)
+
+`dist/DigimonTCGLab.exe` já vem pronto no repositório — basta baixar (ou
+clonar) e executar, sem precisar de Python nem instalar dependências.
+
 ## Rodando em desenvolvimento
 
 O repositório já inclui `data/cards.json` (catálogo oficial completo, ~4400
