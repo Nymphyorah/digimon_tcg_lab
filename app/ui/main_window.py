@@ -1,4 +1,4 @@
-from PySide6.QtCore import Qt, QTimer
+from PySide6.QtCore import Qt, QTimer, QThread, Signal
 from PySide6.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QVBoxLayout, QStackedWidget
 
 from app.ui.sidebar import Sidebar
@@ -10,6 +10,27 @@ from core.settings_manager import SettingsManager
 from core.meta_analyzer import MetaAnalyzer
 from core.update_manager import UpdateManager
 from core.deckbuilder import DeckBuilder
+
+
+class _DataUpdateWorker(QThread):
+    """Runs the update check (and, if one is found, the download) off the
+    main thread — network I/O only, no Qt widgets touched here, so this is
+    safe to run concurrently with the UI."""
+    finished_check = Signal(bool)  # True if an update was found and applied
+
+    def __init__(self, updater, parent=None):
+        super().__init__(parent)
+        self.updater = updater
+
+    def run(self):
+        applied = False
+        try:
+            remote = self.updater.check_data_update()
+            if remote:
+                applied = self.updater.download_data_update(remote)
+        except Exception:
+            applied = False
+        self.finished_check.emit(applied)
 
 
 class MainWindow(QMainWindow):
@@ -64,6 +85,7 @@ class MainWindow(QMainWindow):
         self.show_page("dashboard")
 
         QTimer.singleShot(300, self._check_online_status)
+        QTimer.singleShot(800, self._start_background_data_update_check)
 
     def _build_pages(self):
         from app.pages.dashboard import DashboardPage
@@ -93,6 +115,8 @@ class MainWindow(QMainWindow):
             page = cls(**ctx)
             if hasattr(page, "navigate_requested"):
                 page.navigate_requested.connect(self.show_page)
+            if hasattr(page, "data_updated"):
+                page.data_updated.connect(self.refresh_all_pages)
             self.pages[key] = page
             self.stack.addWidget(page)
 
@@ -114,3 +138,19 @@ class MainWindow(QMainWindow):
         except Exception:
             online = False
         self.header.set_status(online)
+
+    def _start_background_data_update_check(self):
+        self._update_worker = _DataUpdateWorker(self.updater, parent=self)
+        self._update_worker.finished_check.connect(self._on_background_update_checked)
+        self._update_worker.start()
+
+    def _on_background_update_checked(self, applied: bool):
+        if applied:
+            self.refresh_all_pages()
+
+    def refresh_all_pages(self):
+        self.repo.reload()
+        for page in self.pages.values():
+            if hasattr(page, "refresh"):
+                page.refresh()
+        self.header.set_last_updated(self.repo.version.get("meta_version", "--"))

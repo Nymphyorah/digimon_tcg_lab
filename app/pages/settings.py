@@ -19,6 +19,7 @@ WEIGHT_LABELS = {
 
 class SettingsPage(QWidget):
     navigate_requested = Signal(str)
+    data_updated = Signal()
 
     def __init__(self, repo, banlist, settings, analyzer, db, updater, collection=None, deckbuilder=None, parent=None):
         super().__init__(parent)
@@ -185,8 +186,16 @@ class SettingsPage(QWidget):
             QMessageBox.information(self, "Dados atualizados", "Você já está com os dados mais recentes disponíveis (ou está offline).")
 
     def _update_now(self):
-        QMessageBox.information(
-            self, "Atualização de dados",
-            "A sincronização com o pipeline de dados público ainda não está configurada nesta versão.\n"
-            "Os dados locais continuam disponíveis normalmente."
-        )
+        remote = self.updater.check_data_update()
+        if not remote:
+            QMessageBox.information(self, "Dados atualizados", "Você já está com os dados mais recentes disponíveis (ou está offline).")
+            return
+
+        applied = self.updater.download_data_update(remote)
+        if not applied:
+            QMessageBox.warning(self, "Falha na atualização", "Não foi possível baixar os dados novos agora. Tente novamente mais tarde.")
+            return
+
+        self.data_updated.emit()
+        self.data_updated_label.setText(f'Última atualização: {self.repo.version.get("meta_version", "--")}')
+        QMessageBox.information(self, "Dados atualizados", "Os dados foram atualizados com sucesso a partir do repositório público.")

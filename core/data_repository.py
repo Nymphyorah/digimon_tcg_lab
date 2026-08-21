@@ -6,10 +6,7 @@ This is the boundary between the app and the offline JSON produced by the
 import json
 from functools import lru_cache
 
-from core.paths import (
-    CARDS_JSON, DECKS_JSON, TOURNAMENTS_JSON, META_JSON, VERSION_JSON,
-    APP_DATA_DIR, ensure_app_data_seeded,
-)
+from core.paths import data_file_path, ensure_app_data_seeded
 
 
 def _load_json(path, default):
@@ -29,13 +26,13 @@ class DataRepository:
         self.reload()
 
     def reload(self):
-        self._cards = _load_json(CARDS_JSON, [])
-        self._decks = _load_json(DECKS_JSON, [])
-        self._tournaments = _load_json(TOURNAMENTS_JSON, [])
-        self._meta = _load_json(META_JSON, {})
-        self._version = _load_json(VERSION_JSON, {})
-        self._history_seed = _load_json(APP_DATA_DIR / "history.json", [])
-        self._meta_entries = _load_json(APP_DATA_DIR / "meta_entries.json", [])
+        self._cards = _load_json(data_file_path("cards.json"), [])
+        self._decks = _load_json(data_file_path("decks.json"), [])
+        self._tournaments = _load_json(data_file_path("tournaments.json"), [])
+        self._meta = _load_json(data_file_path("meta.json"), {})
+        self._version = _load_json(data_file_path("version.json"), {})
+        self._history_seed = _load_json(data_file_path("history.json"), [])
+        self._meta_entries = _load_json(data_file_path("meta_entries.json"), [])
 
         self._cards_by_id = {c["card_id"]: c for c in self._cards}
         self._decks_by_id = {d["deck_id"]: d for d in self._decks}

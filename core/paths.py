@@ -55,9 +55,27 @@ USER_DB_PATH = USER_ROOT / "database.db"
 USER_SETTINGS_PATH = USER_ROOT / "settings.json"
 USER_CACHE_DIR = USER_ROOT / "cache"
 USER_LOGS_DIR = USER_ROOT / "logs"
+# Downloaded data updates land here rather than in APP_DATA_DIR: when frozen,
+# APP_DATA_DIR lives inside PyInstaller's onefile temp extraction folder and
+# is wiped on every exit, so writing an update there would just vanish.
+USER_DATA_DIR = USER_ROOT / "data"
 
-for _d in (USER_CACHE_DIR, USER_LOGS_DIR):
+for _d in (USER_CACHE_DIR, USER_LOGS_DIR, USER_DATA_DIR):
     _d.mkdir(parents=True, exist_ok=True)
+
+DATA_FILE_NAMES = [
+    "cards.json", "decks.json", "tournaments.json", "meta.json",
+    "meta_entries.json", "history.json", "version.json",
+]
+
+
+def data_file_path(name: str) -> Path:
+    """A downloaded update in USER_DATA_DIR always wins over the version
+    bundled with the app; falls back to the bundled copy otherwise."""
+    override = USER_DATA_DIR / name
+    if override.exists():
+        return override
+    return APP_DATA_DIR / name
 
 
 def _find_variant(directory: Path, card_id: str):

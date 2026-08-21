@@ -55,6 +55,17 @@ raiz:
 copy /y dist\DigimonTCGLab.exe DigimonTCGLab.exe
 ```
 
+## Atualização automática de dados
+
+O app verifica, em segundo plano ao abrir (e sob demanda em Configurações →
+Dados → "Verificar atualizações" / "Atualizar agora"), se `data/version.json`
+neste repositório público mudou. Se sim, baixa os JSONs novos
+(`core/update_manager.py`) para `%LOCALAPPDATA%\DigimonTCGLab\data\`, que
+tem prioridade sobre os dados empacotados no `.exe` — assim, publicar dados
+novos aqui (cartas, decks, meta) chega a todo mundo que já tem o `.exe`
+instalado, sem precisar baixar um `.exe` novo. Só os dados são atualizados
+dessa forma; o próprio `.exe` não se auto-substitui.
+
 ## Estrutura
 
 - `app/` — UI (PySide6): janela principal, sidebar, páginas, componentes.
