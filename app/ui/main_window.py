@@ -78,23 +78,21 @@ class MainWindow(QMainWindow):
 
         self.pages = {}
         self._page_order = [
-            "dashboard", "ban_list", "collection",
-            "meta", "analysis", "history", "settings",
+            "overview", "meta", "collection", "analysis", "ban_list", "history",
         ]
         self._build_pages()
-        self.show_page("dashboard")
+        self.show_page("overview")
 
         QTimer.singleShot(300, self._check_online_status)
         QTimer.singleShot(800, self._start_background_data_update_check)
 
     def _build_pages(self):
-        from app.pages.dashboard import DashboardPage
+        from app.pages.overview import OverviewPage
         from app.pages.ban_list import BanListPage
         from app.pages.collection import CollectionPage
         from app.pages.meta import MetaPage
         from app.pages.analysis import AnalysisPage
         from app.pages.history import HistoryPage
-        from app.pages.settings import SettingsPage
 
         ctx = dict(
             repo=self.repo, banlist=self.banlist, settings=self.settings,
@@ -103,13 +101,12 @@ class MainWindow(QMainWindow):
         )
 
         page_classes = {
-            "dashboard": DashboardPage,
-            "ban_list": BanListPage,
-            "collection": CollectionPage,
+            "overview": OverviewPage,
             "meta": MetaPage,
+            "collection": CollectionPage,
             "analysis": AnalysisPage,
+            "ban_list": BanListPage,
             "history": HistoryPage,
-            "settings": SettingsPage,
         }
         for key, cls in page_classes.items():
             page = cls(**ctx)

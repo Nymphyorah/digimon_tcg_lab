@@ -1,7 +1,11 @@
-"""Meta analysis helpers: dominance, engine detection, ban risk ranking."""
+"""Meta analysis helpers: per-card competitive presence indicators and
+engine detection. Every number here comes directly from real tournament
+data collected via data_collector/fetch_limitless_meta.py — no aggregate
+score is computed, and no restriction is ever suggested automatically. The
+three indicators (Meta Usage, Top Cut, Dominance) are presented as-is so the
+community can weigh them and decide for itself."""
 from collections import Counter
 
-from core.ban_score import compute_ban_score, risk_for_score
 from core.data_repository import DataRepository
 
 
@@ -9,41 +13,18 @@ class MetaAnalyzer:
     def __init__(self, repo: DataRepository):
         self.repo = repo
 
-    def ban_risk_table(self, weights=None):
+    def candidate_table(self):
+        """Every card with real per-deck presence data (Meta Usage, Top Cut,
+        Dominance), joined with its catalog entry. No score, no ranking
+        beyond what the caller asks for — callers sort by whichever
+        indicator the user picked."""
         rows = []
         for candidate in self.repo.meta.get("ban_candidates", []):
             card = self.repo.card(candidate["card_id"])
             if not card:
                 continue
-            score = compute_ban_score(candidate, weights)
-            label, icon = risk_for_score(score)
-            rows.append({
-                **candidate,
-                "card": card,
-                "ban_score": score,
-                "risk_label": label,
-                "risk_icon": icon,
-            })
-        rows.sort(key=lambda r: -r["ban_score"])
+            rows.append({**candidate, "card": card})
         return rows
-
-    def dominance(self, card_id):
-        candidate = self.repo.ban_candidate(card_id)
-        if not candidate:
-            return None
-        meta_usage = candidate["meta_usage"]
-        top8 = min(99.0, meta_usage * 1.15)
-        top4 = min(99.0, meta_usage * 1.22)
-        first = min(99.0, meta_usage * 1.26)
-        high_dominance = first > meta_usage * 1.15
-        return {
-            "card_id": card_id,
-            "meta_geral": meta_usage,
-            "top8": round(top8, 1),
-            "top4": round(top4, 1),
-            "first_place": round(first, 1),
-            "high_dominance": high_dominance,
-        }
 
     def engine_detection(self, min_group_size=3, min_copies=3):
         """Finds groups of cards that co-occur at high copy counts across decks,

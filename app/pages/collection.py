@@ -10,19 +10,11 @@ from app.components.card_widget import CardWidget
 from app.components.image_loader import load_card_pixmap, invalidate_card_pixmap_cache
 from app.components.card_detail_dialog import CardDetailDialog
 from app.components.card_hover_popup import get_hover_popup
+from app.components.metric_bar import MetricInline, INDICATOR_FIELDS
 from core.image_cache import get_image_cache_manager
 from core.deckbuilder import MAIN_DECK_SIZE, DIGI_EGG_DECK_MAX
-from core.ban_score import compute_ban_score, risk_for_score
 
-RISK_CHIP_OBJECT_NAMES = {
-    "CRITICO": "riskChipCritical",
-    "ALTO": "riskChipHigh",
-    "MODERADO": "riskChipModerate",
-    "BAIXO": "riskChipLow",
-    "NORMAL": "riskChipNormal",
-}
-
-COLS_TARGET_WIDTH = 176
+COLS_TARGET_WIDTH = 192
 IMAGE_BATCH_SIZE = 40
 WIDGET_BATCH_SIZE = 60
 PAGE_SIZE = 120  # caps how many tiles are ever live at once, regardless of catalog size
@@ -198,6 +190,12 @@ class CollectionPage(QWidget):
         self.detail_restriction = QLabel("")
         self.detail_restriction.setStyleSheet("font-size: 11px; font-weight: 700;")
         layout.addWidget(self.detail_restriction)
+
+        self.detail_indicators_box = QWidget()
+        self.detail_indicators_layout = QVBoxLayout(self.detail_indicators_box)
+        self.detail_indicators_layout.setContentsMargins(0, 0, 0, 0)
+        self.detail_indicators_layout.setSpacing(2)
+        layout.addWidget(self.detail_indicators_box)
 
         deck_row = QHBoxLayout()
         deck_lbl = QLabel("No deck:")
@@ -669,7 +667,6 @@ class CollectionPage(QWidget):
         self._widgets = {}
         self._image_queue = []
         restriction_map = self.banlist.restriction_map()
-        self._weights_snapshot = self.settings.get("ban_score_weights")
         self._update_pagination_controls()
 
         width = max(self.catalog_scroll.viewport().width() - 20, COLS_TARGET_WIDTH)
@@ -697,7 +694,7 @@ class CollectionPage(QWidget):
                 deck_count=self._working_cards.get(cid, 0) if self.current_deck_id else None,
                 selected=(cid == self.selected_card_id),
                 lazy_image=True,
-                risk_chip=self._risk_chip_for(cid),
+                indicators=self._indicators_for(cid),
             )
             widget.clicked.connect(self._catalog_left_click)
             widget.right_clicked.connect(self._catalog_right_click)
@@ -711,17 +708,10 @@ class CollectionPage(QWidget):
         else:
             self._process_image_queue()
 
-    def _risk_chip_for(self, card_id):
-        """Only cards with real meta/ban-score data get a discreet risk chip —
-        the catalog stays clean for the hundreds of cards without any."""
-        candidate = self.repo.ban_candidate(card_id)
-        if not candidate:
-            return None
-        score = compute_ban_score(candidate, self._weights_snapshot)
-        label, icon = risk_for_score(score)
-        if label in ("NORMAL",):
-            return None  # not worth flagging — keeps chips meaningful, not noisy
-        return f"{icon} {label}", RISK_CHIP_OBJECT_NAMES.get(label, "riskChipNormal")
+    def _indicators_for(self, card_id):
+        """Only cards with real per-deck presence data carry indicators —
+        shown discreetly in the hover popup, never as a permanent badge."""
+        return self.repo.ban_candidate(card_id)
 
     def _reflow(self):
         width = max(self.catalog_scroll.viewport().width() - 20, COLS_TARGET_WIDTH)
@@ -757,6 +747,14 @@ class CollectionPage(QWidget):
             self._reflow()
 
     # ---------- Selection / detail panel ----------
+    @staticmethod
+    def _clear_layout(layout):
+        while layout.count():
+            item = layout.takeAt(0)
+            w = item.widget()
+            if w:
+                w.deleteLater()
+
     def _select_card(self, card_id):
         if self.selected_card_id and self.selected_card_id in self._widgets:
             self._widgets[self.selected_card_id].set_selected(False)
@@ -772,6 +770,7 @@ class CollectionPage(QWidget):
             self.detail_name.setText("Selecione uma carta")
             self.detail_meta.setText("")
             self.detail_restriction.setText("")
+            self._clear_layout(self.detail_indicators_layout)
             self.deck_qty_label.setText("0")
             for btn in (self._deck_minus, self._deck_plus):
                 btn.setEnabled(False)
@@ -792,6 +791,12 @@ class CollectionPage(QWidget):
             self.detail_restriction.setStyleSheet(f'color: {meta["color"]}; font-weight: 700; font-size: 11px;')
         else:
             self.detail_restriction.setText("")
+
+        self._clear_layout(self.detail_indicators_layout)
+        candidate = self.repo.ban_candidate(card["card_id"])
+        if candidate:
+            for key, label in INDICATOR_FIELDS:
+                self.detail_indicators_layout.addWidget(MetricInline(label, candidate.get(key, 0.0)))
 
         in_deck = self._working_cards.get(card["card_id"], 0)
         self.deck_qty_label.setText(str(in_deck))
@@ -953,9 +958,10 @@ class CollectionPage(QWidget):
             self._adjust_deck_copies(1)
 
     def _deck_tile_hover_enter(self, card):
+        indicators = self.repo.ban_candidate(card["card_id"])
         self._deck_hover_timer = QTimer(self)
         self._deck_hover_timer.setSingleShot(True)
-        self._deck_hover_timer.timeout.connect(lambda: get_hover_popup().show_for(card, QCursor.pos()))
+        self._deck_hover_timer.timeout.connect(lambda: get_hover_popup().show_for(card, QCursor.pos(), indicators))
         self._deck_hover_timer.start(220)
 
     def _deck_tile_hover_leave(self):

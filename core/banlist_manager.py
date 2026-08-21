@@ -7,10 +7,10 @@ from core.database import Database
 RESTRICTIONS = ["BAN", "LIMIT_1", "LIMIT_2", "LIMIT_3"]
 
 RESTRICTION_META = {
-    "BAN": {"label": "Banimento Total", "color": "#EF4444", "icon": "🔴", "max_copies": 0},
-    "LIMIT_1": {"label": "Limitado a 1", "color": "#F97316", "icon": "🟠", "max_copies": 1},
-    "LIMIT_2": {"label": "Limitado a 2", "color": "#EAB308", "icon": "🟡", "max_copies": 2},
-    "LIMIT_3": {"label": "Limitado a 3", "color": "#22C55E", "icon": "🟢", "max_copies": 3},
+    "BAN": {"label": "Banned", "color": "#EF4444", "icon": "🔴", "max_copies": 0},
+    "LIMIT_1": {"label": "Limit 1", "color": "#F97316", "icon": "🟠", "max_copies": 1},
+    "LIMIT_2": {"label": "Limit 2", "color": "#EAB308", "icon": "🟡", "max_copies": 2},
+    "LIMIT_3": {"label": "Limit 3", "color": "#22C55E", "icon": "🟢", "max_copies": 3},
 }
 
 

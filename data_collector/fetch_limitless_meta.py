@@ -279,7 +279,10 @@ def main():
         "avg_win_rate": round(sum(d["win_rate"] for d in decks_out) / max(1, len(decks_out)), 1),
         "deck_ranking": deck_ranking,
         "trends": [],  # would need repeated snapshots over time to backfill meaningfully
-        "ban_candidates": ban_candidates[:20],
+        # Every card meeting MIN_SAMPLE_FOR_CANDIDATE — not just a top-20 slice —
+        # since Analysis presents the full real per-card indicator set, not a
+        # curated shortlist.
+        "ban_candidates": ban_candidates,
         "source": "Limitless TCG (play.limitlesstcg.com), game=DCG",
     }
 

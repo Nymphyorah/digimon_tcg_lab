@@ -1,5 +1,5 @@
 import pyqtgraph as pg
-from PySide6.QtCore import Qt
+from PySide6.QtCore import Qt, Signal
 from PySide6.QtGui import QColor, QFont
 
 pg.setConfigOption("background", "#0D1622")
@@ -71,3 +71,52 @@ class BarChart(pg.PlotWidget):
         x = list(range(len(values)))
         bg = pg.BarGraphItem(x=x, height=values, width=0.6, brushes=colors, pens=colors)
         self.addItem(bg)
+
+
+class ScatterChart(pg.PlotWidget):
+    """Exploratory Meta Usage x Dominance scatter — every point is a real
+    card, point size reflects Top Cut. Purely a visual aid for spotting
+    cards that are high on all three real indicators at once; it computes
+    no new score and orders/labels nothing on its own."""
+
+    point_clicked = Signal(str)  # card_id
+
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setBackground("#0D1622")
+        self.showGrid(x=True, y=True, alpha=0.12)
+        self.getAxis("left").setPen(QColor("#1B2A3A"))
+        self.getAxis("bottom").setPen(QColor("#1B2A3A"))
+        self.getAxis("left").setTextPen(QColor("#94A3B8"))
+        self.getAxis("bottom").setTextPen(QColor("#94A3B8"))
+        self.setLabel("left", "Dominance (%)")
+        self.setLabel("bottom", "Meta Usage (%)")
+        self.setMouseEnabled(x=False, y=False)
+        self.setMenuEnabled(False)
+        self._scatter = None
+        self._ids = []
+
+    def plot_points(self, points):
+        """points: list of {card_id, meta_usage, top_cut, dominance}"""
+        self.clear()
+        self._ids = [p["card_id"] for p in points]
+        sizes = [8 + (p.get("top_cut", 0) / 100.0) * 26 for p in points]
+        spots = [
+            {
+                "pos": (p.get("meta_usage", 0), p.get("dominance", 0)),
+                "size": sizes[i],
+                "brush": pg.mkBrush(35, 136, 255, 130),
+                "pen": pg.mkPen(35, 136, 255, 220, width=1.2),
+            }
+            for i, p in enumerate(points)
+        ]
+        self._scatter = pg.ScatterPlotItem(spots)
+        self._scatter.sigClicked.connect(self._on_clicked)
+        self.addItem(self._scatter)
+
+    def _on_clicked(self, _plot, points):
+        if not points:
+            return
+        index = points[0].index()
+        if 0 <= index < len(self._ids):
+            self.point_clicked.emit(self._ids[index])

@@ -1,15 +1,15 @@
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import (
-    QFrame, QLabel, QVBoxLayout, QHBoxLayout, QScrollArea, QWidget, QGridLayout
+    QFrame, QLabel, QVBoxLayout, QHBoxLayout, QPushButton, QScrollArea, QWidget, QGridLayout
 )
 
 from core.banlist_manager import RESTRICTION_META
 
 DESCRIPTIONS = {
-    "BAN": "Removida totalmente do formato competitivo.",
-    "LIMIT_1": "No máximo 1 cópia permitida por deck.",
-    "LIMIT_2": "No máximo 2 cópias permitidas por deck.",
-    "LIMIT_3": "No máximo 3 cópias permitidas por deck.",
+    "BAN": "Removed entirely from competitive play.",
+    "LIMIT_1": "Maximum 1 copy allowed per deck.",
+    "LIMIT_2": "Maximum 2 copies allowed per deck.",
+    "LIMIT_3": "Maximum 3 copies allowed per deck.",
 }
 
 
@@ -19,6 +19,7 @@ class BanColumn(QFrame):
     short description, and a visual empty state instead of dead space."""
 
     card_dropped = Signal(str, str)  # card_id, restriction
+    add_card_requested = Signal(str)  # restriction
 
     def __init__(self, restriction: str, parent=None):
         super().__init__(parent)
@@ -65,7 +66,12 @@ class BanColumn(QFrame):
         desc.setObjectName("sectionHint")
         desc.setWordWrap(True)
         body.addWidget(desc)
-        body.addSpacing(10)
+        body.addSpacing(8)
+
+        add_btn = QPushButton("+ Add Card")
+        add_btn.clicked.connect(lambda: self.add_card_requested.emit(self.restriction))
+        body.addWidget(add_btn)
+        body.addSpacing(6)
 
         # ---- Card area (with a visual empty state instead of dead space) ----
         self.scroll = QScrollArea()
@@ -86,10 +92,10 @@ class BanColumn(QFrame):
         empty_icon = QLabel("+")
         empty_icon.setAlignment(Qt.AlignCenter)
         empty_icon.setStyleSheet(f"color: {self.color}; font-size: 22px; font-weight: 800;")
-        empty_title = QLabel("Adicionar carta")
+        empty_title = QLabel("No cards yet")
         empty_title.setObjectName("emptyState")
         empty_title.setAlignment(Qt.AlignCenter)
-        empty_hint = QLabel("Arraste uma carta até aqui")
+        empty_hint = QLabel("Drag a card here, or use + Add Card")
         empty_hint.setObjectName("emptyStateHint")
         empty_hint.setAlignment(Qt.AlignCenter)
         empty_layout.addWidget(empty_icon)
@@ -113,7 +119,7 @@ class BanColumn(QFrame):
         """
         self.setStyleSheet(self._default_style)
 
-        self.drop_hint = QLabel("Solte a carta aqui")
+        self.drop_hint = QLabel("Drop card here")
         self.drop_hint.setAlignment(Qt.AlignCenter)
         self.drop_hint.setStyleSheet(f"color: {self.color}; font-weight: 700; font-size: 13px;")
         self.drop_hint.hide()

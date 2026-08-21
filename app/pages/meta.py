@@ -35,7 +35,7 @@ class MetaPage(QWidget):
 
         header_col = QVBoxLayout()
         header_col.setSpacing(2)
-        title = QLabel("META ANALYSIS")
+        title = QLabel("META LAB")
         title.setObjectName("sectionLabel")
         header_col.addWidget(title)
         subtitle = QLabel("Panorama do formato competitivo com base nos torneios reais coletados.")
@@ -74,7 +74,7 @@ class MetaPage(QWidget):
         chart_box.setObjectName("surface")
         chart_layout = QVBoxLayout(chart_box)
         chart_layout.setContentsMargins(18, 14, 18, 14)
-        chart_title = QLabel("DISTRIBUIÇÃO DO META (TOP 8)")
+        chart_title = QLabel("META SHARE (TOP 8)")
         chart_title.setObjectName("sectionLabel")
         chart_layout.addWidget(chart_title)
         self.meta_chart = BarChart()

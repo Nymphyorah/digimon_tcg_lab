@@ -11,6 +11,7 @@ from PySide6.QtGui import QGuiApplication
 from PySide6.QtWidgets import QFrame, QVBoxLayout, QHBoxLayout, QLabel, QScrollArea, QWidget
 
 from app.components.image_loader import load_card_pixmap
+from app.components.metric_bar import MetricInline, INDICATOR_FIELDS
 
 POPUP_IMG_SIZE = QSize(180, 252)
 
@@ -52,9 +53,11 @@ class CardHoverPopup(QFrame):
         stats_row.addStretch()
         root.addLayout(stats_row)
 
-        self.risk_label = QLabel()
-        self.risk_label.setWordWrap(True)
-        root.addWidget(self.risk_label)
+        self.indicators_box = QWidget()
+        self.indicators_layout = QVBoxLayout(self.indicators_box)
+        self.indicators_layout.setContentsMargins(0, 0, 0, 0)
+        self.indicators_layout.setSpacing(2)
+        root.addWidget(self.indicators_box)
 
         effect_scroll = QScrollArea()
         effect_scroll.setWidgetResizable(True)
@@ -73,7 +76,7 @@ class CardHoverPopup(QFrame):
 
         self.hide()
 
-    def show_for(self, card: dict, global_pos: QPoint, risk_chip: tuple = None):
+    def show_for(self, card: dict, global_pos: QPoint, indicators: dict = None):
         self.image_label.setPixmap(load_card_pixmap(card["card_id"], POPUP_IMG_SIZE))
         self.name_label.setText(f'{card.get("name","")}')
         self.meta_label.setText(
@@ -93,16 +96,14 @@ class CardHoverPopup(QFrame):
         self.cost_label.setText(" · ".join(cost_parts))
         self.cost_label.setVisible(bool(cost_parts))
 
-        if risk_chip:
-            chip_text, chip_object_name = risk_chip
-            self.risk_label.setText(chip_text)
-            self.risk_label.setObjectName(chip_object_name)
-            self.risk_label.setVisible(True)
-            self.risk_label.style().unpolish(self.risk_label)
-            self.risk_label.style().polish(self.risk_label)
-        else:
-            self.risk_label.setText("")
-            self.risk_label.setVisible(False)
+        while self.indicators_layout.count():
+            item = self.indicators_layout.takeAt(0)
+            w = item.widget()
+            if w:
+                w.deleteLater()
+        if indicators:
+            for key, label in INDICATOR_FIELDS:
+                self.indicators_layout.addWidget(MetricInline(label, indicators.get(key, 0.0)))
 
         effect_text = "\n\n".join(filter(None, [
             card.get("main_effect"), card.get("source_effect"), card.get("alt_effect"),

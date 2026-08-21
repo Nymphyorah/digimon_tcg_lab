@@ -2,44 +2,44 @@
   "generated_at": "2026-08-20",
   "format": "English",
   "period_days": null,
-  "decks_analyzed": 362,
+  "decks_analyzed": 382,
   "tournaments": 97,
-  "top8_total": 487,
-  "avg_win_rate": 34.8,
+  "top8_total": 508,
+  "avg_win_rate": 34.5,
   "deck_ranking": [
     {
       "rank": 1,
       "deck_id": "deck-olympos-xii",
       "name": "Olympos XII",
-      "entries": 63,
-      "meta_usage": 17.4,
-      "top8": 60.3,
-      "win_rate": 50.2
+      "entries": 71,
+      "meta_usage": 18.6,
+      "top8": 59.2,
+      "win_rate": 50.9
     },
     {
       "rank": 2,
       "deck_id": "deck-medusa",
       "name": "Medusa",
-      "entries": 30,
-      "meta_usage": 8.3,
-      "top8": 56.7,
-      "win_rate": 51.5
+      "entries": 32,
+      "meta_usage": 8.4,
+      "top8": 59.4,
+      "win_rate": 52.1
     },
     {
       "rank": 3,
       "deck_id": "deck-vemmon",
       "name": "Vemmon",
-      "entries": 23,
-      "meta_usage": 6.4,
-      "top8": 69.6,
-      "win_rate": 50.5
+      "entries": 25,
+      "meta_usage": 6.5,
+      "top8": 68.0,
+      "win_rate": 52.0
     },
     {
       "rank": 4,
       "deck_id": "deck-xros",
       "name": "Xros",
       "entries": 22,
-      "meta_usage": 6.1,
+      "meta_usage": 5.8,
       "top8": 59.1,
       "win_rate": 41.6
     },
@@ -48,7 +48,7 @@
       "deck_id": "deck-dark-masters",
       "name": "Dark Masters",
       "entries": 14,
-      "meta_usage": 3.9,
+      "meta_usage": 3.7,
       "top8": 78.6,
       "win_rate": 41.5
     },
@@ -57,7 +57,7 @@
       "deck_id": "deck-rocks",
       "name": "Rocks",
       "entries": 14,
-      "meta_usage": 3.9,
+      "meta_usage": 3.7,
       "top8": 28.6,
       "win_rate": 36.2
     },
@@ -66,7 +66,7 @@
       "deck_id": "deck-blue-green-imperialdramon",
       "name": "Blue Green Imperialdramon",
       "entries": 13,
-      "meta_usage": 3.6,
+      "meta_usage": 3.4,
       "top8": 53.8,
       "win_rate": 42.9
     },
@@ -75,7 +75,7 @@
       "deck_id": "deck-yellow-shinegreymon",
       "name": "Yellow ShineGreymon",
       "entries": 13,
-      "meta_usage": 3.6,
+      "meta_usage": 3.4,
       "top8": 76.9,
       "win_rate": 41.9
     },
@@ -84,7 +84,7 @@
       "deck_id": "deck-ex7-beelstarmon",
       "name": "EX7 Beelstarmon",
       "entries": 13,
-      "meta_usage": 3.6,
+      "meta_usage": 3.4,
       "top8": 61.5,
       "win_rate": 31.6
     },
@@ -93,7 +93,7 @@
       "deck_id": "deck-yellow-vaccine",
       "name": "Yellow Vaccine",
       "entries": 11,
-      "meta_usage": 3.0,
+      "meta_usage": 2.9,
       "top8": 63.6,
       "win_rate": 51.2
     },
@@ -102,253 +102,7013 @@
       "deck_id": "deck-red-hybrid",
       "name": "Red Hybrid",
       "entries": 10,
-      "meta_usage": 2.8,
+      "meta_usage": 2.6,
       "top8": 60.0,
       "win_rate": 35.5
     },
     {
       "rank": 12,
+      "deck_id": "deck-gammamon",
+      "name": "Gammamon",
+      "entries": 10,
+      "meta_usage": 2.6,
+      "top8": 40.0,
+      "win_rate": 33.3
+    },
+    {
+      "rank": 13,
       "deck_id": "deck-cs-hudiemon",
       "name": "CS Hudiemon",
       "entries": 9,
-      "meta_usage": 2.5,
+      "meta_usage": 2.4,
       "top8": 11.1,
       "win_rate": 36.8
     },
     {
-      "rank": 13,
-      "deck_id": "deck-gammamon",
-      "name": "Gammamon",
+      "rank": 14,
+      "deck_id": "deck-green-bloomlordmon",
+      "name": "Green Bloomlordmon",
       "entries": 9,
-      "meta_usage": 2.5,
-      "top8": 33.3,
-      "win_rate": 34.2
+      "meta_usage": 2.4,
+      "top8": 44.4,
+      "win_rate": 33.3
     },
     {
-      "rank": 14,
+      "rank": 15,
       "deck_id": "deck-ts-neptunemon-/-ts-abyss-sanctuary",
       "name": "TS Neptunemon / TS Abyss Sanctuary",
       "entries": 8,
-      "meta_usage": 2.2,
+      "meta_usage": 2.1,
       "top8": 50.0,
       "win_rate": 40.0
     },
     {
-      "rank": 15,
-      "deck_id": "deck-green-bloomlordmon",
-      "name": "Green Bloomlordmon",
+      "rank": 16,
+      "deck_id": "deck-emperorgreymon",
+      "name": "EmperorGreymon",
       "entries": 7,
-      "meta_usage": 1.9,
-      "top8": 28.6,
-      "win_rate": 23.1
+      "meta_usage": 1.8,
+      "top8": 57.1,
+      "win_rate": 39.3
     },
     {
-      "rank": 16,
+      "rank": 17,
       "deck_id": "deck-vortexdramon",
       "name": "Vortexdramon",
       "entries": 7,
-      "meta_usage": 1.9,
+      "meta_usage": 1.8,
       "top8": 71.4,
       "win_rate": 35.7
     },
     {
-      "rank": 17,
+      "rank": 18,
       "deck_id": "deck-cs-mastemon",
       "name": "CS Mastemon",
       "entries": 7,
-      "meta_usage": 1.9,
+      "meta_usage": 1.8,
       "top8": 71.4,
       "win_rate": 34.8
     },
     {
-      "rank": 18,
-      "deck_id": "deck-emperorgreymon",
-      "name": "EmperorGreymon",
-      "entries": 6,
-      "meta_usage": 1.7,
-      "top8": 50.0,
-      "win_rate": 37.5
-    },
-    {
       "rank": 19,
-      "deck_id": "deck-bees",
-      "name": "Bees",
+      "deck_id": "deck-appmon",
+      "name": "Appmon",
       "entries": 6,
-      "meta_usage": 1.7,
-      "top8": 16.7,
-      "win_rate": 31.0
+      "meta_usage": 1.6,
+      "top8": 66.7,
+      "win_rate": 50.0
     },
     {
       "rank": 20,
-      "deck_id": "deck-appmon",
-      "name": "Appmon",
-      "entries": 5,
-      "meta_usage": 1.4,
-      "top8": 60.0,
-      "win_rate": 44.4
+      "deck_id": "deck-bees",
+      "name": "Bees",
+      "entries": 6,
+      "meta_usage": 1.6,
+      "top8": 16.7,
+      "win_rate": 31.0
     }
   ],
   "trends": [],
   "ban_candidates": [
     {
       "card_id": "BT24-088",
-      "meta_usage": 32.6,
-      "top_cut": 35.2,
+      "meta_usage": 32.1,
+      "top_cut": 35.1,
       "avg_copies": 3.0,
-      "growth": -10.0,
-      "dominance": 41.3
+      "growth": -10.6,
+      "dominance": 41.5
     },
     {
       "card_id": "BT24-100",
-      "meta_usage": 15.3,
-      "top_cut": 15.0,
+      "meta_usage": 15.5,
+      "top_cut": 14.9,
       "avg_copies": 3.0,
-      "growth": 0.0,
-      "dominance": 15.9
+      "growth": 0.8,
+      "dominance": 15.4
     },
     {
       "card_id": "BT24-085",
       "meta_usage": 14.8,
-      "top_cut": 13.5,
+      "top_cut": 13.4,
       "avg_copies": 3.1,
-      "growth": -2.3,
-      "dominance": 11.1
+      "growth": -2.0,
+      "dominance": 10.8
     },
     {
       "card_id": "ST23-09",
       "meta_usage": 13.5,
-      "top_cut": 14.4,
-      "avg_copies": 3.5,
-      "growth": -4.5,
-      "dominance": 12.7
-    },
-    {
-      "card_id": "BT25-057",
-      "meta_usage": 13.2,
-      "top_cut": 14.2,
-      "avg_copies": 3.1,
-      "growth": -4.8,
-      "dominance": 12.7
+      "top_cut": 14.7,
+      "avg_copies": 3.4,
+      "growth": -4.1,
+      "dominance": 12.3
     },
     {
       "card_id": "EX4-074",
-      "meta_usage": 13.1,
-      "top_cut": 15.5,
+      "meta_usage": 13.0,
+      "top_cut": 15.1,
       "avg_copies": 1.7,
-      "growth": -7.6,
-      "dominance": 17.5
+      "growth": -6.6,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "BT25-057",
+      "meta_usage": 12.9,
+      "top_cut": 14.0,
+      "avg_copies": 3.1,
+      "growth": -5.2,
+      "dominance": 12.3
     },
     {
       "card_id": "BT4-104",
-      "meta_usage": 13.1,
-      "top_cut": 14.8,
+      "meta_usage": 12.9,
+      "top_cut": 14.9,
       "avg_copies": 1.0,
-      "growth": -0.1,
-      "dominance": 19.0
-    },
-    {
-      "card_id": "BT25-092",
-      "meta_usage": 13.1,
-      "top_cut": 16.7,
-      "avg_copies": 3.4,
-      "growth": -3.1,
-      "dominance": 20.6
+      "growth": -0.8,
+      "dominance": 20.0
     },
     {
       "card_id": "ST23-15",
-      "meta_usage": 13.1,
-      "top_cut": 14.2,
+      "meta_usage": 12.8,
+      "top_cut": 14.0,
       "avg_copies": 3.9,
-      "growth": -5.4,
-      "dominance": 12.7
+      "growth": -5.6,
+      "dominance": 12.3
+    },
+    {
+      "card_id": "BT25-092",
+      "meta_usage": 12.7,
+      "top_cut": 16.3,
+      "avg_copies": 3.4,
+      "growth": -4.2,
+      "dominance": 20.0
     },
     {
       "card_id": "ST23-06",
-      "meta_usage": 12.9,
-      "top_cut": 13.9,
+      "meta_usage": 12.7,
+      "top_cut": 13.8,
       "avg_copies": 3.8,
-      "growth": -5.9,
-      "dominance": 12.7
+      "growth": -6.1,
+      "dominance": 12.3
     },
     {
       "card_id": "ST23-03",
-      "meta_usage": 12.9,
-      "top_cut": 14.2,
+      "meta_usage": 12.7,
+      "top_cut": 14.0,
       "avg_copies": 3.6,
-      "growth": -5.2,
-      "dominance": 12.7
+      "growth": -5.5,
+      "dominance": 12.3
     },
     {
       "card_id": "ST23-13",
-      "meta_usage": 12.9,
-      "top_cut": 13.9,
+      "meta_usage": 12.7,
+      "top_cut": 13.8,
       "avg_copies": 4.0,
-      "growth": -5.2,
-      "dominance": 12.7
+      "growth": -5.5,
+      "dominance": 12.3
     },
     {
       "card_id": "BT25-090",
-      "meta_usage": 12.9,
-      "top_cut": 13.9,
+      "meta_usage": 12.7,
+      "top_cut": 13.8,
       "avg_copies": 2.7,
-      "growth": -5.2,
-      "dominance": 12.7
+      "growth": -5.5,
+      "dominance": 12.3
     },
     {
       "card_id": "ST23-01",
-      "meta_usage": 12.9,
-      "top_cut": 13.9,
+      "meta_usage": 12.7,
+      "top_cut": 13.8,
       "avg_copies": 4.0,
-      "growth": -5.2,
-      "dominance": 12.7
+      "growth": -5.5,
+      "dominance": 12.3
     },
     {
       "card_id": "BT25-049",
-      "meta_usage": 12.8,
-      "top_cut": 13.7,
-      "avg_copies": 3.3,
-      "growth": -5.0,
-      "dominance": 12.7
+      "meta_usage": 12.5,
+      "top_cut": 13.6,
+      "avg_copies": 3.2,
+      "growth": -5.3,
+      "dominance": 12.3
     },
     {
       "card_id": "ST23-08",
-      "meta_usage": 12.8,
-      "top_cut": 13.5,
+      "meta_usage": 12.4,
+      "top_cut": 13.2,
       "avg_copies": 2.4,
-      "growth": -5.8,
-      "dominance": 12.7
+      "growth": -6.4,
+      "dominance": 12.3
     },
     {
       "card_id": "BT25-046",
-      "meta_usage": 12.6,
-      "top_cut": 13.7,
+      "meta_usage": 12.3,
+      "top_cut": 13.6,
       "avg_copies": 3.3,
-      "growth": -5.5,
-      "dominance": 12.7
+      "growth": -5.7,
+      "dominance": 12.3
     },
     {
       "card_id": "BT25-041",
-      "meta_usage": 12.3,
-      "top_cut": 13.1,
+      "meta_usage": 12.1,
+      "top_cut": 13.0,
       "avg_copies": 2.7,
-      "growth": -4.4,
-      "dominance": 12.7
+      "growth": -4.7,
+      "dominance": 12.3
+    },
+    {
+      "card_id": "BT25-100",
+      "meta_usage": 11.7,
+      "top_cut": 10.7,
+      "avg_copies": 1.7,
+      "growth": -4.2,
+      "dominance": 12.3
     },
     {
       "card_id": "ST23-12",
-      "meta_usage": 11.9,
-      "top_cut": 12.9,
+      "meta_usage": 11.7,
+      "top_cut": 12.8,
       "avg_copies": 1.5,
-      "growth": -4.7,
-      "dominance": 11.1
+      "growth": -4.9,
+      "dominance": 10.8
     },
     {
       "card_id": "BT25-043",
-      "meta_usage": 11.9,
+      "meta_usage": 11.7,
       "top_cut": 12.4,
       "avg_copies": 2.4,
-      "growth": -3.9,
-      "dominance": 11.1
+      "growth": -4.2,
+      "dominance": 10.8
+    },
+    {
+      "card_id": "P-236",
+      "meta_usage": 11.4,
+      "top_cut": 12.4,
+      "avg_copies": 2.2,
+      "growth": -5.0,
+      "dominance": 9.2
+    },
+    {
+      "card_id": "ST23-14",
+      "meta_usage": 11.3,
+      "top_cut": 13.2,
+      "avg_copies": 1.6,
+      "growth": -4.9,
+      "dominance": 12.3
+    },
+    {
+      "card_id": "BT25-020",
+      "meta_usage": 11.1,
+      "top_cut": 9.9,
+      "avg_copies": 2.6,
+      "growth": -0.9,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT21-071",
+      "meta_usage": 10.8,
+      "top_cut": 13.4,
+      "avg_copies": 3.8,
+      "growth": -6.8,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "BT25-058",
+      "meta_usage": 10.7,
+      "top_cut": 11.2,
+      "avg_copies": 2.9,
+      "growth": -1.6,
+      "dominance": 10.8
+    },
+    {
+      "card_id": "EX7-051",
+      "meta_usage": 10.7,
+      "top_cut": 13.4,
+      "avg_copies": 3.6,
+      "growth": -6.6,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "P-180",
+      "meta_usage": 10.7,
+      "top_cut": 13.4,
+      "avg_copies": 3.9,
+      "growth": -6.6,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "EX7-071",
+      "meta_usage": 10.7,
+      "top_cut": 13.4,
+      "avg_copies": 3.3,
+      "growth": -6.6,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "BT25-001",
+      "meta_usage": 10.6,
+      "top_cut": 9.9,
+      "avg_copies": 4.0,
+      "growth": -1.4,
+      "dominance": 9.2
+    },
+    {
+      "card_id": "BT25-078",
+      "meta_usage": 10.6,
+      "top_cut": 13.4,
+      "avg_copies": 4.0,
+      "growth": -6.5,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "BT25-082",
+      "meta_usage": 10.6,
+      "top_cut": 13.4,
+      "avg_copies": 4.0,
+      "growth": -6.5,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "BT25-085",
+      "meta_usage": 10.6,
+      "top_cut": 13.4,
+      "avg_copies": 3.8,
+      "growth": -6.5,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "BT25-044",
+      "meta_usage": 10.4,
+      "top_cut": 11.2,
+      "avg_copies": 2.1,
+      "growth": -1.9,
+      "dominance": 15.4
+    },
+    {
+      "card_id": "BT25-083",
+      "meta_usage": 10.4,
+      "top_cut": 13.4,
+      "avg_copies": 3.6,
+      "growth": -6.3,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "BT25-005",
+      "meta_usage": 10.4,
+      "top_cut": 13.2,
+      "avg_copies": 4.0,
+      "growth": -6.3,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "BT8-097",
+      "meta_usage": 10.3,
+      "top_cut": 10.7,
+      "avg_copies": 1.9,
+      "growth": -4.9,
+      "dominance": 9.2
+    },
+    {
+      "card_id": "EX7-070",
+      "meta_usage": 10.3,
+      "top_cut": 13.0,
+      "avg_copies": 2.0,
+      "growth": -6.8,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "BT21-074",
+      "meta_usage": 10.2,
+      "top_cut": 13.0,
+      "avg_copies": 1.9,
+      "growth": -6.0,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "EX7-073",
+      "meta_usage": 10.1,
+      "top_cut": 12.4,
+      "avg_copies": 2.1,
+      "growth": -6.5,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "BT25-035",
+      "meta_usage": 10.0,
+      "top_cut": 10.5,
+      "avg_copies": 1.9,
+      "growth": -3.8,
+      "dominance": 6.2
+    },
+    {
+      "card_id": "BT24-031",
+      "meta_usage": 9.8,
+      "top_cut": 10.5,
+      "avg_copies": 3.4,
+      "growth": 2.0,
+      "dominance": 13.8
+    },
+    {
+      "card_id": "BT24-034",
+      "meta_usage": 9.8,
+      "top_cut": 10.1,
+      "avg_copies": 3.4,
+      "growth": -1.1,
+      "dominance": 10.8
+    },
+    {
+      "card_id": "BT24-083",
+      "meta_usage": 9.8,
+      "top_cut": 11.2,
+      "avg_copies": 2.6,
+      "growth": 0.1,
+      "dominance": 15.4
+    },
+    {
+      "card_id": "BT25-032",
+      "meta_usage": 9.4,
+      "top_cut": 9.7,
+      "avg_copies": 3.0,
+      "growth": -3.6,
+      "dominance": 9.2
+    },
+    {
+      "card_id": "EX7-008",
+      "meta_usage": 9.1,
+      "top_cut": 11.4,
+      "avg_copies": 2.9,
+      "growth": -7.7,
+      "dominance": 15.4
+    },
+    {
+      "card_id": "BT24-058",
+      "meta_usage": 8.7,
+      "top_cut": 9.3,
+      "avg_copies": 2.9,
+      "growth": 1.1,
+      "dominance": 16.9
+    },
+    {
+      "card_id": "BT24-102",
+      "meta_usage": 8.6,
+      "top_cut": 8.3,
+      "avg_copies": 2.5,
+      "growth": -0.0,
+      "dominance": 9.2
+    },
+    {
+      "card_id": "P-197",
+      "meta_usage": 8.3,
+      "top_cut": 8.9,
+      "avg_copies": 3.0,
+      "growth": -2.9,
+      "dominance": 13.8
+    },
+    {
+      "card_id": "ST23-04",
+      "meta_usage": 8.3,
+      "top_cut": 9.5,
+      "avg_copies": 1.7,
+      "growth": -2.2,
+      "dominance": 9.2
+    },
+    {
+      "card_id": "BT24-043",
+      "meta_usage": 7.7,
+      "top_cut": 6.8,
+      "avg_copies": 3.4,
+      "growth": 0.4,
+      "dominance": 6.2
+    },
+    {
+      "card_id": "LM-055",
+      "meta_usage": 7.7,
+      "top_cut": 7.9,
+      "avg_copies": 1.3,
+      "growth": -4.6,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT15-003",
+      "meta_usage": 7.7,
+      "top_cut": 8.7,
+      "avg_copies": 4.0,
+      "growth": -2.7,
+      "dominance": 15.4
+    },
+    {
+      "card_id": "BT25-008",
+      "meta_usage": 7.6,
+      "top_cut": 6.2,
+      "avg_copies": 3.2,
+      "growth": -1.3,
+      "dominance": 6.2
+    },
+    {
+      "card_id": "BT25-009",
+      "meta_usage": 7.4,
+      "top_cut": 6.6,
+      "avg_copies": 3.6,
+      "growth": -1.0,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT25-038",
+      "meta_usage": 7.3,
+      "top_cut": 7.4,
+      "avg_copies": 3.7,
+      "growth": -2.1,
+      "dominance": 13.8
+    },
+    {
+      "card_id": "BT25-028",
+      "meta_usage": 7.2,
+      "top_cut": 8.1,
+      "avg_copies": 1.7,
+      "growth": -0.7,
+      "dominance": 9.2
+    },
+    {
+      "card_id": "LM-056",
+      "meta_usage": 7.0,
+      "top_cut": 8.5,
+      "avg_copies": 1.6,
+      "growth": -3.7,
+      "dominance": 15.4
+    },
+    {
+      "card_id": "BT16-082",
+      "meta_usage": 6.8,
+      "top_cut": 6.0,
+      "avg_copies": 3.3,
+      "growth": -0.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX1-066",
+      "meta_usage": 6.8,
+      "top_cut": 6.8,
+      "avg_copies": 3.0,
+      "growth": 11.1,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT25-051",
+      "meta_usage": 6.6,
+      "top_cut": 5.8,
+      "avg_copies": 3.8,
+      "growth": -1.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT23-027",
+      "meta_usage": 6.6,
+      "top_cut": 6.8,
+      "avg_copies": 3.8,
+      "growth": -1.8,
+      "dominance": 12.3
+    },
+    {
+      "card_id": "BT25-054",
+      "meta_usage": 6.4,
+      "top_cut": 5.8,
+      "avg_copies": 3.4,
+      "growth": -2.3,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT25-034",
+      "meta_usage": 6.4,
+      "top_cut": 7.6,
+      "avg_copies": 3.9,
+      "growth": -1.0,
+      "dominance": 13.8
+    },
+    {
+      "card_id": "BT25-022",
+      "meta_usage": 6.2,
+      "top_cut": 6.6,
+      "avg_copies": 3.0,
+      "growth": 1.2,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT25-016",
+      "meta_usage": 6.1,
+      "top_cut": 5.6,
+      "avg_copies": 4.0,
+      "growth": -1.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT25-095",
+      "meta_usage": 6.1,
+      "top_cut": 5.6,
+      "avg_copies": 3.3,
+      "growth": -1.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT25-012",
+      "meta_usage": 6.0,
+      "top_cut": 5.6,
+      "avg_copies": 3.6,
+      "growth": -1.6,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT3-103",
+      "meta_usage": 5.9,
+      "top_cut": 5.2,
+      "avg_copies": 1.0,
+      "growth": -0.2,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT25-040",
+      "meta_usage": 5.9,
+      "top_cut": 6.8,
+      "avg_copies": 3.8,
+      "growth": -1.5,
+      "dominance": 12.3
+    },
+    {
+      "card_id": "LM-054",
+      "meta_usage": 5.9,
+      "top_cut": 6.4,
+      "avg_copies": 1.6,
+      "growth": -2.1,
+      "dominance": 12.3
+    },
+    {
+      "card_id": "BT25-031",
+      "meta_usage": 5.6,
+      "top_cut": 6.4,
+      "avg_copies": 4.0,
+      "growth": -1.2,
+      "dominance": 12.3
+    },
+    {
+      "card_id": "BT24-041",
+      "meta_usage": 5.6,
+      "top_cut": 4.8,
+      "avg_copies": 2.3,
+      "growth": -1.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT25-037",
+      "meta_usage": 5.5,
+      "top_cut": 6.4,
+      "avg_copies": 4.0,
+      "growth": -1.0,
+      "dominance": 12.3
+    },
+    {
+      "card_id": "P-198",
+      "meta_usage": 5.5,
+      "top_cut": 7.2,
+      "avg_copies": 2.3,
+      "growth": -2.9,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT24-040",
+      "meta_usage": 5.5,
+      "top_cut": 5.0,
+      "avg_copies": 1.9,
+      "growth": -2.3,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "P-103",
+      "meta_usage": 5.4,
+      "top_cut": 5.6,
+      "avg_copies": 3.0,
+      "growth": -2.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "LM-027",
+      "meta_usage": 5.4,
+      "top_cut": 5.0,
+      "avg_copies": 1.8,
+      "growth": -3.4,
+      "dominance": 6.2
+    },
+    {
+      "card_id": "P-130",
+      "meta_usage": 5.4,
+      "top_cut": 6.4,
+      "avg_copies": 1.0,
+      "growth": -4.6,
+      "dominance": 10.8
+    },
+    {
+      "card_id": "BT24-091",
+      "meta_usage": 5.4,
+      "top_cut": 4.5,
+      "avg_copies": 2.5,
+      "growth": 0.4,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT1-090",
+      "meta_usage": 5.4,
+      "top_cut": 5.8,
+      "avg_copies": 1.0,
+      "growth": -0.9,
+      "dominance": 9.2
+    },
+    {
+      "card_id": "EX12-074",
+      "meta_usage": 5.4,
+      "top_cut": 7.2,
+      "avg_copies": 2.7,
+      "growth": 15.5,
+      "dominance": 9.2
+    },
+    {
+      "card_id": "EX12-076",
+      "meta_usage": 5.3,
+      "top_cut": 7.2,
+      "avg_copies": 2.5,
+      "growth": 14.4,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT25-093",
+      "meta_usage": 5.2,
+      "top_cut": 4.8,
+      "avg_copies": 1.7,
+      "growth": 0.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "ST23-07",
+      "meta_usage": 5.2,
+      "top_cut": 5.4,
+      "avg_copies": 2.0,
+      "growth": -3.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT25-033",
+      "meta_usage": 5.2,
+      "top_cut": 5.8,
+      "avg_copies": 3.9,
+      "growth": -0.6,
+      "dominance": 6.2
+    },
+    {
+      "card_id": "BT24-101",
+      "meta_usage": 5.2,
+      "top_cut": 6.0,
+      "avg_copies": 3.7,
+      "growth": -0.6,
+      "dominance": 6.2
+    },
+    {
+      "card_id": "BT14-001",
+      "meta_usage": 5.0,
+      "top_cut": 4.8,
+      "avg_copies": 4.0,
+      "growth": -0.4,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT24-014",
+      "meta_usage": 4.9,
+      "top_cut": 5.6,
+      "avg_copies": 3.2,
+      "growth": -0.2,
+      "dominance": 6.2
+    },
+    {
+      "card_id": "BT25-025",
+      "meta_usage": 4.9,
+      "top_cut": 5.6,
+      "avg_copies": 2.7,
+      "growth": -0.2,
+      "dominance": 6.2
+    },
+    {
+      "card_id": "P-213",
+      "meta_usage": 4.9,
+      "top_cut": 5.6,
+      "avg_copies": 2.0,
+      "growth": -0.2,
+      "dominance": 6.2
+    },
+    {
+      "card_id": "BT24-084",
+      "meta_usage": 4.9,
+      "top_cut": 5.6,
+      "avg_copies": 3.5,
+      "growth": -0.2,
+      "dominance": 6.2
+    },
+    {
+      "card_id": "BT25-030",
+      "meta_usage": 4.8,
+      "top_cut": 5.6,
+      "avg_copies": 3.5,
+      "growth": -0.1,
+      "dominance": 6.2
+    },
+    {
+      "card_id": "BT25-013",
+      "meta_usage": 4.6,
+      "top_cut": 4.1,
+      "avg_copies": 1.6,
+      "growth": -1.0,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT14-033",
+      "meta_usage": 4.6,
+      "top_cut": 5.6,
+      "avg_copies": 3.7,
+      "growth": -1.0,
+      "dominance": 6.2
+    },
+    {
+      "card_id": "BT25-064",
+      "meta_usage": 4.3,
+      "top_cut": 4.1,
+      "avg_copies": 3.7,
+      "growth": -0.7,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "LM-030",
+      "meta_usage": 4.2,
+      "top_cut": 3.3,
+      "avg_copies": 1.6,
+      "growth": 0.7,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX12-075",
+      "meta_usage": 4.2,
+      "top_cut": 5.8,
+      "avg_copies": 2.4,
+      "growth": 12.0,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT24-051",
+      "meta_usage": 4.1,
+      "top_cut": 4.8,
+      "avg_copies": 1.9,
+      "growth": 1.5,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "EX11-012",
+      "meta_usage": 4.1,
+      "top_cut": 4.3,
+      "avg_copies": 3.6,
+      "growth": -2.3,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-026",
+      "meta_usage": 4.1,
+      "top_cut": 5.4,
+      "avg_copies": 3.3,
+      "growth": 12.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT25-101",
+      "meta_usage": 4.0,
+      "top_cut": 3.5,
+      "avg_copies": 3.9,
+      "growth": -0.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT24-018",
+      "meta_usage": 4.0,
+      "top_cut": 4.1,
+      "avg_copies": 3.0,
+      "growth": -2.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "P-207",
+      "meta_usage": 3.9,
+      "top_cut": 4.8,
+      "avg_copies": 2.6,
+      "growth": -2.6,
+      "dominance": 9.2
+    },
+    {
+      "card_id": "BT25-075",
+      "meta_usage": 3.9,
+      "top_cut": 3.5,
+      "avg_copies": 4.0,
+      "growth": -0.1,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT25-102",
+      "meta_usage": 3.9,
+      "top_cut": 3.5,
+      "avg_copies": 3.5,
+      "growth": -0.1,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "ST23-02",
+      "meta_usage": 3.9,
+      "top_cut": 4.5,
+      "avg_copies": 2.7,
+      "growth": -1.4,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "EX12-009",
+      "meta_usage": 3.9,
+      "top_cut": 5.4,
+      "avg_copies": 3.9,
+      "growth": 11.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-020",
+      "meta_usage": 3.9,
+      "top_cut": 5.4,
+      "avg_copies": 3.0,
+      "growth": 11.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-061",
+      "meta_usage": 3.9,
+      "top_cut": 5.4,
+      "avg_copies": 3.6,
+      "growth": 11.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-062",
+      "meta_usage": 3.9,
+      "top_cut": 5.4,
+      "avg_copies": 3.7,
+      "growth": 11.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-046",
+      "meta_usage": 3.9,
+      "top_cut": 5.4,
+      "avg_copies": 3.9,
+      "growth": 11.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-063",
+      "meta_usage": 3.9,
+      "top_cut": 5.4,
+      "avg_copies": 2.9,
+      "growth": 11.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-031",
+      "meta_usage": 3.9,
+      "top_cut": 5.4,
+      "avg_copies": 1.7,
+      "growth": 11.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-047",
+      "meta_usage": 3.9,
+      "top_cut": 5.4,
+      "avg_copies": 2.9,
+      "growth": 11.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-065",
+      "meta_usage": 3.9,
+      "top_cut": 5.4,
+      "avg_copies": 3.1,
+      "growth": 11.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-036",
+      "meta_usage": 3.9,
+      "top_cut": 5.4,
+      "avg_copies": 1.9,
+      "growth": 11.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-070",
+      "meta_usage": 3.9,
+      "top_cut": 5.4,
+      "avg_copies": 3.9,
+      "growth": 11.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-004",
+      "meta_usage": 3.9,
+      "top_cut": 5.4,
+      "avg_copies": 4.0,
+      "growth": 11.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT21-008",
+      "meta_usage": 3.8,
+      "top_cut": 3.9,
+      "avg_copies": 4.0,
+      "growth": -1.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX11-008",
+      "meta_usage": 3.8,
+      "top_cut": 3.9,
+      "avg_copies": 3.0,
+      "growth": -1.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT24-008",
+      "meta_usage": 3.8,
+      "top_cut": 3.9,
+      "avg_copies": 3.6,
+      "growth": -1.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT21-017",
+      "meta_usage": 3.8,
+      "top_cut": 3.9,
+      "avg_copies": 3.9,
+      "growth": -1.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT24-016",
+      "meta_usage": 3.8,
+      "top_cut": 3.9,
+      "avg_copies": 4.0,
+      "growth": -1.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT21-081",
+      "meta_usage": 3.8,
+      "top_cut": 3.9,
+      "avg_copies": 2.3,
+      "growth": -1.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT24-082",
+      "meta_usage": 3.8,
+      "top_cut": 3.9,
+      "avg_copies": 2.5,
+      "growth": -1.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT21-001",
+      "meta_usage": 3.8,
+      "top_cut": 3.9,
+      "avg_copies": 4.0,
+      "growth": -1.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT24-081",
+      "meta_usage": 3.8,
+      "top_cut": 5.2,
+      "avg_copies": 1.9,
+      "growth": 0.1,
+      "dominance": 10.8
+    },
+    {
+      "card_id": "EX12-011",
+      "meta_usage": 3.8,
+      "top_cut": 5.2,
+      "avg_copies": 2.2,
+      "growth": 10.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "P-105",
+      "meta_usage": 3.6,
+      "top_cut": 4.3,
+      "avg_copies": 2.3,
+      "growth": -2.9,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT24-011",
+      "meta_usage": 3.6,
+      "top_cut": 3.1,
+      "avg_copies": 1.6,
+      "growth": -1.7,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT25-098",
+      "meta_usage": 3.6,
+      "top_cut": 3.7,
+      "avg_copies": 3.3,
+      "growth": -0.4,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT24-003",
+      "meta_usage": 3.6,
+      "top_cut": 4.5,
+      "avg_copies": 3.9,
+      "growth": 0.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "P-037",
+      "meta_usage": 3.6,
+      "top_cut": 4.5,
+      "avg_copies": 2.3,
+      "growth": 0.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "P-206",
+      "meta_usage": 3.5,
+      "top_cut": 3.7,
+      "avg_copies": 2.0,
+      "growth": -2.2,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "P-035",
+      "meta_usage": 3.5,
+      "top_cut": 3.7,
+      "avg_copies": 1.7,
+      "growth": -2.2,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT24-030",
+      "meta_usage": 3.5,
+      "top_cut": 2.9,
+      "avg_copies": 2.1,
+      "growth": -0.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT25-089",
+      "meta_usage": 3.5,
+      "top_cut": 3.7,
+      "avg_copies": 3.3,
+      "growth": -0.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "ST2-13",
+      "meta_usage": 3.4,
+      "top_cut": 3.1,
+      "avg_copies": 1.0,
+      "growth": 1.8,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT24-090",
+      "meta_usage": 3.4,
+      "top_cut": 3.3,
+      "avg_copies": 2.3,
+      "growth": 2.4,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT25-007",
+      "meta_usage": 3.4,
+      "top_cut": 3.5,
+      "avg_copies": 4.0,
+      "growth": -0.1,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT25-045",
+      "meta_usage": 3.4,
+      "top_cut": 3.5,
+      "avg_copies": 4.0,
+      "growth": -0.1,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT25-036",
+      "meta_usage": 3.4,
+      "top_cut": 3.5,
+      "avg_copies": 4.0,
+      "growth": -0.1,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT25-052",
+      "meta_usage": 3.4,
+      "top_cut": 3.5,
+      "avg_copies": 4.0,
+      "growth": -0.1,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT25-056",
+      "meta_usage": 3.4,
+      "top_cut": 3.5,
+      "avg_copies": 4.0,
+      "growth": -0.1,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT25-072",
+      "meta_usage": 3.4,
+      "top_cut": 3.5,
+      "avg_copies": 3.9,
+      "growth": -0.1,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT21-073",
+      "meta_usage": 3.4,
+      "top_cut": 3.3,
+      "avg_copies": 2.0,
+      "growth": -0.1,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT25-060",
+      "meta_usage": 3.4,
+      "top_cut": 3.5,
+      "avg_copies": 4.0,
+      "growth": -0.1,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT10-042",
+      "meta_usage": 3.3,
+      "top_cut": 3.5,
+      "avg_copies": 1.4,
+      "growth": -2.5,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "ST24-13",
+      "meta_usage": 3.3,
+      "top_cut": 1.7,
+      "avg_copies": 3.4,
+      "growth": 1.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT15-102",
+      "meta_usage": 3.2,
+      "top_cut": 4.3,
+      "avg_copies": 1.0,
+      "growth": 0.2,
+      "dominance": 9.2
+    },
+    {
+      "card_id": "AD1-021",
+      "meta_usage": 3.2,
+      "top_cut": 2.7,
+      "avg_copies": 3.4,
+      "growth": -0.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-189",
+      "meta_usage": 3.2,
+      "top_cut": 3.1,
+      "avg_copies": 3.1,
+      "growth": -2.3,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT8-094",
+      "meta_usage": 3.0,
+      "top_cut": 3.3,
+      "avg_copies": 1.8,
+      "growth": -1.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT21-044",
+      "meta_usage": 3.0,
+      "top_cut": 2.7,
+      "avg_copies": 3.4,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST24-07",
+      "meta_usage": 3.0,
+      "top_cut": 2.1,
+      "avg_copies": 3.0,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "AD1-016",
+      "meta_usage": 3.0,
+      "top_cut": 2.7,
+      "avg_copies": 2.9,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-062",
+      "meta_usage": 3.0,
+      "top_cut": 2.3,
+      "avg_copies": 2.8,
+      "growth": -0.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT25-053",
+      "meta_usage": 3.0,
+      "top_cut": 3.9,
+      "avg_copies": 1.3,
+      "growth": -1.5,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "ST23-11",
+      "meta_usage": 2.9,
+      "top_cut": 3.5,
+      "avg_copies": 1.6,
+      "growth": -0.7,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT21-009",
+      "meta_usage": 2.9,
+      "top_cut": 2.7,
+      "avg_copies": 2.4,
+      "growth": -1.4,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT19-089",
+      "meta_usage": 2.9,
+      "top_cut": 2.3,
+      "avg_copies": 1.8,
+      "growth": -1.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT11-061",
+      "meta_usage": 2.9,
+      "top_cut": 3.5,
+      "avg_copies": 10.1,
+      "growth": 1.1,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT18-060",
+      "meta_usage": 2.9,
+      "top_cut": 3.5,
+      "avg_copies": 3.6,
+      "growth": 1.1,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT21-056",
+      "meta_usage": 2.9,
+      "top_cut": 3.5,
+      "avg_copies": 2.7,
+      "growth": 1.1,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT21-058",
+      "meta_usage": 2.9,
+      "top_cut": 3.5,
+      "avg_copies": 3.4,
+      "growth": 1.1,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT18-065",
+      "meta_usage": 2.9,
+      "top_cut": 3.5,
+      "avg_copies": 3.5,
+      "growth": 1.1,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT21-060",
+      "meta_usage": 2.9,
+      "top_cut": 3.5,
+      "avg_copies": 2.8,
+      "growth": 1.1,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "P-094",
+      "meta_usage": 2.9,
+      "top_cut": 3.5,
+      "avg_copies": 3.2,
+      "growth": 1.1,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT21-062",
+      "meta_usage": 2.9,
+      "top_cut": 3.5,
+      "avg_copies": 3.0,
+      "growth": 1.1,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "EX11-046",
+      "meta_usage": 2.9,
+      "top_cut": 3.5,
+      "avg_copies": 3.6,
+      "growth": 1.1,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "EX11-066",
+      "meta_usage": 2.9,
+      "top_cut": 3.5,
+      "avg_copies": 3.9,
+      "growth": 1.1,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT21-098",
+      "meta_usage": 2.9,
+      "top_cut": 3.5,
+      "avg_copies": 3.3,
+      "growth": 1.1,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT21-006",
+      "meta_usage": 2.9,
+      "top_cut": 3.5,
+      "avg_copies": 4.0,
+      "growth": 1.1,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "P-123",
+      "meta_usage": 2.8,
+      "top_cut": 3.1,
+      "avg_copies": 1.0,
+      "growth": -1.8,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "BT8-095",
+      "meta_usage": 2.8,
+      "top_cut": 2.3,
+      "avg_copies": 1.7,
+      "growth": -1.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-048",
+      "meta_usage": 2.8,
+      "top_cut": 3.3,
+      "avg_copies": 2.2,
+      "growth": -0.6,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT18-092",
+      "meta_usage": 2.8,
+      "top_cut": 3.5,
+      "avg_copies": 1.8,
+      "growth": 1.3,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT11-105",
+      "meta_usage": 2.8,
+      "top_cut": 3.3,
+      "avg_copies": 2.0,
+      "growth": 0.7,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "ST24-06",
+      "meta_usage": 2.8,
+      "top_cut": 1.2,
+      "avg_copies": 2.8,
+      "growth": 1.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT15-037",
+      "meta_usage": 2.7,
+      "top_cut": 3.3,
+      "avg_copies": 3.1,
+      "growth": -1.7,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT19-008",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 3.8,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-061",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 3.0,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-035",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 2.7,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-021",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 3.9,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-038",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 3.0,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-051",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 3.0,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "AD1-006",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 3.1,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "AD1-013",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 3.0,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-014",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 3.2,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT10-087",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 3.3,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-083",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 3.7,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-224",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 2.3,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-046",
+      "meta_usage": 2.7,
+      "top_cut": 2.3,
+      "avg_copies": 2.6,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-070",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 1.7,
+      "growth": 0.8,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT21-013",
+      "meta_usage": 2.7,
+      "top_cut": 2.5,
+      "avg_copies": 3.6,
+      "growth": -2.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT18-048",
+      "meta_usage": 2.7,
+      "top_cut": 2.5,
+      "avg_copies": 2.3,
+      "growth": -2.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "AD1-002",
+      "meta_usage": 2.7,
+      "top_cut": 2.5,
+      "avg_copies": 4.0,
+      "growth": -2.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "AD1-020",
+      "meta_usage": 2.7,
+      "top_cut": 2.5,
+      "avg_copies": 4.0,
+      "growth": -2.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT24-010",
+      "meta_usage": 2.7,
+      "top_cut": 2.7,
+      "avg_copies": 1.4,
+      "growth": 0.8,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "ST24-05",
+      "meta_usage": 2.6,
+      "top_cut": 1.4,
+      "avg_copies": 2.9,
+      "growth": 1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT11-095",
+      "meta_usage": 2.6,
+      "top_cut": 2.7,
+      "avg_copies": 2.3,
+      "growth": -1.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-024",
+      "meta_usage": 2.6,
+      "top_cut": 1.9,
+      "avg_copies": 1.8,
+      "growth": -1.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX7-048",
+      "meta_usage": 2.6,
+      "top_cut": 2.1,
+      "avg_copies": 1.6,
+      "growth": -2.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT21-012",
+      "meta_usage": 2.6,
+      "top_cut": 2.5,
+      "avg_copies": 3.0,
+      "growth": -2.2,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT18-011",
+      "meta_usage": 2.6,
+      "top_cut": 2.5,
+      "avg_copies": 1.8,
+      "growth": -2.2,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT21-082",
+      "meta_usage": 2.6,
+      "top_cut": 2.3,
+      "avg_copies": 3.1,
+      "growth": -2.2,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT20-102",
+      "meta_usage": 2.5,
+      "top_cut": 2.9,
+      "avg_copies": 1.5,
+      "growth": -1.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT25-014",
+      "meta_usage": 2.5,
+      "top_cut": 2.1,
+      "avg_copies": 1.9,
+      "growth": -0.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT21-093",
+      "meta_usage": 2.5,
+      "top_cut": 2.5,
+      "avg_copies": 1.5,
+      "growth": -1.4,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT21-084",
+      "meta_usage": 2.5,
+      "top_cut": 2.1,
+      "avg_copies": 1.6,
+      "growth": -1.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-055",
+      "meta_usage": 2.5,
+      "top_cut": 1.7,
+      "avg_copies": 3.0,
+      "growth": 0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "P-106",
+      "meta_usage": 2.5,
+      "top_cut": 1.7,
+      "avg_copies": 2.8,
+      "growth": 0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT25-086",
+      "meta_usage": 2.5,
+      "top_cut": 2.7,
+      "avg_copies": 2.0,
+      "growth": 1.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT17-012",
+      "meta_usage": 2.5,
+      "top_cut": 2.5,
+      "avg_copies": 2.8,
+      "growth": -2.0,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT18-049",
+      "meta_usage": 2.5,
+      "top_cut": 2.1,
+      "avg_copies": 1.4,
+      "growth": -2.0,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT21-091",
+      "meta_usage": 2.5,
+      "top_cut": 2.3,
+      "avg_copies": 2.6,
+      "growth": -2.0,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "EX12-035",
+      "meta_usage": 2.5,
+      "top_cut": 1.7,
+      "avg_copies": 2.5,
+      "growth": 6.2,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT13-012",
+      "meta_usage": 2.3,
+      "top_cut": 2.9,
+      "avg_copies": 1.0,
+      "growth": -2.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-104",
+      "meta_usage": 2.3,
+      "top_cut": 2.3,
+      "avg_copies": 1.8,
+      "growth": 0.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-017",
+      "meta_usage": 2.3,
+      "top_cut": 2.1,
+      "avg_copies": 1.4,
+      "growth": -1.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT24-004",
+      "meta_usage": 2.3,
+      "top_cut": 1.9,
+      "avg_copies": 4.0,
+      "growth": 0.7,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT18-022",
+      "meta_usage": 2.3,
+      "top_cut": 2.3,
+      "avg_copies": 1.6,
+      "growth": -1.9,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT7-014",
+      "meta_usage": 2.3,
+      "top_cut": 2.3,
+      "avg_copies": 1.6,
+      "growth": -1.9,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT17-009",
+      "meta_usage": 2.3,
+      "top_cut": 2.3,
+      "avg_copies": 3.1,
+      "growth": -1.9,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT7-107",
+      "meta_usage": 2.3,
+      "top_cut": 1.7,
+      "avg_copies": 1.0,
+      "growth": 1.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-043",
+      "meta_usage": 2.3,
+      "top_cut": 2.9,
+      "avg_copies": 3.5,
+      "growth": 7.0,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-073",
+      "meta_usage": 2.3,
+      "top_cut": 1.2,
+      "avg_copies": 3.5,
+      "growth": 5.7,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT16-025",
+      "meta_usage": 2.2,
+      "top_cut": 1.7,
+      "avg_copies": 3.5,
+      "growth": -1.7,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT24-037",
+      "meta_usage": 2.2,
+      "top_cut": 2.3,
+      "avg_copies": 2.4,
+      "growth": 0.2,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT25-059",
+      "meta_usage": 2.2,
+      "top_cut": 1.4,
+      "avg_copies": 2.9,
+      "growth": -0.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT25-050",
+      "meta_usage": 2.2,
+      "top_cut": 2.3,
+      "avg_copies": 2.1,
+      "growth": 1.4,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT24-012",
+      "meta_usage": 2.2,
+      "top_cut": 2.7,
+      "avg_copies": 1.8,
+      "growth": 0.2,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT9-103",
+      "meta_usage": 2.2,
+      "top_cut": 1.2,
+      "avg_copies": 1.8,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-077",
+      "meta_usage": 2.2,
+      "top_cut": 1.4,
+      "avg_copies": 2.7,
+      "growth": 2.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "ST24-04",
+      "meta_usage": 2.2,
+      "top_cut": 0.4,
+      "avg_copies": 3.7,
+      "growth": 2.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT12-034",
+      "meta_usage": 2.1,
+      "top_cut": 2.7,
+      "avg_copies": 3.5,
+      "growth": -2.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-042",
+      "meta_usage": 2.1,
+      "top_cut": 2.7,
+      "avg_copies": 3.9,
+      "growth": -2.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-025",
+      "meta_usage": 2.1,
+      "top_cut": 2.3,
+      "avg_copies": 1.8,
+      "growth": -1.5,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT13-106",
+      "meta_usage": 2.1,
+      "top_cut": 2.9,
+      "avg_copies": 1.4,
+      "growth": -0.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT6-022",
+      "meta_usage": 2.1,
+      "top_cut": 2.1,
+      "avg_copies": 1.9,
+      "growth": -1.5,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT21-087",
+      "meta_usage": 2.1,
+      "top_cut": 2.7,
+      "avg_copies": 1.3,
+      "growth": 1.0,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT18-018",
+      "meta_usage": 2.1,
+      "top_cut": 2.1,
+      "avg_copies": 1.7,
+      "growth": -1.5,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "LM-031",
+      "meta_usage": 2.1,
+      "top_cut": 1.2,
+      "avg_copies": 1.7,
+      "growth": -1.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-010",
+      "meta_usage": 2.1,
+      "top_cut": 1.2,
+      "avg_copies": 2.4,
+      "growth": 5.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT20-037",
+      "meta_usage": 2.0,
+      "top_cut": 1.9,
+      "avg_copies": 1.2,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-040",
+      "meta_usage": 2.0,
+      "top_cut": 2.5,
+      "avg_copies": 1.6,
+      "growth": -2.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX7-059",
+      "meta_usage": 2.0,
+      "top_cut": 1.9,
+      "avg_copies": 1.4,
+      "growth": -1.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-057",
+      "meta_usage": 2.0,
+      "top_cut": 1.7,
+      "avg_copies": 3.2,
+      "growth": -1.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT10-029",
+      "meta_usage": 2.0,
+      "top_cut": 1.7,
+      "avg_copies": 2.0,
+      "growth": -1.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-047",
+      "meta_usage": 2.0,
+      "top_cut": 1.2,
+      "avg_copies": 3.7,
+      "growth": -0.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "P-194",
+      "meta_usage": 2.0,
+      "top_cut": 2.1,
+      "avg_copies": 1.1,
+      "growth": -1.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-004",
+      "meta_usage": 2.0,
+      "top_cut": 2.5,
+      "avg_copies": 3.8,
+      "growth": -0.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT24-063",
+      "meta_usage": 2.0,
+      "top_cut": 1.9,
+      "avg_copies": 2.4,
+      "growth": -0.1,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT25-091",
+      "meta_usage": 2.0,
+      "top_cut": 1.4,
+      "avg_copies": 1.4,
+      "growth": -1.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX12-037",
+      "meta_usage": 2.0,
+      "top_cut": 1.7,
+      "avg_copies": 1.6,
+      "growth": 4.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT12-092",
+      "meta_usage": 1.9,
+      "top_cut": 2.7,
+      "avg_copies": 2.3,
+      "growth": -1.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "LM-029",
+      "meta_usage": 1.9,
+      "top_cut": 1.9,
+      "avg_copies": 1.3,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-004",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 4.0,
+      "growth": -1.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "LM-037",
+      "meta_usage": 1.9,
+      "top_cut": 1.9,
+      "avg_copies": 2.8,
+      "growth": 0.7,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "BT10-003",
+      "meta_usage": 1.9,
+      "top_cut": 1.7,
+      "avg_copies": 4.0,
+      "growth": -1.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-032",
+      "meta_usage": 1.9,
+      "top_cut": 1.0,
+      "avg_copies": 1.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-005",
+      "meta_usage": 1.9,
+      "top_cut": 1.4,
+      "avg_copies": 3.9,
+      "growth": 0.0,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT18-088",
+      "meta_usage": 1.9,
+      "top_cut": 1.7,
+      "avg_copies": 2.2,
+      "growth": -1.9,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT24-033",
+      "meta_usage": 1.9,
+      "top_cut": 1.7,
+      "avg_copies": 3.2,
+      "growth": 0.0,
+      "dominance": 6.2
+    },
+    {
+      "card_id": "ST24-10",
+      "meta_usage": 1.9,
+      "top_cut": 0.2,
+      "avg_copies": 3.6,
+      "growth": 2.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST24-15",
+      "meta_usage": 1.9,
+      "top_cut": 0.2,
+      "avg_copies": 3.8,
+      "growth": 2.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-013",
+      "meta_usage": 1.9,
+      "top_cut": 0.8,
+      "avg_copies": 3.2,
+      "growth": 5.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-066",
+      "meta_usage": 1.9,
+      "top_cut": 0.8,
+      "avg_copies": 2.6,
+      "growth": 5.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-006",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 3.9,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-022",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 4.0,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-039",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 3.0,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-012",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 3.7,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-025",
+      "meta_usage": 1.9,
+      "top_cut": 2.1,
+      "avg_copies": 1.6,
+      "growth": 5.7,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "EX12-045",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 3.8,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-015",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 2.1,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-029",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 2.4,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-056",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 2.7,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-019",
+      "meta_usage": 1.9,
+      "top_cut": 2.1,
+      "avg_copies": 2.1,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-034",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 2.8,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-048",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 2.1,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-057",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 2.7,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-071",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 3.9,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-002",
+      "meta_usage": 1.9,
+      "top_cut": 2.3,
+      "avg_copies": 4.0,
+      "growth": 5.1,
+      "dominance": 4.6
+    },
+    {
+      "card_id": "EX12-016",
+      "meta_usage": 1.9,
+      "top_cut": 1.2,
+      "avg_copies": 2.2,
+      "growth": 4.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "P-117",
+      "meta_usage": 1.8,
+      "top_cut": 1.9,
+      "avg_copies": 3.8,
+      "growth": -1.7,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT3-093",
+      "meta_usage": 1.8,
+      "top_cut": 1.4,
+      "avg_copies": 1.8,
+      "growth": -0.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "LM-036",
+      "meta_usage": 1.8,
+      "top_cut": 1.2,
+      "avg_copies": 2.1,
+      "growth": -0.4,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "P-217",
+      "meta_usage": 1.8,
+      "top_cut": 1.2,
+      "avg_copies": 2.0,
+      "growth": -1.1,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT21-092",
+      "meta_usage": 1.8,
+      "top_cut": 1.9,
+      "avg_copies": 1.5,
+      "growth": -1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-185",
+      "meta_usage": 1.8,
+      "top_cut": 1.7,
+      "avg_copies": 1.4,
+      "growth": -1.7,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "P-215",
+      "meta_usage": 1.8,
+      "top_cut": 1.0,
+      "avg_copies": 2.7,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-007",
+      "meta_usage": 1.8,
+      "top_cut": 0.8,
+      "avg_copies": 3.7,
+      "growth": 5.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-017",
+      "meta_usage": 1.8,
+      "top_cut": 0.6,
+      "avg_copies": 1.7,
+      "growth": 5.2,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT9-112",
+      "meta_usage": 1.6,
+      "top_cut": 1.9,
+      "avg_copies": 1.0,
+      "growth": -0.3,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX9-068",
+      "meta_usage": 1.6,
+      "top_cut": 1.9,
+      "avg_copies": 2.1,
+      "growth": -1.6,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX4-005",
+      "meta_usage": 1.6,
+      "top_cut": 2.1,
+      "avg_copies": 2.7,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT12-038",
+      "meta_usage": 1.6,
+      "top_cut": 2.5,
+      "avg_copies": 2.1,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT22-084",
+      "meta_usage": 1.6,
+      "top_cut": 2.1,
+      "avg_copies": 1.4,
+      "growth": -1.6,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "P-026",
+      "meta_usage": 1.6,
+      "top_cut": 1.7,
+      "avg_copies": 1.6,
+      "growth": 1.0,
+      "dominance": 7.7
+    },
+    {
+      "card_id": "EX1-072",
+      "meta_usage": 1.6,
+      "top_cut": 1.9,
+      "avg_copies": 1.7,
+      "growth": 0.3,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT18-093",
+      "meta_usage": 1.6,
+      "top_cut": 1.0,
+      "avg_copies": 1.4,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT17-077",
+      "meta_usage": 1.6,
+      "top_cut": 1.2,
+      "avg_copies": 1.0,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX4-002",
+      "meta_usage": 1.6,
+      "top_cut": 1.0,
+      "avg_copies": 4.0,
+      "growth": 0.3,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX8-047",
+      "meta_usage": 1.6,
+      "top_cut": 0.8,
+      "avg_copies": 3.9,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-038",
+      "meta_usage": 1.6,
+      "top_cut": 0.8,
+      "avg_copies": 3.4,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-167",
+      "meta_usage": 1.6,
+      "top_cut": 0.8,
+      "avg_copies": 3.9,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-032",
+      "meta_usage": 1.6,
+      "top_cut": 0.8,
+      "avg_copies": 4.0,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-044",
+      "meta_usage": 1.6,
+      "top_cut": 0.8,
+      "avg_copies": 3.3,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-036",
+      "meta_usage": 1.6,
+      "top_cut": 0.8,
+      "avg_copies": 3.0,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX8-067",
+      "meta_usage": 1.6,
+      "top_cut": 0.8,
+      "avg_copies": 2.9,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-065",
+      "meta_usage": 1.6,
+      "top_cut": 0.8,
+      "avg_copies": 2.2,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-069",
+      "meta_usage": 1.6,
+      "top_cut": 0.8,
+      "avg_copies": 3.4,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-107",
+      "meta_usage": 1.6,
+      "top_cut": 0.8,
+      "avg_copies": 3.0,
+      "growth": -0.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX8-005",
+      "meta_usage": 1.6,
+      "top_cut": 0.8,
+      "avg_copies": 4.0,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-095",
+      "meta_usage": 1.6,
+      "top_cut": 2.3,
+      "avg_copies": 1.2,
+      "growth": 0.3,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT25-039",
+      "meta_usage": 1.6,
+      "top_cut": 1.0,
+      "avg_copies": 2.9,
+      "growth": 1.6,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "ST24-14",
+      "meta_usage": 1.6,
+      "top_cut": 0.2,
+      "avg_copies": 3.1,
+      "growth": 2.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-244",
+      "meta_usage": 1.6,
+      "top_cut": 2.1,
+      "avg_copies": 3.0,
+      "growth": 2.2,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX12-021",
+      "meta_usage": 1.6,
+      "top_cut": 0.6,
+      "avg_copies": 3.5,
+      "growth": 5.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-032",
+      "meta_usage": 1.6,
+      "top_cut": 0.4,
+      "avg_copies": 3.7,
+      "growth": 5.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT12-021",
+      "meta_usage": 1.5,
+      "top_cut": 1.4,
+      "avg_copies": 4.0,
+      "growth": -1.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT12-047",
+      "meta_usage": 1.5,
+      "top_cut": 1.4,
+      "avg_copies": 3.8,
+      "growth": -1.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT12-022",
+      "meta_usage": 1.5,
+      "top_cut": 1.4,
+      "avg_copies": 4.0,
+      "growth": -1.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT21-037",
+      "meta_usage": 1.5,
+      "top_cut": 1.4,
+      "avg_copies": 2.5,
+      "growth": -1.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT16-085",
+      "meta_usage": 1.5,
+      "top_cut": 1.4,
+      "avg_copies": 4.0,
+      "growth": -1.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX5-070",
+      "meta_usage": 1.5,
+      "top_cut": 0.8,
+      "avg_copies": 1.5,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT13-020",
+      "meta_usage": 1.5,
+      "top_cut": 2.1,
+      "avg_copies": 1.8,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT14-044",
+      "meta_usage": 1.5,
+      "top_cut": 1.0,
+      "avg_copies": 2.8,
+      "growth": 0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT10-048",
+      "meta_usage": 1.5,
+      "top_cut": 0.8,
+      "avg_copies": 4.0,
+      "growth": -0.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT14-046",
+      "meta_usage": 1.5,
+      "top_cut": 0.8,
+      "avg_copies": 3.2,
+      "growth": -0.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT14-085",
+      "meta_usage": 1.5,
+      "top_cut": 0.8,
+      "avg_copies": 3.8,
+      "growth": -0.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT23-077",
+      "meta_usage": 1.5,
+      "top_cut": 2.1,
+      "avg_copies": 1.7,
+      "growth": -0.8,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT24-009",
+      "meta_usage": 1.5,
+      "top_cut": 1.7,
+      "avg_copies": 3.8,
+      "growth": 1.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT24-021",
+      "meta_usage": 1.5,
+      "top_cut": 1.7,
+      "avg_copies": 4.0,
+      "growth": 1.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT24-042",
+      "meta_usage": 1.5,
+      "top_cut": 1.7,
+      "avg_copies": 3.3,
+      "growth": 1.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT24-045",
+      "meta_usage": 1.5,
+      "top_cut": 1.7,
+      "avg_copies": 2.8,
+      "growth": 1.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT24-026",
+      "meta_usage": 1.5,
+      "top_cut": 1.7,
+      "avg_copies": 3.5,
+      "growth": 1.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT24-075",
+      "meta_usage": 1.5,
+      "top_cut": 1.7,
+      "avg_copies": 3.9,
+      "growth": 1.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT24-072",
+      "meta_usage": 1.5,
+      "top_cut": 1.7,
+      "avg_copies": 2.8,
+      "growth": 1.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT25-084",
+      "meta_usage": 1.5,
+      "top_cut": 1.7,
+      "avg_copies": 3.6,
+      "growth": 1.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT4-098",
+      "meta_usage": 1.5,
+      "top_cut": 1.2,
+      "avg_copies": 2.0,
+      "growth": -1.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-070",
+      "meta_usage": 1.5,
+      "top_cut": 1.4,
+      "avg_copies": 1.8,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-055",
+      "meta_usage": 1.5,
+      "top_cut": 0.6,
+      "avg_copies": 2.5,
+      "growth": -1.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX8-048",
+      "meta_usage": 1.5,
+      "top_cut": 0.8,
+      "avg_copies": 2.3,
+      "growth": -2.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-063",
+      "meta_usage": 1.5,
+      "top_cut": 0.8,
+      "avg_copies": 1.9,
+      "growth": -1.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-010",
+      "meta_usage": 1.5,
+      "top_cut": 1.4,
+      "avg_copies": 3.0,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-053",
+      "meta_usage": 1.5,
+      "top_cut": 0.8,
+      "avg_copies": 2.1,
+      "growth": 1.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-090",
+      "meta_usage": 1.5,
+      "top_cut": 0.8,
+      "avg_copies": 3.4,
+      "growth": 2.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-053",
+      "meta_usage": 1.5,
+      "top_cut": 1.7,
+      "avg_copies": 2.0,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-059",
+      "meta_usage": 1.5,
+      "top_cut": 1.0,
+      "avg_copies": 2.6,
+      "growth": 2.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX12-060",
+      "meta_usage": 1.5,
+      "top_cut": 1.0,
+      "avg_copies": 2.7,
+      "growth": 2.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT4-097",
+      "meta_usage": 1.4,
+      "top_cut": 2.1,
+      "avg_copies": 3.2,
+      "growth": -0.6,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT12-050",
+      "meta_usage": 1.4,
+      "top_cut": 1.2,
+      "avg_copies": 3.8,
+      "growth": -1.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "ST9-09",
+      "meta_usage": 1.4,
+      "top_cut": 1.2,
+      "avg_copies": 1.0,
+      "growth": -1.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "AD1-011",
+      "meta_usage": 1.4,
+      "top_cut": 1.2,
+      "avg_copies": 3.5,
+      "growth": -1.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "AD1-024",
+      "meta_usage": 1.4,
+      "top_cut": 1.2,
+      "avg_copies": 2.6,
+      "growth": -1.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT17-097",
+      "meta_usage": 1.4,
+      "top_cut": 1.2,
+      "avg_copies": 1.9,
+      "growth": -1.2,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT13-095",
+      "meta_usage": 1.4,
+      "top_cut": 1.7,
+      "avg_copies": 1.8,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-079",
+      "meta_usage": 1.4,
+      "top_cut": 1.0,
+      "avg_copies": 1.0,
+      "growth": -1.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-054",
+      "meta_usage": 1.4,
+      "top_cut": 0.8,
+      "avg_copies": 1.2,
+      "growth": -1.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-104",
+      "meta_usage": 1.4,
+      "top_cut": 1.4,
+      "avg_copies": 2.3,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST23-05",
+      "meta_usage": 1.4,
+      "top_cut": 2.1,
+      "avg_copies": 2.3,
+      "growth": -1.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT24-013",
+      "meta_usage": 1.4,
+      "top_cut": 1.4,
+      "avg_copies": 2.8,
+      "growth": 1.3,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "P-209",
+      "meta_usage": 1.4,
+      "top_cut": 1.4,
+      "avg_copies": 2.4,
+      "growth": 1.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-095",
+      "meta_usage": 1.4,
+      "top_cut": 1.4,
+      "avg_copies": 1.9,
+      "growth": -0.6,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "RB1-005",
+      "meta_usage": 1.4,
+      "top_cut": 0.8,
+      "avg_copies": 3.8,
+      "growth": 1.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-080",
+      "meta_usage": 1.4,
+      "top_cut": 0.8,
+      "avg_copies": 3.5,
+      "growth": 1.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT22-089",
+      "meta_usage": 1.4,
+      "top_cut": 1.0,
+      "avg_copies": 3.0,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-014",
+      "meta_usage": 1.4,
+      "top_cut": 0.8,
+      "avg_copies": 3.2,
+      "growth": 4.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-008",
+      "meta_usage": 1.4,
+      "top_cut": 1.0,
+      "avg_copies": 3.8,
+      "growth": 2.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX12-053",
+      "meta_usage": 1.4,
+      "top_cut": 1.0,
+      "avg_copies": 3.9,
+      "growth": 2.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX12-038",
+      "meta_usage": 1.4,
+      "top_cut": 1.0,
+      "avg_copies": 2.9,
+      "growth": 2.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX12-041",
+      "meta_usage": 1.4,
+      "top_cut": 1.0,
+      "avg_copies": 3.8,
+      "growth": 2.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX12-054",
+      "meta_usage": 1.4,
+      "top_cut": 1.0,
+      "avg_copies": 3.8,
+      "growth": 2.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX12-055",
+      "meta_usage": 1.4,
+      "top_cut": 1.0,
+      "avg_copies": 3.8,
+      "growth": 2.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX12-064",
+      "meta_usage": 1.4,
+      "top_cut": 1.0,
+      "avg_copies": 3.2,
+      "growth": 2.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX12-003",
+      "meta_usage": 1.4,
+      "top_cut": 1.0,
+      "avg_copies": 4.0,
+      "growth": 2.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "P-216",
+      "meta_usage": 1.3,
+      "top_cut": 1.9,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX10-012",
+      "meta_usage": 1.3,
+      "top_cut": 1.9,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX10-020",
+      "meta_usage": 1.3,
+      "top_cut": 1.9,
+      "avg_copies": 3.6,
+      "growth": -0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX10-035",
+      "meta_usage": 1.3,
+      "top_cut": 1.9,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX10-057",
+      "meta_usage": 1.3,
+      "top_cut": 1.9,
+      "avg_copies": 3.8,
+      "growth": -0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX10-061",
+      "meta_usage": 1.3,
+      "top_cut": 1.9,
+      "avg_copies": 3.2,
+      "growth": -0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX10-072",
+      "meta_usage": 1.3,
+      "top_cut": 1.9,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT16-040",
+      "meta_usage": 1.3,
+      "top_cut": 1.2,
+      "avg_copies": 1.0,
+      "growth": -1.7,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT12-002",
+      "meta_usage": 1.3,
+      "top_cut": 1.2,
+      "avg_copies": 4.0,
+      "growth": -1.7,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT1-089",
+      "meta_usage": 1.3,
+      "top_cut": 1.0,
+      "avg_copies": 1.6,
+      "growth": -1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-029",
+      "meta_usage": 1.3,
+      "top_cut": 1.7,
+      "avg_copies": 3.0,
+      "growth": -1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-186",
+      "meta_usage": 1.3,
+      "top_cut": 0.4,
+      "avg_copies": 1.3,
+      "growth": -1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX8-074",
+      "meta_usage": 1.3,
+      "top_cut": 1.4,
+      "avg_copies": 1.5,
+      "growth": -1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT14-084",
+      "meta_usage": 1.3,
+      "top_cut": 1.4,
+      "avg_copies": 1.0,
+      "growth": -1.7,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT23-096",
+      "meta_usage": 1.3,
+      "top_cut": 0.4,
+      "avg_copies": 1.8,
+      "growth": -1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT9-047",
+      "meta_usage": 1.3,
+      "top_cut": 0.8,
+      "avg_copies": 1.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "AD1-010",
+      "meta_usage": 1.3,
+      "top_cut": 0.8,
+      "avg_copies": 3.9,
+      "growth": 2.7,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT25-011",
+      "meta_usage": 1.3,
+      "top_cut": 1.2,
+      "avg_copies": 1.4,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT9-033",
+      "meta_usage": 1.3,
+      "top_cut": 1.7,
+      "avg_copies": 1.4,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX8-050",
+      "meta_usage": 1.3,
+      "top_cut": 0.8,
+      "avg_copies": 1.2,
+      "growth": -1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX8-051",
+      "meta_usage": 1.3,
+      "top_cut": 0.4,
+      "avg_copies": 1.4,
+      "growth": -1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "LM-032",
+      "meta_usage": 1.3,
+      "top_cut": 0.8,
+      "avg_copies": 1.6,
+      "growth": -0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "ST24-12",
+      "meta_usage": 1.3,
+      "top_cut": 0.2,
+      "avg_copies": 1.9,
+      "growth": 2.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-023",
+      "meta_usage": 1.3,
+      "top_cut": 1.0,
+      "avg_copies": 1.4,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-069",
+      "meta_usage": 1.3,
+      "top_cut": 0.8,
+      "avg_copies": 3.3,
+      "growth": 1.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-019",
+      "meta_usage": 1.3,
+      "top_cut": 0.6,
+      "avg_copies": 2.2,
+      "growth": 1.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-077",
+      "meta_usage": 1.3,
+      "top_cut": 0.6,
+      "avg_copies": 1.8,
+      "growth": 4.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-058",
+      "meta_usage": 1.3,
+      "top_cut": 0.8,
+      "avg_copies": 2.6,
+      "growth": 2.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX12-072",
+      "meta_usage": 1.3,
+      "top_cut": 0.8,
+      "avg_copies": 2.6,
+      "growth": 2.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX12-024",
+      "meta_usage": 1.3,
+      "top_cut": 0.6,
+      "avg_copies": 3.5,
+      "growth": 4.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT14-009",
+      "meta_usage": 1.2,
+      "top_cut": 0.6,
+      "avg_copies": 1.6,
+      "growth": -1.6,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "ST9-06",
+      "meta_usage": 1.2,
+      "top_cut": 0.8,
+      "avg_copies": 2.5,
+      "growth": -1.6,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT21-086",
+      "meta_usage": 1.2,
+      "top_cut": 1.7,
+      "avg_copies": 1.7,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT10-053",
+      "meta_usage": 1.2,
+      "top_cut": 0.6,
+      "avg_copies": 3.7,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT20-084",
+      "meta_usage": 1.2,
+      "top_cut": 1.9,
+      "avg_copies": 1.8,
+      "growth": -0.3,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT6-084",
+      "meta_usage": 1.2,
+      "top_cut": 2.1,
+      "avg_copies": 1.4,
+      "growth": -0.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT23-013",
+      "meta_usage": 1.2,
+      "top_cut": 1.9,
+      "avg_copies": 3.7,
+      "growth": -0.3,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX7-014",
+      "meta_usage": 1.2,
+      "top_cut": 0.8,
+      "avg_copies": 1.3,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX7-049",
+      "meta_usage": 1.2,
+      "top_cut": 0.8,
+      "avg_copies": 1.2,
+      "growth": -1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT7-077",
+      "meta_usage": 1.2,
+      "top_cut": 0.8,
+      "avg_copies": 1.8,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-087",
+      "meta_usage": 1.2,
+      "top_cut": 0.6,
+      "avg_copies": 2.3,
+      "growth": 1.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT12-088",
+      "meta_usage": 1.2,
+      "top_cut": 1.2,
+      "avg_copies": 1.9,
+      "growth": -0.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-010",
+      "meta_usage": 1.2,
+      "top_cut": 0.8,
+      "avg_copies": 3.1,
+      "growth": 1.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-042",
+      "meta_usage": 1.2,
+      "top_cut": 0.6,
+      "avg_copies": 1.8,
+      "growth": 1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-022",
+      "meta_usage": 1.2,
+      "top_cut": 0.6,
+      "avg_copies": 2.1,
+      "growth": 1.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "RB1-001",
+      "meta_usage": 1.2,
+      "top_cut": 0.6,
+      "avg_copies": 4.0,
+      "growth": 1.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-018",
+      "meta_usage": 1.2,
+      "top_cut": 0.6,
+      "avg_copies": 2.3,
+      "growth": 3.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-240",
+      "meta_usage": 1.2,
+      "top_cut": 0.4,
+      "avg_copies": 2.6,
+      "growth": 3.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-048",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-037",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 3.4,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-017",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 2.1,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-020",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 3.6,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-101",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-084",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 3.4,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-085",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 2.7,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-090",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 2.9,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-081",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 2.7,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-035",
+      "meta_usage": 1.1,
+      "top_cut": 0.8,
+      "avg_copies": 2.2,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT13-050",
+      "meta_usage": 1.1,
+      "top_cut": 0.6,
+      "avg_copies": 1.4,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT20-008",
+      "meta_usage": 1.1,
+      "top_cut": 1.7,
+      "avg_copies": 3.9,
+      "growth": -0.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT23-006",
+      "meta_usage": 1.1,
+      "top_cut": 1.7,
+      "avg_copies": 4.0,
+      "growth": -0.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT23-076",
+      "meta_usage": 1.1,
+      "top_cut": 1.7,
+      "avg_copies": 2.6,
+      "growth": -0.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT13-013",
+      "meta_usage": 1.1,
+      "top_cut": 1.7,
+      "avg_copies": 3.0,
+      "growth": -0.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT20-013",
+      "meta_usage": 1.1,
+      "top_cut": 1.7,
+      "avg_copies": 2.9,
+      "growth": -0.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT20-014",
+      "meta_usage": 1.1,
+      "top_cut": 1.7,
+      "avg_copies": 4.0,
+      "growth": -0.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "ST12-15",
+      "meta_usage": 1.1,
+      "top_cut": 1.7,
+      "avg_copies": 4.0,
+      "growth": -0.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT20-020",
+      "meta_usage": 1.1,
+      "top_cut": 1.2,
+      "avg_copies": 1.0,
+      "growth": -1.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT16-102",
+      "meta_usage": 1.1,
+      "top_cut": 1.2,
+      "avg_copies": 2.4,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-080",
+      "meta_usage": 1.1,
+      "top_cut": 1.2,
+      "avg_copies": 1.2,
+      "growth": 2.4,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT25-099",
+      "meta_usage": 1.1,
+      "top_cut": 1.2,
+      "avg_copies": 1.9,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT17-037",
+      "meta_usage": 1.1,
+      "top_cut": 1.4,
+      "avg_copies": 2.3,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-108",
+      "meta_usage": 1.1,
+      "top_cut": 0.4,
+      "avg_copies": 3.2,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST24-02",
+      "meta_usage": 1.1,
+      "top_cut": 0.4,
+      "avg_copies": 3.4,
+      "growth": 1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST24-03",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 2.2,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST24-01",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": 1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT6-102",
+      "meta_usage": 1.1,
+      "top_cut": 1.2,
+      "avg_copies": 1.1,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-102",
+      "meta_usage": 1.1,
+      "top_cut": 1.0,
+      "avg_copies": 2.3,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT22-045",
+      "meta_usage": 1.1,
+      "top_cut": 0.6,
+      "avg_copies": 2.0,
+      "growth": 1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "AD1-007",
+      "meta_usage": 1.1,
+      "top_cut": 0.6,
+      "avg_copies": 2.8,
+      "growth": 1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "RB1-031",
+      "meta_usage": 1.1,
+      "top_cut": 0.6,
+      "avg_copies": 2.1,
+      "growth": 1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST23-10",
+      "meta_usage": 1.1,
+      "top_cut": 1.4,
+      "avg_copies": 1.7,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-029",
+      "meta_usage": 1.1,
+      "top_cut": 0.6,
+      "avg_copies": 2.2,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-094",
+      "meta_usage": 1.1,
+      "top_cut": 0.8,
+      "avg_copies": 2.0,
+      "growth": 1.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-069",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 3.4,
+      "growth": 3.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-044",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 2.8,
+      "growth": 3.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-042",
+      "meta_usage": 1.1,
+      "top_cut": 0.2,
+      "avg_copies": 3.1,
+      "growth": 3.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST17-07",
+      "meta_usage": 0.9,
+      "top_cut": 1.2,
+      "avg_copies": 1.4,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-010",
+      "meta_usage": 0.9,
+      "top_cut": 1.2,
+      "avg_copies": 1.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT12-043",
+      "meta_usage": 0.9,
+      "top_cut": 1.4,
+      "avg_copies": 1.1,
+      "growth": -1.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-040",
+      "meta_usage": 0.9,
+      "top_cut": 0.2,
+      "avg_copies": 2.1,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-092",
+      "meta_usage": 0.9,
+      "top_cut": 0.2,
+      "avg_copies": 2.1,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-002",
+      "meta_usage": 0.9,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT10-046",
+      "meta_usage": 0.9,
+      "top_cut": 0.4,
+      "avg_copies": 2.2,
+      "growth": -0.6,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT10-057",
+      "meta_usage": 0.9,
+      "top_cut": 0.6,
+      "avg_copies": 2.6,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX9-012",
+      "meta_usage": 0.9,
+      "top_cut": 0.6,
+      "avg_copies": 3.2,
+      "growth": 0.0,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "LM-033",
+      "meta_usage": 0.9,
+      "top_cut": 1.0,
+      "avg_copies": 2.2,
+      "growth": 0.6,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT20-021",
+      "meta_usage": 0.9,
+      "top_cut": 1.4,
+      "avg_copies": 1.6,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX7-013",
+      "meta_usage": 0.9,
+      "top_cut": 1.4,
+      "avg_copies": 1.5,
+      "growth": -1.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT6-010",
+      "meta_usage": 0.9,
+      "top_cut": 1.2,
+      "avg_copies": 1.1,
+      "growth": 0.0,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT11-001",
+      "meta_usage": 0.9,
+      "top_cut": 1.2,
+      "avg_copies": 1.0,
+      "growth": -0.6,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "EX11-069",
+      "meta_usage": 0.9,
+      "top_cut": 0.8,
+      "avg_copies": 2.8,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST17-03",
+      "meta_usage": 0.9,
+      "top_cut": 1.0,
+      "avg_copies": 1.1,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-059",
+      "meta_usage": 0.9,
+      "top_cut": 0.8,
+      "avg_copies": 1.6,
+      "growth": -0.6,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT4-111",
+      "meta_usage": 0.9,
+      "top_cut": 0.8,
+      "avg_copies": 1.0,
+      "growth": 0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-166",
+      "meta_usage": 0.9,
+      "top_cut": 1.0,
+      "avg_copies": 2.4,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-074",
+      "meta_usage": 0.9,
+      "top_cut": 1.0,
+      "avg_copies": 2.6,
+      "growth": 1.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-062",
+      "meta_usage": 0.9,
+      "top_cut": 1.0,
+      "avg_copies": 2.8,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-006",
+      "meta_usage": 0.9,
+      "top_cut": 0.8,
+      "avg_copies": 3.6,
+      "growth": 1.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "LM-028",
+      "meta_usage": 0.9,
+      "top_cut": 0.8,
+      "avg_copies": 1.5,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-027",
+      "meta_usage": 0.9,
+      "top_cut": 0.4,
+      "avg_copies": 3.1,
+      "growth": 0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST24-09",
+      "meta_usage": 0.9,
+      "top_cut": 0.2,
+      "avg_copies": 2.2,
+      "growth": 0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-040",
+      "meta_usage": 0.9,
+      "top_cut": 0.2,
+      "avg_copies": 2.6,
+      "growth": 3.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-005",
+      "meta_usage": 0.9,
+      "top_cut": 0.2,
+      "avg_copies": 2.9,
+      "growth": 3.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX12-001",
+      "meta_usage": 0.9,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": 3.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT15-008",
+      "meta_usage": 0.8,
+      "top_cut": 1.2,
+      "avg_copies": 3.4,
+      "growth": 0.2,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT21-051",
+      "meta_usage": 0.8,
+      "top_cut": 0.6,
+      "avg_copies": 1.1,
+      "growth": -1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST16-14",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 2.3,
+      "growth": 0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX2-004",
+      "meta_usage": 0.8,
+      "top_cut": 0.8,
+      "avg_copies": 1.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT13-008",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 1.6,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT13-015",
+      "meta_usage": 0.8,
+      "top_cut": 1.4,
+      "avg_copies": 1.7,
+      "growth": -1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX4-006",
+      "meta_usage": 0.8,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": -1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-040",
+      "meta_usage": 0.8,
+      "top_cut": 0.6,
+      "avg_copies": 2.9,
+      "growth": -1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT3-006",
+      "meta_usage": 0.8,
+      "top_cut": 0.6,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT22-094",
+      "meta_usage": 0.8,
+      "top_cut": 0.4,
+      "avg_copies": 2.9,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT22-099",
+      "meta_usage": 0.8,
+      "top_cut": 0.4,
+      "avg_copies": 3.1,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST12-12",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 1.9,
+      "growth": -0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT6-009",
+      "meta_usage": 0.8,
+      "top_cut": 1.2,
+      "avg_copies": 1.6,
+      "growth": -0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT8-084",
+      "meta_usage": 0.8,
+      "top_cut": 1.2,
+      "avg_copies": 1.4,
+      "growth": -0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT9-109",
+      "meta_usage": 0.8,
+      "top_cut": 0.6,
+      "avg_copies": 1.6,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX1-068",
+      "meta_usage": 0.8,
+      "top_cut": 0.8,
+      "avg_copies": 1.0,
+      "growth": 1.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-001",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-014",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 1.1,
+      "growth": -0.5,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "EX7-024",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 3.9,
+      "growth": -1.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "ST19-03",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 4.0,
+      "growth": -1.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX11-019",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 2.6,
+      "growth": -1.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "P-165",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 4.0,
+      "growth": -1.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX11-021",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 3.7,
+      "growth": -1.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX9-032",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 4.0,
+      "growth": -1.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX11-022",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 2.0,
+      "growth": -1.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX11-024",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 4.0,
+      "growth": -1.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX9-033",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 2.0,
+      "growth": -1.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX9-067",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 4.0,
+      "growth": -1.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "P-229",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 4.0,
+      "growth": -1.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX7-005",
+      "meta_usage": 0.8,
+      "top_cut": 1.2,
+      "avg_copies": 2.4,
+      "growth": -1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT20-060",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 1.9,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-039",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 1.4,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT6-006",
+      "meta_usage": 0.8,
+      "top_cut": 0.8,
+      "avg_copies": 4.0,
+      "growth": 1.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX6-018",
+      "meta_usage": 0.8,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX6-054",
+      "meta_usage": 0.8,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX5-063",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 2.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-038",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-025",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 3.9,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-042",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-030",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 3.6,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-031",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-052",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 2.6,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-034",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 3.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-083",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 3.7,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-181",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 2.9,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-096",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 1.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-033",
+      "meta_usage": 0.8,
+      "top_cut": 0.6,
+      "avg_copies": 1.6,
+      "growth": -1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "LM-016",
+      "meta_usage": 0.8,
+      "top_cut": 0.4,
+      "avg_copies": 2.7,
+      "growth": 0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX5-015",
+      "meta_usage": 0.8,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": 2.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX5-018",
+      "meta_usage": 0.8,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": 2.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX5-023",
+      "meta_usage": 0.8,
+      "top_cut": 0.4,
+      "avg_copies": 3.0,
+      "growth": 2.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST10-04",
+      "meta_usage": 0.8,
+      "top_cut": 0.8,
+      "avg_copies": 3.7,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-031",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 3.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-067",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 3.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-187",
+      "meta_usage": 0.8,
+      "top_cut": 1.0,
+      "avg_copies": 2.9,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "RB1-010",
+      "meta_usage": 0.8,
+      "top_cut": 0.2,
+      "avg_copies": 2.1,
+      "growth": 2.7,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST17-02",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 3.2,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX4-032",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 2.7,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-038",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 2.2,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT8-039",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 3.5,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST17-06",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 4.0,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-101",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 4.0,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST17-08",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 1.2,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-085",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 2.3,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST17-11",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 2.2,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST17-01",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 3.2,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX8-009",
+      "meta_usage": 0.7,
+      "top_cut": 0.4,
+      "avg_copies": 3.2,
+      "growth": -0.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-097",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 1.2,
+      "growth": -0.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT8-001",
+      "meta_usage": 0.7,
+      "top_cut": 1.0,
+      "avg_copies": 4.0,
+      "growth": -0.3,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "AD1-001",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 4.0,
+      "growth": 0.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "EX9-019",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 4.0,
+      "growth": 0.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "AD1-009",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 3.7,
+      "growth": 0.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "AD1-012",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 2.8,
+      "growth": 0.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "EX9-021",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 2.7,
+      "growth": 0.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "EX4-003",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 3.8,
+      "growth": 0.3,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT21-011",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 2.7,
+      "growth": -0.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT22-042",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 1.2,
+      "growth": -0.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX11-061",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 1.2,
+      "growth": -0.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX7-066",
+      "meta_usage": 0.7,
+      "top_cut": 1.0,
+      "avg_copies": 1.7,
+      "growth": -0.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-196",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 2.3,
+      "growth": -0.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT25-097",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 1.8,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-023",
+      "meta_usage": 0.7,
+      "top_cut": 0.4,
+      "avg_copies": 3.7,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST24-11",
+      "meta_usage": 0.7,
+      "top_cut": 0.2,
+      "avg_copies": 2.2,
+      "growth": 1.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT2-041",
+      "meta_usage": 0.7,
+      "top_cut": 0.4,
+      "avg_copies": 3.0,
+      "growth": 1.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-235",
+      "meta_usage": 0.7,
+      "top_cut": 0.0,
+      "avg_copies": 3.0,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-020",
+      "meta_usage": 0.7,
+      "top_cut": 0.2,
+      "avg_copies": 2.3,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT13-049",
+      "meta_usage": 0.7,
+      "top_cut": 0.4,
+      "avg_copies": 3.5,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT13-111",
+      "meta_usage": 0.7,
+      "top_cut": 0.2,
+      "avg_copies": 1.5,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST14-12",
+      "meta_usage": 0.7,
+      "top_cut": 0.0,
+      "avg_copies": 2.2,
+      "growth": -0.9,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "AD1-018",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 2.0,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX1-014",
+      "meta_usage": 0.7,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": -0.9,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "AD1-025",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 1.5,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-200",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 1.2,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-063",
+      "meta_usage": 0.7,
+      "top_cut": 0.2,
+      "avg_copies": 1.3,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST18-04",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 4.0,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-047",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 2.7,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-028",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 3.5,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-032",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 3.2,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-035",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 2.7,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-072",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 3.0,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-062",
+      "meta_usage": 0.7,
+      "top_cut": 0.2,
+      "avg_copies": 1.8,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "RB1-032",
+      "meta_usage": 0.7,
+      "top_cut": 0.4,
+      "avg_copies": 1.7,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX7-064",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 2.0,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-021",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 4.0,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-038",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 2.0,
+      "growth": 1.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-045",
+      "meta_usage": 0.7,
+      "top_cut": 0.2,
+      "avg_copies": 2.3,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-004",
+      "meta_usage": 0.7,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT12-009",
+      "meta_usage": 0.7,
+      "top_cut": 0.4,
+      "avg_copies": 2.7,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-047",
+      "meta_usage": 0.7,
+      "top_cut": 0.6,
+      "avg_copies": 1.0,
+      "growth": -0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX6-020",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 2.2,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT11-042",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 2.0,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT11-083",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 1.8,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST10-12",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 1.0,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT11-094",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 2.8,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX6-074",
+      "meta_usage": 0.7,
+      "top_cut": 0.8,
+      "avg_copies": 2.5,
+      "growth": 0.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-018",
+      "meta_usage": 0.7,
+      "top_cut": 1.2,
+      "avg_copies": 1.3,
+      "growth": 1.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-071",
+      "meta_usage": 0.7,
+      "top_cut": 0.4,
+      "avg_copies": 3.3,
+      "growth": 2.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "LM-046",
+      "meta_usage": 0.7,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": 2.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-241",
+      "meta_usage": 0.7,
+      "top_cut": 1.0,
+      "avg_copies": 1.7,
+      "growth": 2.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX2-067",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 1.0,
+      "growth": -0.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX2-045",
+      "meta_usage": 0.6,
+      "top_cut": 0.8,
+      "avg_copies": 2.0,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-044",
+      "meta_usage": 0.6,
+      "top_cut": 0.8,
+      "avg_copies": 2.8,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-093",
+      "meta_usage": 0.6,
+      "top_cut": 0.8,
+      "avg_copies": 1.6,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-092",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 1.2,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX2-008",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 2.8,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX8-012",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST7-05",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 2.4,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-009",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 2.4,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT12-016",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 2.8,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "AD1-003",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 2.6,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "AD1-008",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 3.0,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX8-073",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 2.4,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT17-080",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 2.6,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX2-001",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-062",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 1.2,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT15-006",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-061",
+      "meta_usage": 0.6,
+      "top_cut": 0.8,
+      "avg_copies": 2.6,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-093",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 2.0,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT3-054",
+      "meta_usage": 0.6,
+      "top_cut": 0.0,
+      "avg_copies": 1.0,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX4-038",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 4.0,
+      "growth": 0.5,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "EX4-039",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 4.0,
+      "growth": 0.5,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT17-027",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 1.2,
+      "growth": -0.1,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "LM-049",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 2.8,
+      "growth": 0.5,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "BT21-102",
+      "meta_usage": 0.6,
+      "top_cut": 0.8,
+      "avg_copies": 2.0,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-090",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 2.2,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-025",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 1.2,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX9-024",
+      "meta_usage": 0.6,
+      "top_cut": 0.8,
+      "avg_copies": 1.4,
+      "growth": -0.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX7-043",
+      "meta_usage": 0.6,
+      "top_cut": 0.8,
+      "avg_copies": 2.0,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX8-015",
+      "meta_usage": 0.6,
+      "top_cut": 0.2,
+      "avg_copies": 2.0,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-058",
+      "meta_usage": 0.6,
+      "top_cut": 0.8,
+      "avg_copies": 1.2,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-040",
+      "meta_usage": 0.6,
+      "top_cut": 0.2,
+      "avg_copies": 2.8,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT12-057",
+      "meta_usage": 0.6,
+      "top_cut": 0.2,
+      "avg_copies": 1.0,
+      "growth": -0.1,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "ST24-08",
+      "meta_usage": 0.6,
+      "top_cut": 0.2,
+      "avg_copies": 2.4,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-070",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 2.2,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT13-102",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 2.4,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT10-080",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 1.0,
+      "growth": 1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-013",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-034",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 3.2,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-052",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 3.6,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-082",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 1.4,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "AD1-017",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 2.4,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-086",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 3.4,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-043",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 2.4,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-060",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-067",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-071",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-004",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-053",
+      "meta_usage": 0.6,
+      "top_cut": 0.2,
+      "avg_copies": 1.4,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-084",
+      "meta_usage": 0.6,
+      "top_cut": 0.2,
+      "avg_copies": 1.4,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-003",
+      "meta_usage": 0.6,
+      "top_cut": 0.2,
+      "avg_copies": 1.6,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX7-031",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 3.4,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT20-101",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 1.0,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX7-004",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 4.0,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-077",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-025",
+      "meta_usage": 0.6,
+      "top_cut": 0.2,
+      "avg_copies": 1.4,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT9-020",
+      "meta_usage": 0.6,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": 1.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT8-108",
+      "meta_usage": 0.6,
+      "top_cut": 0.0,
+      "avg_copies": 2.4,
+      "growth": -0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-048",
+      "meta_usage": 0.6,
+      "top_cut": 0.2,
+      "avg_copies": 1.6,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX6-022",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 1.0,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX6-029",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 2.0,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-190",
+      "meta_usage": 0.6,
+      "top_cut": 1.0,
+      "avg_copies": 1.4,
+      "growth": 1.7,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT17-018",
+      "meta_usage": 0.6,
+      "top_cut": 0.6,
+      "avg_copies": 1.2,
+      "growth": -0.1,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT20-057",
+      "meta_usage": 0.6,
+      "top_cut": 0.8,
+      "avg_copies": 3.8,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT20-059",
+      "meta_usage": 0.6,
+      "top_cut": 0.8,
+      "avg_copies": 2.8,
+      "growth": 0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT10-077",
+      "meta_usage": 0.6,
+      "top_cut": 0.2,
+      "avg_copies": 3.0,
+      "growth": 2.4,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-118",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-064",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-068",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 2.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX9-058",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 3.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-070",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 3.8,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-015",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 1.8,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-073",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-065",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 1.5,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-019",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-220",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 3.5,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-075",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 2.5,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-101",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-055",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 3.2,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-193",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-042",
+      "meta_usage": 0.5,
+      "top_cut": 0.6,
+      "avg_copies": 1.2,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-068",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT6-015",
+      "meta_usage": 0.5,
+      "top_cut": 0.8,
+      "avg_copies": 2.0,
+      "growth": -0.6,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT10-016",
+      "meta_usage": 0.5,
+      "top_cut": 0.8,
+      "avg_copies": 2.0,
+      "growth": -0.6,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT23-099",
+      "meta_usage": 0.5,
+      "top_cut": 0.8,
+      "avg_copies": 1.5,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT11-002",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 3.5,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX4-060",
+      "meta_usage": 0.5,
+      "top_cut": 0.6,
+      "avg_copies": 1.5,
+      "growth": 0.0,
+      "dominance": 3.1
+    },
+    {
+      "card_id": "ST20-14",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 2.8,
+      "growth": -0.6,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT23-054",
+      "meta_usage": 0.5,
+      "top_cut": 0.8,
+      "avg_copies": 3.5,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "LM-034",
+      "meta_usage": 0.5,
+      "top_cut": 0.8,
+      "avg_copies": 2.5,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-098",
+      "meta_usage": 0.5,
+      "top_cut": 0.6,
+      "avg_copies": 2.8,
+      "growth": 1.3,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX9-018",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 2.2,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-076",
+      "meta_usage": 0.5,
+      "top_cut": 0.6,
+      "avg_copies": 2.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-002",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-089",
+      "meta_usage": 0.5,
+      "top_cut": 0.6,
+      "avg_copies": 2.0,
+      "growth": 0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT3-077",
+      "meta_usage": 0.5,
+      "top_cut": 0.0,
+      "avg_copies": 2.2,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-211",
+      "meta_usage": 0.5,
+      "top_cut": 0.6,
+      "avg_copies": 1.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST16-03",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 3.5,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT7-073",
+      "meta_usage": 0.5,
+      "top_cut": 0.0,
+      "avg_copies": 1.2,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-094",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 2.8,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-100",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 2.0,
+      "growth": 0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-021",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 1.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-044",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 3.5,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST22-13",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 3.8,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT22-020",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 2.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT10-085",
+      "meta_usage": 0.5,
+      "top_cut": 0.6,
+      "avg_copies": 1.0,
+      "growth": -0.6,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT10-060",
+      "meta_usage": 0.5,
+      "top_cut": 0.8,
+      "avg_copies": 2.0,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-088",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 1.0,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "LM-047",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 2.2,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-028",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 1.2,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT6-108",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 3.0,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-059",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 1.2,
+      "growth": 0.0,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT11-033",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT13-033",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 2.5,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT4-093",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 1.2,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-096",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 1.5,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "AD1-014",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 1.5,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-045",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 2.8,
+      "growth": 0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT7-076",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 1.8,
+      "growth": 0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-230",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 2.0,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-074",
+      "meta_usage": 0.5,
+      "top_cut": 0.4,
+      "avg_copies": 1.8,
+      "growth": 0.6,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT5-033",
+      "meta_usage": 0.5,
+      "top_cut": 0.6,
+      "avg_copies": 1.0,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT9-082",
+      "meta_usage": 0.5,
+      "top_cut": 0.6,
+      "avg_copies": 1.0,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "LM-035",
+      "meta_usage": 0.5,
+      "top_cut": 0.6,
+      "avg_copies": 1.8,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT14-003",
+      "meta_usage": 0.5,
+      "top_cut": 0.6,
+      "avg_copies": 4.0,
+      "growth": 0.0,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-053",
+      "meta_usage": 0.5,
+      "top_cut": 0.2,
+      "avg_copies": 1.2,
+      "growth": -0.6,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-047",
+      "meta_usage": 0.5,
+      "top_cut": 0.6,
+      "avg_copies": 1.0,
+      "growth": 1.3,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT11-089",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.3,
+      "growth": 0.2,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX5-016",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "BT19-080",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-013",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-205",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "LM-053",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX3-045",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 1.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT12-030",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT7-023",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.7,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-032",
+      "meta_usage": 0.4,
+      "top_cut": 0.6,
+      "avg_copies": 4.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-017",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST17-13",
+      "meta_usage": 0.4,
+      "top_cut": 0.6,
+      "avg_copies": 4.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-023",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT4-109",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST20-15",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT9-098",
+      "meta_usage": 0.4,
+      "top_cut": 0.6,
+      "avg_copies": 1.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-002",
+      "meta_usage": 0.4,
+      "top_cut": 0.6,
+      "avg_copies": 4.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-007",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 3.3,
+      "growth": 0.8,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX9-017",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 3.7,
+      "growth": 0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX9-064",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX9-011",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX9-073",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-055",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX7-040",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-028",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-092",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT3-096",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT15-092",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 3.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX2-003",
+      "meta_usage": 0.4,
+      "top_cut": 0.6,
+      "avg_copies": 1.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX3-057",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 1.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-099",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX9-046",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST13-08",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX9-048",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 10.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX9-047",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX9-054",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT11-068",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT22-060",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-076",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 3.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX9-055",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 3.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX9-057",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 3.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST15-14",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT14-088",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX9-005",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-068",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-046",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-069",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 3.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX8-059",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-073",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 3.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-049",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 3.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT14-077",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-009",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-078",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 3.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-219",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 3.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-096",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 3.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX10-005",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT8-071",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 1.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-079",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-078",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-072",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 2.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT7-091",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT17-094",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 1.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-006",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 2.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT4-115",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-101",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.7,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-094",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 3.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-044",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-043",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 2.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-133",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT15-020",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 3.3,
+      "growth": 0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT15-083",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-050",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 1.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-212",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-019",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": 0.2,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "EX9-066",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.0,
+      "growth": 0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-079",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT24-099",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX6-058",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 3.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT15-081",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 1.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT15-100",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 1.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX2-071",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 3.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-017",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-013",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-031",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-023",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-024",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-018",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT22-028",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 3.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-058",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT19-082",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT22-096",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT16-020",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 3.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX4-017",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT13-029",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT13-031",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.7,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT2-047",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "AD1-004",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST21-13",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-210",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": 0.2,
+      "dominance": 1.5
+    },
+    {
+      "card_id": "P-041",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 4.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT3-098",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT7-081",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.3,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "P-036",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.7,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX11-026",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 2.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT15-038",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT18-071",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX4-007",
+      "meta_usage": 0.4,
+      "top_cut": 0.6,
+      "avg_copies": 1.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-020",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "EX8-064",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.7,
+      "growth": 0.8,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT25-017",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 1.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT21-065",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT20-063",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-061",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.7,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT20-068",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-064",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 3.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT20-072",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-065",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 3.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT20-079",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-071",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT20-088",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 3.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-087",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.7,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-098",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 2.3,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT20-006",
+      "meta_usage": 0.4,
+      "top_cut": 0.2,
+      "avg_copies": 4.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "ST12-03",
+      "meta_usage": 0.4,
+      "top_cut": 0.4,
+      "avg_copies": 1.0,
+      "growth": 0.2,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT23-014",
+      "meta_usage": 0.4,
+      "top_cut": 0.6,
+      "avg_copies": 2.0,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "BT22-012",
+      "meta_usage": 0.4,
+      "top_cut": 0.0,
+      "avg_copies": 1.7,
+      "growth": -0.5,
+      "dominance": 0.0
+    },
+    {
+      "card_id": "LM-052",
+      "meta_usage": 0.4,
+      "top_cut": 0.6,
+      "avg_copies": 2.7,
+      "growth": 0.8,
+      "dominance": 0.0
     }
   ],
   "source": "Limitless TCG (play.limitlesstcg.com), game=DCG"

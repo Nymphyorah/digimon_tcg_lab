@@ -2,17 +2,15 @@ from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import QWidget, QVBoxLayout, QPushButton, QLabel, QFrame, QButtonGroup
 
 NAV_ITEMS = [
-    ("dashboard", "🏠", "Dashboard"),
+    ("overview", "🏠", "Overview"),
+    ("meta", "📊", "Meta Lab"),
+    ("collection", "🃏", "Collection"),
+    ("analysis", "🔎", "Analysis"),
     ("ban_list", "🛑", "Ban List"),
-    ("collection", "🃏", "Coleção"),
-    ("meta", "📊", "Meta"),
-    ("analysis", "🔎", "Análise"),
-    ("history", "📜", "Histórico"),
+    ("history", "📜", "History"),
 ]
 
-FOOTER_ITEMS = [
-    ("settings", "⚙", "Configurações"),
-]
+FOOTER_ITEMS = []
 
 
 class Sidebar(QWidget):
@@ -79,7 +77,7 @@ class Sidebar(QWidget):
         self.layout_.addWidget(collapse_btn)
         self.collapse_btn = collapse_btn
 
-        self.buttons["dashboard"].setChecked(True)
+        self.buttons["overview"].setChecked(True)
 
     def _make_button(self, icon, label):
         btn = QPushButton(f"  {icon}   {label}")

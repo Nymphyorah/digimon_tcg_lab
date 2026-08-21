@@ -1,12 +1,18 @@
+"""Single, reusable card-detail dialog used everywhere the app needs to show
+a card plus its real competitive-presence data and let the user set (or
+clear) its restriction tier.
+
+Shows Meta Usage / Top Cut / Dominance exactly as collected — no aggregate
+score, no suggested restriction. Language stays neutral ('Strong Meta
+Usage', not 'should be banned'): the decision is always the user's."""
 from PySide6.QtCore import Qt, QSize, Signal
 from PySide6.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QFrame, QWidget, QScrollArea
 )
 
 from app.components.image_loader import load_card_pixmap
-from app.components.ban_score_bar import BanScoreGauge, FactorBar
-from core.ban_score import compute_ban_score, score_breakdown, risk_for_score
-from core.banlist_manager import RESTRICTION_META
+from app.components.metric_bar import MetricBar, INDICATOR_FIELDS, presence_notes
+from core.banlist_manager import RESTRICTION_META, RESTRICTIONS
 
 
 class CardDetailDialog(QDialog):
@@ -21,100 +27,98 @@ class CardDetailDialog(QDialog):
         self.settings = settings_manager
 
         self.setWindowTitle(f'{self.card_id} · {card.get("name","")}')
-        self.setMinimumSize(680, 560)
+        self.setMinimumSize(760, 620)
         self.setStyleSheet("QDialog { background-color: #070B12; }")
 
         root = QHBoxLayout(self)
-        root.setContentsMargins(20, 20, 20, 20)
-        root.setSpacing(20)
+        root.setContentsMargins(22, 22, 22, 22)
+        root.setSpacing(22)
 
-        # Left: image
+        # ---- Left: card art + identity ----
         left = QVBoxLayout()
+        left.setSpacing(10)
         img = QLabel()
         img.setPixmap(load_card_pixmap(self.card_id, QSize(240, 336)))
         left.addWidget(img)
+
+        id_label = QLabel(self.card_id)
+        id_label.setStyleSheet("color: #2388FF; font-weight: 800; font-size: 13px;")
+        left.addWidget(id_label)
+        name_label = QLabel(card.get("name", ""))
+        name_label.setStyleSheet("font-size: 19px; font-weight: 800;")
+        name_label.setWordWrap(True)
+        left.addWidget(name_label)
+        meta_label = QLabel(
+            f'{card.get("color","")} · Lv.{card.get("level") or "-"} · '
+            f'{card.get("type","")} · {card.get("rarity","")} · {card.get("set","")}'
+        )
+        meta_label.setStyleSheet("color: #64748B; font-size: 11px;")
+        meta_label.setWordWrap(True)
+        left.addWidget(meta_label)
         left.addStretch()
         root.addLayout(left)
 
-        # Right: scrollable details
+        # ---- Right: scrollable indicators + restriction controls ----
         scroll = QScrollArea()
         scroll.setWidgetResizable(True)
         scroll.setFrameShape(QFrame.NoFrame)
         right_content = QWidget()
         right = QVBoxLayout(right_content)
-        right.setSpacing(14)
+        right.setSpacing(16)
 
-        id_label = QLabel(self.card_id)
-        id_label.setStyleSheet("color: #2388FF; font-weight: 800; font-size: 14px;")
-        right.addWidget(id_label)
+        candidate = self.repo.ban_candidate(self.card_id)
+        if candidate:
+            indicators_title = QLabel("COMPETITIVE PRESENCE")
+            indicators_title.setObjectName("sectionLabel")
+            right.addWidget(indicators_title)
 
-        name_label = QLabel(card.get("name", ""))
-        name_label.setStyleSheet("font-size: 22px; font-weight: 800;")
-        name_label.setWordWrap(True)
-        right.addWidget(name_label)
+            for key, label in INDICATOR_FIELDS:
+                right.addWidget(MetricBar(label, candidate.get(key, 0.0)))
 
-        info_grid = QHBoxLayout()
-        for key, label in [("color", "Cor"), ("level", "Level"), ("rarity", "Raridade"), ("set", "Set")]:
-            box = QVBoxLayout()
-            lbl = QLabel(label.upper())
-            lbl.setStyleSheet("color: #64748B; font-size: 10px; font-weight: 700;")
-            val = QLabel(str(card.get(key) or "-"))
-            val.setStyleSheet("font-size: 14px; font-weight: 700;")
-            box.addWidget(lbl)
-            box.addWidget(val)
-            info_grid.addLayout(box)
-        right.addLayout(info_grid)
+            notes = presence_notes(candidate)
+            if notes:
+                notes_row = QHBoxLayout()
+                notes_row.setSpacing(6)
+                for note in notes:
+                    chip = QLabel(note)
+                    chip.setObjectName("presenceChip")
+                    notes_row.addWidget(chip)
+                notes_row.addStretch()
+                right.addLayout(notes_row)
+        else:
+            no_data = QLabel("Sem dados de meta competitivo para esta carta.")
+            no_data.setObjectName("sectionHint")
+            right.addWidget(no_data)
 
         divider = QFrame()
         divider.setObjectName("sidebarDivider")
         divider.setFixedHeight(1)
         right.addWidget(divider)
 
-        candidate = self.repo.ban_candidate(self.card_id)
-        if candidate:
-            meta_grid = QHBoxLayout()
-            for key, label, suffix in [
-                ("meta_usage", "Meta Usage", "%"),
-                ("top_cut", "Top Cut", "%"),
-                ("avg_copies", "Average Copies", ""),
-            ]:
-                box = QVBoxLayout()
-                lbl = QLabel(label.upper())
-                lbl.setStyleSheet("color: #64748B; font-size: 10px; font-weight: 700;")
-                val = QLabel(f"{candidate.get(key, 0)}{suffix}")
-                val.setStyleSheet("font-size: 16px; font-weight: 800; color: #F8FAFC;")
-                box.addWidget(lbl)
-                box.addWidget(val)
-                meta_grid.addLayout(box)
-            right.addLayout(meta_grid)
-
-            weights = self.settings.get("ban_score_weights")
-            score = compute_ban_score(candidate, weights)
-            label, icon = risk_for_score(score)
-            gauge = BanScoreGauge(score, label, icon)
-            right.addWidget(gauge)
-
-            for f_label, value, weight in score_breakdown(candidate, weights):
-                right.addWidget(FactorBar(f_label, value, weight))
-        else:
-            no_data = QLabel("Sem dados de meta para esta carta.")
-            no_data.setStyleSheet("color: #64748B;")
-            right.addWidget(no_data)
-
-        right.addWidget(divider if False else QFrame())
+        # ---- Restriction selector ----
+        restriction_title = QLabel("RESTRICTION")
+        restriction_title.setObjectName("sectionLabel")
+        right.addWidget(restriction_title)
 
         current = self.banlist.restriction_of(self.card_id)
-        status_label = QLabel()
-        self._update_status_label(status_label, current)
-        right.addWidget(status_label)
-        self.status_label = status_label
+        self.status_label = QLabel()
+        self._update_status_label(current)
+        right.addWidget(self.status_label)
 
         actions = QHBoxLayout()
         actions.setSpacing(8)
         self.action_buttons = {}
-        for restriction in ["BAN", "LIMIT_1", "LIMIT_2", "LIMIT_3"]:
+
+        unlimited_btn = QPushButton("Unlimited")
+        unlimited_btn.setCheckable(True)
+        unlimited_btn.setChecked(current is None)
+        unlimited_btn.clicked.connect(self._remove_restriction)
+        actions.addWidget(unlimited_btn)
+        self.unlimited_btn = unlimited_btn
+
+        for restriction in ["LIMIT_3", "LIMIT_2", "LIMIT_1", "BAN"]:
             meta = RESTRICTION_META[restriction]
-            btn = QPushButton(f'{meta["icon"]} {meta["label"] if restriction=="BAN" else "Limitar a " + str(meta["max_copies"])}')
+            btn = QPushButton(f'{meta["icon"]} {meta["label"]}')
             btn.setCheckable(True)
             btn.setChecked(current == restriction)
             btn.clicked.connect(lambda _, r=restriction: self._apply_restriction(r))
@@ -122,38 +126,39 @@ class CardDetailDialog(QDialog):
             self.action_buttons[restriction] = btn
         right.addLayout(actions)
 
-        remove_btn = QPushButton("Remover da Ban List")
-        remove_btn.setObjectName("dangerButton")
-        remove_btn.setVisible(current is not None)
-        remove_btn.clicked.connect(self._remove_restriction)
-        right.addWidget(remove_btn)
-        self.remove_btn = remove_btn
+        note = QLabel(
+            "A decisão de restringir uma carta é sempre sua (ou da sua comunidade) — "
+            "esta tela mostra os dados reais, não uma recomendação."
+        )
+        note.setObjectName("sectionHint")
+        note.setWordWrap(True)
+        right.addWidget(note)
 
         right.addStretch()
         scroll.setWidget(right_content)
         root.addWidget(scroll, 1)
 
-    def _update_status_label(self, label: QLabel, restriction):
+    def _update_status_label(self, restriction):
         if restriction:
             meta = RESTRICTION_META[restriction]
-            label.setText(f'Status atual: {meta["icon"]} {meta["label"]}')
-            label.setStyleSheet(f"color: {meta['color']}; font-weight: 700;")
+            self.status_label.setText(f'Status atual: {meta["icon"]} {meta["label"]}')
+            self.status_label.setStyleSheet(f"color: {meta['color']}; font-weight: 700; font-size: 12px;")
         else:
-            label.setText("Status atual: Sem restrição")
-            label.setStyleSheet("color: #64748B; font-weight: 700;")
+            self.status_label.setText("Status atual: Unlimited (sem restrição)")
+            self.status_label.setStyleSheet("color: #64748B; font-weight: 700; font-size: 12px;")
 
     def _apply_restriction(self, restriction):
-        self.banlist.set_restriction(self.card_id, restriction, reason="Definido manualmente")
+        self.banlist.set_restriction(self.card_id, restriction, reason="Definido via análise de carta")
+        self.unlimited_btn.setChecked(False)
         for r, btn in self.action_buttons.items():
             btn.setChecked(r == restriction)
-        self._update_status_label(self.status_label, restriction)
-        self.remove_btn.setVisible(True)
+        self._update_status_label(restriction)
         self.restriction_changed.emit()
 
     def _remove_restriction(self):
         self.banlist.remove(self.card_id)
+        self.unlimited_btn.setChecked(True)
         for btn in self.action_buttons.values():
             btn.setChecked(False)
-        self._update_status_label(self.status_label, None)
-        self.remove_btn.setVisible(False)
+        self._update_status_label(None)
         self.restriction_changed.emit()

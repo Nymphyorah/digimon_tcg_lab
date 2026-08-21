@@ -2,13 +2,12 @@ from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QLabel
 
 PAGE_TITLES = {
-    "dashboard": ("Dashboard", "Visão geral do meta e da sua Ban List"),
-    "ban_list": ("Ban List", "Gerencie sua lista de banimento pessoal"),
-    "collection": ("Coleção", "Sua coleção e Deck Builder — monte decks com o que você possui, seguindo as regras oficiais e sua Ban List"),
-    "meta": ("Meta Analysis", "Análise do meta competitivo"),
-    "analysis": ("Análise", "Ban Risk Analysis e detecção de engines"),
-    "history": ("Histórico", "Linha do tempo das alterações na Ban List"),
-    "settings": ("Configurações", "Dados, formato e preferências"),
+    "overview": ("Overview", "Visão geral factual do meta e da sua Ban List"),
+    "meta": ("Meta Lab", "Análise do meta competitivo"),
+    "collection": ("Collection", "Sua coleção e Deck Builder — monte decks com o que você possui, seguindo as regras oficiais e sua Ban List"),
+    "analysis": ("Analysis", "Meta Usage, Top Cut e Dominance por carta — dados reais, sem pontuação artificial"),
+    "ban_list": ("Ban List", "Gerencie sua lista de restrição pessoal"),
+    "history": ("History", "Linha do tempo das alterações na Ban List"),
 }
 
 

@@ -6,7 +6,8 @@ from PySide6.QtWidgets import (
 from app.components.ban_column import BanColumn
 from app.components.card_widget import CardWidget
 from app.components.card_detail_dialog import CardDetailDialog
-from core.banlist_manager import RESTRICTIONS
+from app.components.card_picker_dialog import CardPickerDialog
+from core.banlist_manager import RESTRICTIONS, RESTRICTION_META
 
 
 class BanListPage(QWidget):
@@ -59,6 +60,7 @@ class BanListPage(QWidget):
         for restriction in RESTRICTIONS:
             col = BanColumn(restriction)
             col.card_dropped.connect(self._on_card_dropped)
+            col.add_card_requested.connect(self._on_add_card_requested)
             self.columns[restriction] = col
             columns_row.addWidget(col, 1)
         outer.addLayout(columns_row, 1)
@@ -94,6 +96,13 @@ class BanListPage(QWidget):
     def _on_card_dropped(self, card_id, restriction):
         self.banlist.set_restriction(card_id, restriction, reason="Movido via drag & drop")
         self.refresh()
+
+    def _on_add_card_requested(self, restriction):
+        meta = RESTRICTION_META[restriction]
+        dlg = CardPickerDialog(self.repo, title=f'Add Card · {meta["label"]}', parent=self)
+        if dlg.exec() == CardPickerDialog.DialogCode.Accepted and dlg.selected_card_id:
+            self.banlist.set_restriction(dlg.selected_card_id, restriction, reason="Adicionado via + Add Card")
+            self.refresh()
 
     def _open_card_detail(self, card_id):
         card = self.repo.card(card_id)

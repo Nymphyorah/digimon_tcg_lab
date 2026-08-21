@@ -2,13 +2,11 @@
 import json
 
 from core.paths import USER_SETTINGS_PATH
-from core.ban_score import DEFAULT_WEIGHTS
 
 DEFAULTS = {
     "format": "English",
     "period_days": 30,
     "region": "Todas",
-    "ban_score_weights": DEFAULT_WEIGHTS,
     "sidebar_collapsed": False,
     "first_run_complete": False,
 }

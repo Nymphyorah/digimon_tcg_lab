@@ -105,6 +105,11 @@ QFrame#surface:hover, QWidget#surfaceHoverable:hover {
     background-color: #12202E;
 }
 
+QFrame#surface[class="cardWidget"]:hover {
+    background-color: #12202E;
+    border: 1px solid #2388FF;
+}
+
 QFrame#surfaceRaised, QWidget#surfaceRaised {
     background-color: #101B29;
     border: 1px solid #22374C;
@@ -136,59 +141,14 @@ QFrame#surfaceRaised, QWidget#surfaceRaised {
     font-size: 10.5px;
 }
 
-/* ---------- Risk / status chips ---------- */
-#riskChipCritical {
-    background-color: rgba(239, 68, 68, 0.14);
-    color: #F87171;
-    border: 1px solid rgba(239, 68, 68, 0.35);
-    border-radius: 999px;
-    font-size: 10.5px;
-    font-weight: 800;
-    padding: 3px 10px;
-}
-#riskChipHigh {
-    background-color: rgba(249, 115, 22, 0.14);
-    color: #FB923C;
-    border: 1px solid rgba(249, 115, 22, 0.35);
-    border-radius: 999px;
-    font-size: 10.5px;
-    font-weight: 800;
-    padding: 3px 10px;
-}
-#riskChipModerate {
-    background-color: rgba(234, 179, 8, 0.14);
-    color: #FACC15;
-    border: 1px solid rgba(234, 179, 8, 0.35);
-    border-radius: 999px;
-    font-size: 10.5px;
-    font-weight: 800;
-    padding: 3px 10px;
-}
-#riskChipLow {
-    background-color: rgba(35, 136, 255, 0.14);
+/* ---------- Presence chips (neutral — Meta Usage / Top Cut / Dominance) ---------- */
+#presenceChip {
+    background-color: rgba(35, 136, 255, 0.12);
     color: #5EA8FF;
-    border: 1px solid rgba(35, 136, 255, 0.35);
+    border: 1px solid rgba(35, 136, 255, 0.30);
     border-radius: 999px;
     font-size: 10.5px;
-    font-weight: 800;
-    padding: 3px 10px;
-}
-#riskChipNormal {
-    background-color: rgba(148, 163, 184, 0.12);
-    color: #94A3B8;
-    border: 1px solid rgba(148, 163, 184, 0.28);
-    border-radius: 999px;
-    font-size: 10.5px;
-    font-weight: 800;
-    padding: 3px 10px;
-}
-#riskChipHealthy {
-    background-color: rgba(34, 197, 94, 0.14);
-    color: #4ADE80;
-    border: 1px solid rgba(34, 197, 94, 0.35);
-    border-radius: 999px;
-    font-size: 10.5px;
-    font-weight: 800;
+    font-weight: 700;
     padding: 3px 10px;
 }
 

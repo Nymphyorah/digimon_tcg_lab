@@ -7,12 +7,14 @@ from PySide6.QtWidgets import (
 )
 from PySide6.QtCore import QDate
 
+from app.components.metric_bar import MetricInline, INDICATOR_FIELDS
 from core.banlist_manager import RESTRICTION_META
 
 RESTRICTION_TIMELINE_META = {
     **RESTRICTION_META,
     "REMOVED": {"label": "Removido da Ban List", "color": "#94A3B8", "icon": "⚪", "max_copies": None},
 }
+UNLIMITED_LABEL = "Unlimited"
 
 
 class HistoryPage(QWidget):
@@ -124,7 +126,7 @@ class HistoryPage(QWidget):
             return
 
         last_date = None
-        for entry in entries:
+        for i, entry in enumerate(entries):
             date_only = entry["date"].split(" ")[0]
             if date_only != last_date:
                 date_label = QLabel(self._format_date(date_only))
@@ -153,6 +155,25 @@ class HistoryPage(QWidget):
             top.addWidget(status)
             row_layout.addLayout(top)
 
+            # "From -> To": the prior state is derived from the next-older
+            # real history row for this same card — no invented history,
+            # just reading the chronological record already on disk.
+            prior_restriction = self._prior_restriction(entries, i, entry["card_id"])
+            from_label = RESTRICTION_META.get(prior_restriction, {}).get("label", UNLIMITED_LABEL)
+            to_label = RESTRICTION_META.get(entry["restriction"], {}).get("label", UNLIMITED_LABEL)
+            transition = QLabel(f"{from_label} → {to_label}")
+            transition.setStyleSheet("color: #94A3B8; font-size: 11px; font-weight: 600;")
+            row_layout.addWidget(transition)
+
+            candidate = self.repo.ban_candidate(entry["card_id"])
+            if candidate:
+                indicators_row = QHBoxLayout()
+                indicators_row.setSpacing(14)
+                for key, label in INDICATOR_FIELDS:
+                    indicators_row.addWidget(MetricInline(label, candidate.get(key, 0.0)))
+                indicators_row.addStretch()
+                row_layout.addLayout(indicators_row)
+
             if entry.get("note"):
                 note = QLabel(entry["note"])
                 note.setStyleSheet("color: #94A3B8; font-size: 11px;")
@@ -166,6 +187,15 @@ class HistoryPage(QWidget):
             self.timeline_layout.addWidget(row)
 
         self.timeline_layout.addStretch()
+
+    @staticmethod
+    def _prior_restriction(entries, index, card_id):
+        """entries is ordered most-recent-first; the prior state is the
+        restriction from the next OLDER row for this same card, if any."""
+        for older in entries[index + 1:]:
+            if older["card_id"] == card_id:
+                return older["restriction"] if older["restriction"] != "REMOVED" else None
+        return None
 
     def _format_date(self, date_str):
         try:

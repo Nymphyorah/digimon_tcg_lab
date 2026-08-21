@@ -7,13 +7,13 @@ from app.components.card_hover_popup import get_hover_popup
 from core.banlist_manager import RESTRICTION_META
 from core.image_cache import get_image_cache_manager
 
-CARD_IMG_SIZE = QSize(140, 196)
-CARD_IMG_SIZE_LARGE = QSize(172, 241)
+CARD_IMG_SIZE = QSize(154, 216)
+CARD_IMG_SIZE_LARGE = QSize(188, 263)
 HOVER_DELAY_MS = 220
 
 
 class CardWidget(QFrame):
-    """A single Digimon card tile used across Collection, Ban List, Dashboard
+    """A single Digimon card tile used across Collection, Ban List, Overview
     and the Deck Builder's card catalog. Pass large=True where the card
     itself should be the visual protagonist (e.g. the Ban List board)."""
 
@@ -22,11 +22,11 @@ class CardWidget(QFrame):
 
     def __init__(self, card: dict, restriction: str = None, draggable: bool = False,
                  deck_count: int = None, selected: bool = False, lazy_image: bool = False,
-                 large: bool = False, risk_chip: tuple = None, parent=None):
-        """risk_chip: optional (text, object_name) tuple — e.g. ('🔴 HIGH RISK',
-        'riskChipCritical') — shown as a small discreet badge only for cards
-        that actually have meta/ban-score data, per the 'don't clutter every
-        card' rule."""
+                 large: bool = False, indicators: dict = None, parent=None):
+        """indicators: optional {"meta_usage", "top_cut", "dominance"} dict —
+        real per-card competitive data, shown discreetly in the hover popup
+        rather than as a permanent on-tile badge, so the catalog stays
+        card-forward instead of cluttered with numbers."""
         super().__init__(parent)
         self.card = card
         self.card_id = card["card_id"]
@@ -35,7 +35,7 @@ class CardWidget(QFrame):
         self._drag_start = None
         self._image_loaded = False
         self.img_size = CARD_IMG_SIZE_LARGE if large else CARD_IMG_SIZE
-        self._risk_chip = risk_chip
+        self._indicators = indicators
         self._hover_timer = QTimer(self)
         self._hover_timer.setSingleShot(True)
         self._hover_timer.setInterval(HOVER_DELAY_MS)
@@ -43,7 +43,7 @@ class CardWidget(QFrame):
 
         self.setObjectName("surface")
         self.setProperty("class", "cardWidget")
-        self.setFixedWidth(192 if large else 160)
+        self.setFixedWidth(212 if large else 176)
         self.setCursor(Qt.PointingHandCursor)
         if selected:
             self.setStyleSheet("QFrame#surface { border: 2px solid #2388FF; }")
@@ -80,13 +80,6 @@ class CardWidget(QFrame):
         meta_label = QLabel(f'{card.get("color","")} · {card.get("set","")} · {card.get("rarity","")}')
         meta_label.setStyleSheet(f"color: #64748B; font-size: {11 if large else 10}px;")
         layout.addWidget(meta_label)
-
-        if risk_chip:
-            chip_text, chip_object_name = risk_chip
-            chip = QLabel(chip_text)
-            chip.setObjectName(chip_object_name)
-            chip.setAlignment(Qt.AlignCenter)
-            layout.addWidget(chip, alignment=Qt.AlignLeft)
 
         self.deck_label = None
         if deck_count is not None:
@@ -140,7 +133,7 @@ class CardWidget(QFrame):
         super().leaveEvent(event)
 
     def _show_hover_popup(self):
-        get_hover_popup().show_for(self.card, QCursor.pos(), self._risk_chip)
+        get_hover_popup().show_for(self.card, QCursor.pos(), self._indicators)
 
     def mousePressEvent(self, event: QMouseEvent):
         if event.button() == Qt.LeftButton:
