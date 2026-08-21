@@ -213,6 +213,11 @@ QLineEdit:focus, QComboBox:focus {
     border-color: #2388FF;
 }
 
+QLineEdit#catalogSearch {
+    padding: 10px 14px;
+    font-size: 13.5px;
+}
+
 QComboBox::drop-down {
     border: none;
     width: 22px;
@@ -336,15 +341,15 @@ QSplitter::handle {
 /* ---------- Deck Builder: level-curve columns ---------- */
 #levelColumn {
     background-color: #0B111B;
-    border: 1px solid #1B2A3A;
-    border-radius: 10px;
+    border: none;
+    border-radius: 8px;
 }
 
 #levelColumnHeader {
-    color: #6B7F97;
-    font-size: 10px;
+    color: #CBD5E1;
+    font-size: 12px;
     font-weight: 800;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
 }
 
 /* ---------- Catalog: color filter chips ----------
@@ -435,16 +440,41 @@ QPushButton#keywordChip:checked {
     font-size: 11px;
 }
 
-/* ---------- Deck header ---------- */
-#deckHeaderName {
-    color: #F8FAFC;
-    font-size: 15px;
+/* ---------- Deck Building Workspace: deck header ---------- */
+#workspaceEyebrow {
+    color: #2388FF;
+    font-size: 10px;
     font-weight: 800;
+    letter-spacing: 2px;
+}
+
+QComboBox#deckNameCombo {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 2px 0;
+    color: #F8FAFC;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+QComboBox#deckNameCombo::drop-down {
+    border: none;
+    width: 26px;
+}
+
+QComboBox#deckNameCombo QAbstractItemView {
+    background-color: #0D1622;
+    border: 1px solid #1B2A3A;
+    selection-background-color: #12202E;
+    color: #F8FAFC;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 #deckHeaderStat {
     color: #94A3B8;
-    font-size: 11px;
+    font-size: 11.5px;
     font-weight: 700;
     letter-spacing: 0.3px;
 }
@@ -452,14 +482,23 @@ QPushButton#keywordChip:checked {
 QProgressBar#deckProgress {
     background-color: #1B2A3A;
     border: none;
-    border-radius: 5px;
-    min-height: 10px;
-    max-height: 10px;
+    border-radius: 6px;
+    min-height: 12px;
+    max-height: 12px;
 }
 
 QProgressBar#deckProgress::chunk {
     background-color: #2388FF;
-    border-radius: 5px;
+    border-radius: 6px;
+}
+
+/* ---------- Section titles inside the workspace (bigger than the generic
+   #sectionLabel used elsewhere — these anchor the two main zones) ---------- */
+#workspaceSectionTitle {
+    color: #F8FAFC;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
 }
 
 /* ---------- Deck Builder: level curve mini-chart ---------- */
@@ -476,9 +515,35 @@ QProgressBar#deckProgress::chunk {
     font-weight: 800;
 }
 
-/* ---------- Selected-card strip (compact, replaces the old fixed side panel) ---------- */
-#selectedCardStrip {
-    background-color: #101B29;
-    border: 1px solid #22374C;
-    border-radius: 12px;
+/* ---------- Selected-card row (a single slim line, not a boxed panel) ---------- */
+#selectedCardLabel {
+    color: #F8FAFC;
+    font-size: 13px;
+}
+
+/* ---------- Ghost buttons: secondary deck actions (Novo/Renomear/Excluir/
+   Detalhes) — text-only at rest so they don't visually compete with the
+   filled primary Salvar button ---------- */
+QPushButton#ghostButton {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #94A3B8;
+    font-weight: 600;
+}
+
+QPushButton#ghostButton:hover {
+    background-color: #12202E;
+    border-color: #1B2A3A;
+    color: #F8FAFC;
+}
+
+QPushButton#ghostButton[danger="true"]:hover {
+    background-color: rgba(239, 68, 68, 0.12);
+    border-color: #EF4444;
+    color: #F87171;
+}
+
+QPushButton#qtyButton {
+    padding: 0;
+    font-weight: 800;
 }

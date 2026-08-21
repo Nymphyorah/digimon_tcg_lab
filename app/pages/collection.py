@@ -7,11 +7,10 @@ from PySide6.QtWidgets import (
 )
 
 from app.components.card_widget import CardWidget, color_hex, CARD_COLOR_HEX
-from app.components.image_loader import load_card_pixmap, invalidate_card_pixmap_cache
+from app.components.image_loader import load_card_pixmap
 from app.components.card_detail_dialog import CardDetailDialog
 from app.components.card_hover_popup import get_hover_popup
 from app.components.metric_bar import MetricInline, INDICATOR_FIELDS
-from core.image_cache import get_image_cache_manager
 from core.deckbuilder import MAIN_DECK_SIZE, DIGI_EGG_DECK_MAX
 from core.banlist_manager import RESTRICTION_META
 
@@ -20,8 +19,8 @@ IMAGE_BATCH_SIZE = 40
 WIDGET_BATCH_SIZE = 60
 PAGE_SIZE = 120  # caps how many tiles are ever live at once, regardless of catalog size
 SEARCH_DEBOUNCE_MS = 250
-LEVEL_COLUMN_WIDTH = 168
-DECK_TILE_IMG = QSize(64, 90)
+LEVEL_COLUMN_WIDTH = 176
+DECK_TILE_IMG = QSize(74, 104)
 STATUS_META = {
     "LEGAL": ("✅ Válido", "#22C55E"),
     "INCOMPLETO": ("⚠ Incomplete", "#EAB308"),
@@ -107,8 +106,6 @@ class CollectionPage(QWidget):
         outer.setContentsMargins(24, 20, 24, 20)
         outer.setSpacing(12)
 
-        get_image_cache_manager().image_ready.connect(self._on_strip_image_ready)
-
         outer.addWidget(self._build_deck_header())
 
         splitter = QSplitter(Qt.Vertical)
@@ -125,32 +122,39 @@ class CollectionPage(QWidget):
         box = QFrame()
         box.setObjectName("surface")
         layout = QVBoxLayout(box)
-        layout.setContentsMargins(16, 12, 16, 12)
-        layout.setSpacing(10)
+        layout.setContentsMargins(20, 16, 20, 16)
+        layout.setSpacing(12)
 
         row1 = QHBoxLayout()
-        row1.setSpacing(10)
-        deck_lbl = QLabel("DECK:")
-        deck_lbl.setStyleSheet("color: #64748B; font-size: 10px; font-weight: 700;")
-        row1.addWidget(deck_lbl)
+        row1.setSpacing(16)
 
+        title_col = QVBoxLayout()
+        title_col.setSpacing(2)
+        eyebrow = QLabel("DECK BUILDING WORKSPACE")
+        eyebrow.setObjectName("workspaceEyebrow")
+        title_col.addWidget(eyebrow)
         self.deck_combo = QComboBox()
-        self.deck_combo.setMinimumWidth(220)
+        self.deck_combo.setObjectName("deckNameCombo")
+        self.deck_combo.setMinimumWidth(280)
         self.deck_combo.currentIndexChanged.connect(self._on_deck_combo_changed)
-        row1.addWidget(self.deck_combo)
+        title_col.addWidget(self.deck_combo)
+        row1.addLayout(title_col)
         row1.addStretch()
 
         new_btn = QPushButton("+ Novo")
+        new_btn.setObjectName("ghostButton")
         new_btn.clicked.connect(self._create_deck)
         row1.addWidget(new_btn)
         rename_btn = QPushButton("Renomear")
+        rename_btn.setObjectName("ghostButton")
         rename_btn.clicked.connect(self._rename_deck)
         row1.addWidget(rename_btn)
         delete_btn = QPushButton("Excluir")
-        delete_btn.setObjectName("dangerButton")
+        delete_btn.setObjectName("ghostButton")
+        delete_btn.setProperty("danger", True)
         delete_btn.clicked.connect(self._delete_deck)
         row1.addWidget(delete_btn)
-        self.save_btn = QPushButton("💾 Salvar")
+        self.save_btn = QPushButton("💾  SALVAR")
         self.save_btn.setObjectName("primaryButton")
         self.save_btn.setEnabled(False)
         self.save_btn.clicked.connect(self._save_deck)
@@ -158,7 +162,7 @@ class CollectionPage(QWidget):
         layout.addLayout(row1)
 
         row2 = QHBoxLayout()
-        row2.setSpacing(14)
+        row2.setSpacing(16)
 
         self.deck_progress = QProgressBar()
         self.deck_progress.setObjectName("deckProgress")
@@ -189,18 +193,17 @@ class CollectionPage(QWidget):
         panel = QFrame()
         panel.setObjectName("surface")
         layout = QVBoxLayout(panel)
-        layout.setContentsMargins(16, 14, 16, 14)
-        layout.setSpacing(10)
+        layout.setContentsMargins(20, 16, 20, 16)
+        layout.setSpacing(12)
 
         header_row = QHBoxLayout()
         title = QLabel("DECK BUILDER")
-        title.setObjectName("sectionLabel")
+        title.setObjectName("workspaceSectionTitle")
         header_row.addWidget(title)
         header_row.addStretch()
         self.issues_label = QLabel("")
-        self.issues_label.setStyleSheet("color: #F97316; font-size: 10px;")
-        self.issues_label.setWordWrap(True)
-        self.issues_label.setMaximumWidth(420)
+        self.issues_label.setStyleSheet("color: #F97316; font-size: 11px; font-weight: 600;")
+        self.issues_label.setAlignment(Qt.AlignRight)
         header_row.addWidget(self.issues_label)
         layout.addLayout(header_row)
 
@@ -222,13 +225,23 @@ class CollectionPage(QWidget):
 
         return panel
 
-    def _build_deck_level_column(self, header, sublabel, count):
+    def _build_deck_level_column(self, header, sublabel, count, accent="#475569"):
         col = QFrame()
         col.setObjectName("levelColumn")
         col.setFixedWidth(LEVEL_COLUMN_WIDTH)
-        col_layout = QVBoxLayout(col)
-        col_layout.setContentsMargins(8, 10, 8, 8)
+        outer_layout = QVBoxLayout(col)
+        outer_layout.setContentsMargins(0, 0, 0, 0)
+        outer_layout.setSpacing(0)
+
+        accent_bar = QFrame()
+        accent_bar.setFixedHeight(3)
+        accent_bar.setStyleSheet(f"background-color: {accent}; border: none;")
+        outer_layout.addWidget(accent_bar)
+
+        col_layout = QVBoxLayout()
+        col_layout.setContentsMargins(10, 10, 10, 10)
         col_layout.setSpacing(6)
+        outer_layout.addLayout(col_layout)
 
         top_row = QHBoxLayout()
         h = QLabel(header)
@@ -236,12 +249,12 @@ class CollectionPage(QWidget):
         top_row.addWidget(h)
         top_row.addStretch()
         count_lbl = QLabel(str(count))
-        count_lbl.setStyleSheet("color: #2388FF; font-weight: 800; font-size: 13px;")
+        count_lbl.setStyleSheet(f"color: {accent}; font-weight: 800; font-size: 15px;")
         top_row.addWidget(count_lbl)
         col_layout.addLayout(top_row)
 
         if sublabel:
-            sub = QLabel(sublabel)
+            sub = QLabel(sublabel.upper())
             sub.setObjectName("sectionHint")
             col_layout.addWidget(sub)
 
@@ -251,8 +264,8 @@ class CollectionPage(QWidget):
         scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         inner = QWidget()
         tiles_layout = QGridLayout(inner)
-        tiles_layout.setContentsMargins(0, 0, 0, 0)
-        tiles_layout.setSpacing(5)
+        tiles_layout.setContentsMargins(0, 4, 0, 0)
+        tiles_layout.setSpacing(6)
         tiles_layout.setAlignment(Qt.AlignTop | Qt.AlignLeft)
         scroll.setWidget(inner)
         col_layout.addWidget(scroll, 1)
@@ -299,15 +312,23 @@ class CollectionPage(QWidget):
         panel = QFrame()
         panel.setObjectName("surface")
         layout = QVBoxLayout(panel)
-        layout.setContentsMargins(16, 14, 16, 14)
-        layout.setSpacing(10)
+        layout.setContentsMargins(20, 16, 20, 16)
+        layout.setSpacing(12)
 
-        layout.addWidget(self._build_selected_card_strip())
+        header_row = QHBoxLayout()
+        title = QLabel("CATALOG")
+        title.setObjectName("workspaceSectionTitle")
+        header_row.addWidget(title)
+        header_row.addStretch()
+        layout.addLayout(header_row)
+
+        layout.addWidget(self._build_selected_card_row())
 
         toolbar = QHBoxLayout()
         toolbar.setSpacing(8)
         self.search = QLineEdit()
-        self.search.setPlaceholderText("🔍 Buscar carta...")
+        self.search.setObjectName("catalogSearch")
+        self.search.setPlaceholderText("🔍  Buscar carta por nome ou código...")
         self.search.textChanged.connect(lambda: self._search_debounce.start())
         toolbar.addWidget(self.search, 2)
 
@@ -358,31 +379,23 @@ class CollectionPage(QWidget):
 
         return panel
 
-    # ---------- Compact selected-card strip (replaces the old fixed side panel) ----------
-    def _build_selected_card_strip(self):
-        strip = QFrame()
-        strip.setObjectName("selectedCardStrip")
-        strip.setFixedHeight(76)
-        layout = QHBoxLayout(strip)
-        layout.setContentsMargins(10, 8, 14, 8)
-        layout.setSpacing(14)
+    # ---------- Selected-card row: a single slim line, no box of its own —
+    # full detail lives in the hover popup; this is just enough to see what's
+    # selected and adjust/inspect it without losing catalog real estate. ----------
+    def _build_selected_card_row(self):
+        row = QWidget()
+        row.setFixedHeight(30)
+        layout = QHBoxLayout(row)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(10)
 
-        self.strip_image = QLabel()
-        self.strip_image.setFixedSize(QSize(48, 67))
-        self.strip_image.setAlignment(Qt.AlignCenter)
-        layout.addWidget(self.strip_image)
-
-        info_col = QVBoxLayout()
-        info_col.setSpacing(1)
-        info_col.setAlignment(Qt.AlignVCenter)
         self.strip_name = QLabel("Nenhuma carta selecionada")
-        self.strip_name.setStyleSheet("font-weight: 800; font-size: 12.5px;")
-        self.strip_name.setWordWrap(True)
-        info_col.addWidget(self.strip_name)
+        self.strip_name.setObjectName("selectedCardLabel")
+        layout.addWidget(self.strip_name)
+
         self.strip_meta = QLabel("")
-        self.strip_meta.setStyleSheet("color: #64748B; font-size: 10.5px;")
-        info_col.addWidget(self.strip_meta)
-        layout.addLayout(info_col, 1)
+        self.strip_meta.setObjectName("sectionHint")
+        layout.addWidget(self.strip_meta)
 
         self.strip_restriction = QLabel("")
         layout.addWidget(self.strip_restriction)
@@ -393,32 +406,34 @@ class CollectionPage(QWidget):
         self.strip_indicators_layout.setSpacing(12)
         layout.addWidget(self.strip_indicators_box)
 
-        deck_row = QHBoxLayout()
-        deck_row.setSpacing(6)
+        layout.addStretch()
+
         deck_lbl = QLabel("No deck:")
-        deck_lbl.setStyleSheet("color: #94A3B8; font-size: 10.5px;")
+        deck_lbl.setStyleSheet("color: #64748B; font-size: 10.5px;")
+        layout.addWidget(deck_lbl)
         deck_minus = QPushButton("−")
-        deck_minus.setFixedSize(26, 24)
+        deck_minus.setObjectName("qtyButton")
+        deck_minus.setFixedSize(24, 22)
         deck_minus.clicked.connect(lambda: self._adjust_deck_copies(-1))
+        layout.addWidget(deck_minus)
         self.deck_qty_label = QLabel("0")
-        self.deck_qty_label.setFixedWidth(20)
+        self.deck_qty_label.setFixedWidth(18)
         self.deck_qty_label.setAlignment(Qt.AlignCenter)
         self.deck_qty_label.setStyleSheet("font-weight: 800; color: #22C55E;")
+        layout.addWidget(self.deck_qty_label)
         deck_plus = QPushButton("+")
-        deck_plus.setFixedSize(26, 24)
+        deck_plus.setObjectName("qtyButton")
+        deck_plus.setFixedSize(24, 22)
         deck_plus.clicked.connect(lambda: self._adjust_deck_copies(1))
-        deck_row.addWidget(deck_lbl)
-        deck_row.addWidget(deck_minus)
-        deck_row.addWidget(self.deck_qty_label)
-        deck_row.addWidget(deck_plus)
-        layout.addLayout(deck_row)
+        layout.addWidget(deck_plus)
         self._deck_minus, self._deck_plus = deck_minus, deck_plus
 
         detail_btn = QPushButton("Detalhes")
+        detail_btn.setObjectName("ghostButton")
         detail_btn.clicked.connect(self._open_full_detail)
         layout.addWidget(detail_btn)
 
-        return strip
+        return row
 
     def _build_color_chip_row(self):
         row = QFrame()
@@ -830,7 +845,6 @@ class CollectionPage(QWidget):
     def _update_selected_strip(self):
         card = self.repo.card(self.selected_card_id) if self.selected_card_id else None
         if not card:
-            self.strip_image.clear()
             self.strip_name.setText("Nenhuma carta selecionada")
             self.strip_meta.setText("")
             self.strip_restriction.setText("")
@@ -840,12 +854,11 @@ class CollectionPage(QWidget):
                 btn.setEnabled(False)
             return
 
-        self.strip_image.setPixmap(load_card_pixmap(self.selected_card_id, QSize(48, 67)))
-        self.strip_name.setText(f'{card.get("name","")}  ·  {card["card_id"]}')
         color_dot = "".join(f'<span style="color:{color_hex(c)};">●</span> ' for c in [card.get("color"), card.get("color2")] if c)
-        self.strip_meta.setTextFormat(Qt.RichText)
+        self.strip_name.setTextFormat(Qt.RichText)
+        self.strip_name.setText(f'{color_dot}<b>{card.get("name","")}</b>  ·  {card["card_id"]}')
         self.strip_meta.setText(
-            f'{color_dot}{card.get("color","")} · Lv.{card.get("level") or "-"} · {card.get("type","")} · '
+            f'{card.get("color","")} · Lv.{card.get("level") or "-"} · {card.get("type","")} · '
             f'{card.get("rarity","")} · {card.get("set","")}'
         )
 
@@ -869,12 +882,6 @@ class CollectionPage(QWidget):
         allowed = self.deckbuilder.max_allowed_copies(card["card_id"]) if deck_active else 0
         self._deck_minus.setEnabled(deck_active and in_deck > 0)
         self._deck_plus.setEnabled(deck_active and in_deck < allowed)
-
-    def _on_strip_image_ready(self, card_id: str):
-        if card_id != self.selected_card_id:
-            return
-        invalidate_card_pixmap_cache(card_id)
-        self.strip_image.setPixmap(load_card_pixmap(card_id, QSize(48, 67)))
 
     def _catalog_left_click(self, card_id):
         self._select_card(card_id)
@@ -934,7 +941,7 @@ class CollectionPage(QWidget):
                 w.deleteLater()
 
         if not self.current_deck_id or not self.deckbuilder:
-            empty_col, empty_tiles = self._build_deck_level_column("—", "", 0)
+            empty_col, empty_tiles = self._build_deck_level_column("—", "", 0, accent="#1B2A3A")
             empty = QLabel("Selecione ou crie um deck para começar a montar.")
             empty.setObjectName("sectionHint")
             empty.setWordWrap(True)
@@ -945,7 +952,14 @@ class CollectionPage(QWidget):
             return
 
         validation = self.deckbuilder.validate_cards(self._working_cards_list())
-        self.issues_label.setText(" · ".join(validation["issues"][:3]))
+        issues = validation["issues"]
+        if issues:
+            extra = f"  (+{len(issues) - 1})" if len(issues) > 1 else ""
+            self.issues_label.setText(f"⚠ {issues[0]}{extra}")
+            self.issues_label.setToolTip("\n".join(issues))
+        else:
+            self.issues_label.setText("")
+            self.issues_label.setToolTip("")
 
         cards_with_copies = []
         for card_id, copies in self._working_cards.items():
@@ -965,7 +979,8 @@ class CollectionPage(QWidget):
         max_count = max(counts) if any(counts) else 1
 
         for (col_id, header, sublabel, group), count in zip(buckets, counts):
-            col, tiles_layout = self._build_deck_level_column(header, sublabel, count)
+            accent = LEVEL_COLUMN_COLORS.get(col_id, "#475569")
+            col, tiles_layout = self._build_deck_level_column(header, sublabel, count, accent=accent)
             group.sort(key=lambda x: x[0]["card_id"])
             for i, (card, copies) in enumerate(group):
                 tiles_layout.addWidget(self._build_deck_tile(card, copies), i // 2, i % 2)
