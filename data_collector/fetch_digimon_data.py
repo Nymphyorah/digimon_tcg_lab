@@ -103,20 +103,43 @@ def fetch_card(card_id: str):
     return (exact or data)[0]
 
 
+def _clean_text(value):
+    """digimoncard.io returns effect text with literal \\r\\n and the
+    full/half-width bracket glyphs it uses for keyword tags — normalize line
+    endings only, keep the brackets as printed (they're the actual card
+    text, not something to rewrite)."""
+    if not value:
+        return None
+    return value.replace("\r\n", "\n").strip() or None
+
+
 def to_app_card(card_id: str, raw: dict) -> dict:
     set_names = raw.get("set_name") or []
     set_code = card_id.split("-")[0]
+    digi_types = [raw.get(f"digi_type{n}" if n else "digi_type") for n in ("", "2", "3", "4", "5")]
+    digi_types = [t for t in digi_types if t]
     return {
         "card_id": card_id,
         "name": raw.get("name") or card_id,
         "color": raw.get("color") or "Colorless",
+        "color2": raw.get("color2"),
         "type": raw.get("type") or "Digimon",
         "rarity": (raw.get("rarity") or "C").strip().upper(),
         "level": raw.get("level"),
+        "stage": raw.get("stage"),
+        "form": raw.get("form"),
+        "digi_types": digi_types,
         "set": set_code,
         "set_name": set_names[0] if set_names else "",
         "dp": raw.get("dp"),
         "attribute": raw.get("attribute"),
+        "play_cost": raw.get("play_cost"),
+        "evolution_cost": raw.get("evolution_cost"),
+        "evolution_color": raw.get("evolution_color"),
+        "evolution_level": raw.get("evolution_level"),
+        "main_effect": _clean_text(raw.get("main_effect")),
+        "source_effect": _clean_text(raw.get("source_effect")),
+        "alt_effect": _clean_text(raw.get("alt_effect")),
         "image": f"cards/{card_id}.webp",
     }
 

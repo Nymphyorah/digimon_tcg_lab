@@ -377,3 +377,72 @@ QScrollArea {
 QSplitter::handle {
     background-color: #1B2A3A;
 }
+
+/* ---------- Deck Builder: level-curve columns ---------- */
+#levelColumn {
+    background-color: #0B111B;
+    border: 1px solid #1B2A3A;
+    border-radius: 10px;
+}
+
+#levelColumnHeader {
+    color: #6B7F97;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- Catalog: color chips ---------- */
+QPushButton[class="colorChip"] {
+    background-color: transparent;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 10.5px;
+    font-weight: 700;
+}
+
+/* ---------- Catalog: effect keyword chips ---------- */
+QPushButton#keywordChip {
+    background-color: #0D1622;
+    border: 1px solid #1B2A3A;
+    border-radius: 999px;
+    padding: 4px 12px;
+    color: #8494A8;
+    font-size: 10.5px;
+    font-weight: 700;
+}
+
+QPushButton#keywordChip:checked {
+    background-color: rgba(35, 136, 255, 0.16);
+    border-color: #2388FF;
+    color: #5EA8FF;
+}
+
+/* ---------- Card hover popup ---------- */
+#cardHoverPopup {
+    background-color: #0D1622;
+    border: 1px solid #2388FF;
+    border-radius: 12px;
+}
+
+#hoverPopupName {
+    color: #F8FAFC;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+#hoverPopupMeta {
+    color: #94A3B8;
+    font-size: 10.5px;
+}
+
+#hoverPopupStat {
+    color: #2388FF;
+    font-size: 11.5px;
+    font-weight: 700;
+}
+
+#hoverPopupEffect {
+    color: #CBD5E1;
+    font-size: 11px;
+}

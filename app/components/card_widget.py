@@ -1,13 +1,15 @@
-from PySide6.QtCore import Qt, Signal, QSize, QMimeData
-from PySide6.QtGui import QDrag, QMouseEvent
+from PySide6.QtCore import Qt, Signal, QSize, QMimeData, QTimer
+from PySide6.QtGui import QDrag, QMouseEvent, QCursor
 from PySide6.QtWidgets import QFrame, QLabel, QVBoxLayout, QHBoxLayout
 
 from app.components.image_loader import load_card_pixmap, invalidate_card_pixmap_cache
+from app.components.card_hover_popup import get_hover_popup
 from core.banlist_manager import RESTRICTION_META
 from core.image_cache import get_image_cache_manager
 
 CARD_IMG_SIZE = QSize(140, 196)
 CARD_IMG_SIZE_LARGE = QSize(172, 241)
+HOVER_DELAY_MS = 220
 
 
 class CardWidget(QFrame):
@@ -33,6 +35,11 @@ class CardWidget(QFrame):
         self._drag_start = None
         self._image_loaded = False
         self.img_size = CARD_IMG_SIZE_LARGE if large else CARD_IMG_SIZE
+        self._risk_chip = risk_chip
+        self._hover_timer = QTimer(self)
+        self._hover_timer.setSingleShot(True)
+        self._hover_timer.setInterval(HOVER_DELAY_MS)
+        self._hover_timer.timeout.connect(self._show_hover_popup)
 
         self.setObjectName("surface")
         self.setProperty("class", "cardWidget")
@@ -122,6 +129,18 @@ class CardWidget(QFrame):
 
     def set_selected(self, selected: bool):
         self.setStyleSheet("QFrame#surface { border: 2px solid #2388FF; }" if selected else "")
+
+    def enterEvent(self, event):
+        self._hover_timer.start()
+        super().enterEvent(event)
+
+    def leaveEvent(self, event):
+        self._hover_timer.stop()
+        get_hover_popup().hide()
+        super().leaveEvent(event)
+
+    def _show_hover_popup(self):
+        get_hover_popup().show_for(self.card, QCursor.pos(), self._risk_chip)
 
     def mousePressEvent(self, event: QMouseEvent):
         if event.button() == Qt.LeftButton:

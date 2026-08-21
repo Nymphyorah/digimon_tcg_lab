@@ -1,4 +1,5 @@
-from PySide6.QtCore import Qt, Signal, QSize, QTimer
+from PySide6.QtCore import Qt, Signal, QSize, QTimer, QPoint
+from PySide6.QtGui import QCursor
 from PySide6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QGridLayout, QLineEdit, QComboBox,
     QScrollArea, QFrame, QLabel, QPushButton, QSplitter,
@@ -8,6 +9,7 @@ from PySide6.QtWidgets import (
 from app.components.card_widget import CardWidget
 from app.components.image_loader import load_card_pixmap, invalidate_card_pixmap_cache
 from app.components.card_detail_dialog import CardDetailDialog
+from app.components.card_hover_popup import get_hover_popup
 from core.image_cache import get_image_cache_manager
 from core.deckbuilder import MAIN_DECK_SIZE, DIGI_EGG_DECK_MAX
 from core.ban_score import compute_ban_score, risk_for_score
@@ -24,14 +26,43 @@ COLS_TARGET_WIDTH = 176
 IMAGE_BATCH_SIZE = 40
 WIDGET_BATCH_SIZE = 60
 PAGE_SIZE = 120  # caps how many tiles are ever live at once, regardless of catalog size
-DECK_TILE_COLS = 3
-TYPE_ORDER = ["Digi-Egg", "Digimon", "Tamer", "Option"]
-TYPE_LABELS = {"Digi-Egg": "DIGI-OVO", "Digimon": "DIGIMON", "Tamer": "TAMER", "Option": "OPTION"}
+SEARCH_DEBOUNCE_MS = 250
 STATUS_META = {
     "LEGAL": ("✅ Válido", "#22C55E"),
     "INCOMPLETO": ("⚠ Incompleto", "#EAB308"),
     "ILEGAL": ("❌ Ilegal", "#EF4444"),
 }
+
+# Official Digimon TCG card colors — used both for the quick filter chips and
+# for the colored accent on each chip/border (presentational only, not new
+# game data: every card's own `color` field already carries one of these).
+COLOR_CHIPS = [
+    ("Red", "#EF4444"), ("Blue", "#3B82F6"), ("Yellow", "#EAB308"),
+    ("Green", "#22C55E"), ("Black", "#94A3B8"), ("Purple", "#A855F7"),
+    ("White", "#F8FAFC"),
+]
+
+# Curated from the real printed effect text (main_effect/source_effect/
+# alt_effect) already collected from digimoncard.io — these are literal
+# substrings that appear on cards using them, not invented tags. A card
+# matches a chip if the tag text appears anywhere in its effect text.
+KEYWORD_CHIPS = [
+    "Blocker", "On Play", "When Attacking", "Security",
+    "DNA Digivolve", "Burst Digivolve", "Piercing", "Rush",
+]
+
+# Deck panel: groups the working deck into level-curve columns instead of a
+# flat type list. Each entry is (id, header, predicate over a card dict).
+LEVEL_COLUMNS = [
+    ("egg", "Lv.2 · Digi-Ovo", lambda c: c.get("type") == "Digi-Egg"),
+    ("lv3", "Lv.3 · Rookie", lambda c: c.get("level") == 3),
+    ("lv4", "Lv.4 · Champion", lambda c: c.get("level") == 4),
+    ("lv5", "Lv.5 · Ultimate", lambda c: c.get("level") == 5),
+    ("lv67", "Lv.6-7 · Mega", lambda c: c.get("level") in (6, 7)),
+    ("tamer", "Tamers", lambda c: c.get("type") == "Tamer"),
+    ("option", "Options", lambda c: c.get("type") == "Option"),
+]
+LEVEL_COLUMN_FALLBACK = ("other", "Outros", lambda c: True)
 
 
 class CollectionPage(QWidget):
@@ -66,6 +97,13 @@ class CollectionPage(QWidget):
         self._build_queue = []
         self._build_index = 0
         self._build_generation = 0
+        self._active_colors = set()
+        self._active_keywords = set()
+
+        self._search_debounce = QTimer(self)
+        self._search_debounce.setSingleShot(True)
+        self._search_debounce.setInterval(SEARCH_DEBOUNCE_MS)
+        self._search_debounce.timeout.connect(self._apply_filters)
 
         outer = QVBoxLayout(self)
         outer.setContentsMargins(24, 20, 24, 24)
@@ -80,7 +118,7 @@ class CollectionPage(QWidget):
         splitter.addWidget(self._build_detail_panel())
         splitter.addWidget(self._build_catalog_panel())
         splitter.addWidget(self._build_deck_panel())
-        splitter.setSizes([280, 900, 300])
+        splitter.setSizes([260, 760, 460])
         splitter.splitterMoved.connect(lambda *_: self._reflow())
 
     # ---------- Top: deck context bar ----------
@@ -201,17 +239,19 @@ class CollectionPage(QWidget):
         toolbar.setSpacing(8)
         self.search = QLineEdit()
         self.search.setPlaceholderText("🔍 Buscar carta...")
-        self.search.textChanged.connect(self._apply_filters)
+        self.search.textChanged.connect(lambda: self._search_debounce.start())
         toolbar.addWidget(self.search, 2)
 
         self.set_filter = self._make_combo("Set")
-        self.color_filter = self._make_combo("Cor")
         self.type_filter = self._make_combo("Tipo")
         self.rarity_filter = self._make_combo("Raridade")
         self.level_filter = self._make_combo("Level")
-        for combo in [self.set_filter, self.color_filter, self.type_filter, self.rarity_filter, self.level_filter]:
+        for combo in [self.set_filter, self.type_filter, self.rarity_filter, self.level_filter]:
             toolbar.addWidget(combo)
         layout.addLayout(toolbar)
+
+        layout.addWidget(self._build_color_chip_row())
+        layout.addWidget(self._build_keyword_chip_row())
 
         result_row = QHBoxLayout()
         self.result_label = QLabel("")
@@ -255,28 +295,126 @@ class CollectionPage(QWidget):
         panel.setObjectName("surface")
         layout = QVBoxLayout(panel)
         layout.setContentsMargins(14, 14, 14, 14)
-        layout.setSpacing(6)
+        layout.setSpacing(8)
 
         title = QLabel("DECK ATUAL")
         title.setStyleSheet("color: #94A3B8; font-size: 11px; font-weight: 700; letter-spacing: 1px;")
         layout.addWidget(title)
+
+        self.deck_stats_label = QLabel("")
+        self.deck_stats_label.setStyleSheet("color: #F8FAFC; font-size: 12px; font-weight: 700;")
+        layout.addWidget(self.deck_stats_label)
+
+        self.deck_curve_bar = QFrame()
+        self.deck_curve_bar.setFixedHeight(8)
+        curve_layout = QHBoxLayout(self.deck_curve_bar)
+        curve_layout.setContentsMargins(0, 0, 0, 0)
+        curve_layout.setSpacing(2)
+        self.deck_curve_layout = curve_layout
+        layout.addWidget(self.deck_curve_bar)
 
         self.issues_label = QLabel("")
         self.issues_label.setStyleSheet("color: #F97316; font-size: 10px;")
         self.issues_label.setWordWrap(True)
         layout.addWidget(self.issues_label)
 
+        columns_scroll = QScrollArea()
+        columns_scroll.setWidgetResizable(True)
+        columns_scroll.setFrameShape(QFrame.NoFrame)
+        columns_inner = QWidget()
+        self.deck_columns_layout = QHBoxLayout(columns_inner)
+        self.deck_columns_layout.setContentsMargins(0, 0, 0, 0)
+        self.deck_columns_layout.setSpacing(8)
+        self.deck_columns_layout.setAlignment(Qt.AlignLeft | Qt.AlignTop)
+        columns_scroll.setWidget(columns_inner)
+        layout.addWidget(columns_scroll, 1)
+
+        return panel
+
+    def _build_deck_level_column(self, header_text):
+        col = QFrame()
+        col.setObjectName("levelColumn")
+        col.setFixedWidth(96)
+        col_layout = QVBoxLayout(col)
+        col_layout.setContentsMargins(6, 8, 6, 8)
+        col_layout.setSpacing(6)
+
+        header = QLabel(header_text)
+        header.setObjectName("levelColumnHeader")
+        header.setWordWrap(True)
+        header.setAlignment(Qt.AlignCenter)
+        col_layout.addWidget(header)
+
         scroll = QScrollArea()
         scroll.setWidgetResizable(True)
         scroll.setFrameShape(QFrame.NoFrame)
-        self.deck_content = QWidget()
-        self.deck_layout = QVBoxLayout(self.deck_content)
-        self.deck_layout.setSpacing(6)
-        self.deck_layout.setAlignment(Qt.AlignTop)
-        scroll.setWidget(self.deck_content)
-        layout.addWidget(scroll, 1)
+        inner = QWidget()
+        tiles_layout = QVBoxLayout(inner)
+        tiles_layout.setContentsMargins(0, 0, 0, 0)
+        tiles_layout.setSpacing(6)
+        tiles_layout.setAlignment(Qt.AlignTop)
+        scroll.setWidget(inner)
+        col_layout.addWidget(scroll, 1)
 
-        return panel
+        return col, tiles_layout
+
+    def _build_color_chip_row(self):
+        row = QFrame()
+        layout = QHBoxLayout(row)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(6)
+        lbl = QLabel("COR")
+        lbl.setObjectName("sectionHint")
+        layout.addWidget(lbl)
+
+        self._color_chip_buttons = {}
+        for color, hex_code in COLOR_CHIPS:
+            btn = QPushButton(color)
+            btn.setCheckable(True)
+            btn.setProperty("class", "colorChip")
+            btn.setStyleSheet(
+                f'QPushButton {{ border: 1px solid {hex_code}; color: {hex_code}; }}'
+                f'QPushButton:checked {{ background-color: {hex_code}; color: #070B12; }}'
+            )
+            btn.clicked.connect(lambda checked, c=color: self._toggle_color_chip(c, checked))
+            layout.addWidget(btn)
+            self._color_chip_buttons[color] = btn
+        layout.addStretch()
+        return row
+
+    def _build_keyword_chip_row(self):
+        row = QFrame()
+        layout = QHBoxLayout(row)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(6)
+        lbl = QLabel("EFEITO")
+        lbl.setObjectName("sectionHint")
+        layout.addWidget(lbl)
+
+        self._keyword_chip_buttons = {}
+        for keyword in KEYWORD_CHIPS:
+            btn = QPushButton(keyword)
+            btn.setCheckable(True)
+            btn.setObjectName("keywordChip")
+            btn.clicked.connect(lambda checked, k=keyword: self._toggle_keyword_chip(k, checked))
+            layout.addWidget(btn)
+            self._keyword_chip_buttons[keyword] = btn
+        layout.addStretch()
+        return row
+
+    def _toggle_color_chip(self, color, active):
+        if active:
+            self._active_colors.add(color)
+        else:
+            self._active_colors.discard(color)
+        self._apply_filters()
+
+    def _toggle_keyword_chip(self, keyword, active):
+        if active:
+            self._active_keywords.add(keyword)
+        else:
+            self._active_keywords.discard(keyword)
+        self._apply_filters()
 
     def _make_combo(self, label):
         combo = QComboBox()
@@ -300,14 +438,12 @@ class CollectionPage(QWidget):
 
     def _populate_filters(self):
         sets = sorted({c["set"] for c in self.repo.cards})
-        colors = sorted({c["color"] for c in self.repo.cards})
         types = sorted({c["type"] for c in self.repo.cards})
         rarities = sorted({c["rarity"] for c in self.repo.cards})
         levels = sorted({c["level"] for c in self.repo.cards if c.get("level")})
 
         for combo, values in [
-            (self.set_filter, sets), (self.color_filter, colors),
-            (self.type_filter, types), (self.rarity_filter, rarities),
+            (self.set_filter, sets), (self.type_filter, types), (self.rarity_filter, rarities),
         ]:
             for v in values:
                 combo.addItem(v, v)
@@ -466,7 +602,6 @@ class CollectionPage(QWidget):
     def _apply_filters(self):
         text = self.search.text().strip().lower()
         set_v = self.set_filter.currentData()
-        color_v = self.color_filter.currentData()
         type_v = self.type_filter.currentData()
         rarity_v = self.rarity_filter.currentData()
         level_v = self.level_filter.currentData()
@@ -477,19 +612,27 @@ class CollectionPage(QWidget):
                 continue
             if set_v and c["set"] != set_v:
                 continue
-            if color_v and c["color"] != color_v:
-                continue
             if type_v and c["type"] != type_v:
                 continue
             if rarity_v and c["rarity"] != rarity_v:
                 continue
             if level_v and c.get("level") != level_v:
                 continue
+            if self._active_colors and c.get("color") not in self._active_colors and c.get("color2") not in self._active_colors:
+                continue
+            if self._active_keywords and not self._card_has_any_keyword(c):
+                continue
             results.append(c)
 
         self._filtered_results = results
         self._current_page = 0
         self._rebuild_grid()
+
+    def _card_has_any_keyword(self, card):
+        effect_text = " ".join(filter(None, [
+            card.get("main_effect"), card.get("source_effect"), card.get("alt_effect"),
+        ]))
+        return any(keyword in effect_text for keyword in self._active_keywords)
 
     def _total_pages(self):
         return max(1, -(-len(self._filtered_results) // PAGE_SIZE))  # ceil div
@@ -707,49 +850,74 @@ class CollectionPage(QWidget):
         self.deck_combo.setItemText(idx, f'{deck["name"]}{star} ({summary["main_count"]}/{MAIN_DECK_SIZE})')
         self.deck_combo.blockSignals(False)
 
-    # ---------- Right panel: current deck list ----------
+    # ---------- Right panel: current deck, grouped by level curve ----------
     def _render_deck_panel(self):
-        while self.deck_layout.count():
-            item = self.deck_layout.takeAt(0)
+        while self.deck_columns_layout.count():
+            item = self.deck_columns_layout.takeAt(0)
+            w = item.widget()
+            if w:
+                w.deleteLater()
+        while self.deck_curve_layout.count():
+            item = self.deck_curve_layout.takeAt(0)
             w = item.widget()
             if w:
                 w.deleteLater()
 
         if not self.current_deck_id or not self.deckbuilder:
+            empty_col, empty_tiles = self._build_deck_level_column("—")
             empty = QLabel("Selecione ou crie um deck para começar a montar.")
             empty.setStyleSheet("color: #64748B; font-size: 11px;")
             empty.setWordWrap(True)
-            self.deck_layout.addWidget(empty)
+            empty_tiles.addWidget(empty)
+            self.deck_columns_layout.addWidget(empty_col)
+            self.deck_stats_label.setText("")
             self.issues_label.setText("")
             return
 
         validation = self.deckbuilder.validate_cards(self._working_cards_list())
         self.issues_label.setText("\n".join(f"• {msg}" for msg in validation["issues"][:5]))
+        self.deck_stats_label.setText(
+            f'{validation["main_count"]}/{MAIN_DECK_SIZE} cartas  ·  '
+            f'{validation["egg_count"]}/{DIGI_EGG_DECK_MAX} Digi-Ovos'
+        )
 
-        by_type = {t: [] for t in TYPE_ORDER}
+        cards_with_copies = []
         for card_id, copies in self._working_cards.items():
             card = self.repo.card(card_id)
-            if not card:
-                continue
-            by_type.setdefault(card.get("type", "Option"), []).append((card, copies))
+            if card:
+                cards_with_copies.append((card, copies))
 
-        for t in TYPE_ORDER:
-            group = by_type.get(t, [])
-            if not group:
-                continue
+        columns = LEVEL_COLUMNS + [LEVEL_COLUMN_FALLBACK]
+        remaining = list(cards_with_copies)
+        buckets = []
+        for col_id, header, predicate in columns:
+            matched = [(card, copies) for card, copies in remaining if predicate(card)]
+            remaining = [pair for pair in remaining if pair not in matched]
+            buckets.append((header, matched))
+
+        total_copies = sum(copies for _, copies in cards_with_copies) or 1
+        for header, group in buckets:
+            count = sum(c for _, c in group)
+            col, tiles_layout = self._build_deck_level_column(f"{header}\n({count})")
             group.sort(key=lambda x: x[0]["card_id"])
-            header = QLabel(f"{TYPE_LABELS[t]} ({sum(c for _, c in group)})")
-            header.setStyleSheet("color: #2388FF; font-size: 10px; font-weight: 800; letter-spacing: 1px; margin-top: 6px;")
-            self.deck_layout.addWidget(header)
+            for card, copies in group:
+                tiles_layout.addWidget(self._build_deck_tile(card, copies))
+            self.deck_columns_layout.addWidget(col)
 
-            grid_widget = QWidget()
-            grid = QGridLayout(grid_widget)
-            grid.setSpacing(6)
-            grid.setContentsMargins(0, 0, 0, 0)
-            grid.setAlignment(Qt.AlignLeft | Qt.AlignTop)
-            for i, (card, copies) in enumerate(group):
-                grid.addWidget(self._build_deck_tile(card, copies), i // DECK_TILE_COLS, i % DECK_TILE_COLS)
-            self.deck_layout.addWidget(grid_widget)
+            if count:
+                segment = QFrame()
+                segment.setStyleSheet(f"background-color: {self._level_column_color(header)}; border-radius: 2px;")
+                self.deck_curve_layout.addWidget(segment, count)
+        if not any(count for _, group in buckets for count in [sum(c for _, c in group)]):
+            self.deck_curve_layout.addStretch()
+
+    @staticmethod
+    def _level_column_color(header):
+        return {
+            "Lv.2 · Digi-Ovo": "#FACC15", "Lv.3 · Rookie": "#22C55E", "Lv.4 · Champion": "#3B82F6",
+            "Lv.5 · Ultimate": "#A855F7", "Lv.6-7 · Mega": "#EF4444",
+            "Tamers": "#F97316", "Options": "#94A3B8", "Outros": "#475569",
+        }.get(header, "#475569")
 
     def _build_deck_tile(self, card, copies):
         frame = QFrame()
@@ -762,9 +930,9 @@ class CollectionPage(QWidget):
         layout.setSpacing(2)
 
         img = QLabel()
-        img.setFixedSize(QSize(70, 98))
+        img.setFixedSize(QSize(76, 106))
         img.setAlignment(Qt.AlignCenter)
-        img.setPixmap(load_card_pixmap(card["card_id"], QSize(70, 98)))
+        img.setPixmap(load_card_pixmap(card["card_id"], QSize(76, 106)))
         layout.addWidget(img, alignment=Qt.AlignCenter)
 
         qty = QLabel(f"×{copies}")
@@ -773,6 +941,8 @@ class CollectionPage(QWidget):
         layout.addWidget(qty)
 
         frame.mousePressEvent = lambda e, cid=card["card_id"]: self._deck_tile_clicked(e, cid)
+        frame.enterEvent = lambda e, c=card: self._deck_tile_hover_enter(c)
+        frame.leaveEvent = lambda e: self._deck_tile_hover_leave()
         return frame
 
     def _deck_tile_clicked(self, event, card_id):
@@ -781,6 +951,17 @@ class CollectionPage(QWidget):
             self._adjust_deck_copies(-1)
         else:
             self._adjust_deck_copies(1)
+
+    def _deck_tile_hover_enter(self, card):
+        self._deck_hover_timer = QTimer(self)
+        self._deck_hover_timer.setSingleShot(True)
+        self._deck_hover_timer.timeout.connect(lambda: get_hover_popup().show_for(card, QCursor.pos()))
+        self._deck_hover_timer.start(220)
+
+    def _deck_tile_hover_leave(self):
+        if getattr(self, "_deck_hover_timer", None):
+            self._deck_hover_timer.stop()
+        get_hover_popup().hide()
 
     def _open_full_detail(self):
         card = self.repo.card(self.selected_card_id) if self.selected_card_id else None
