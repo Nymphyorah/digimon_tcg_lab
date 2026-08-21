@@ -2,37 +2,36 @@ from PySide6.QtCore import Qt, Signal, QSize, QTimer, QPoint
 from PySide6.QtGui import QCursor
 from PySide6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QGridLayout, QLineEdit, QComboBox,
-    QScrollArea, QFrame, QLabel, QPushButton, QSplitter,
+    QScrollArea, QFrame, QLabel, QPushButton, QSplitter, QProgressBar,
     QInputDialog, QMessageBox
 )
 
-from app.components.card_widget import CardWidget
+from app.components.card_widget import CardWidget, color_hex, CARD_COLOR_HEX
 from app.components.image_loader import load_card_pixmap, invalidate_card_pixmap_cache
 from app.components.card_detail_dialog import CardDetailDialog
 from app.components.card_hover_popup import get_hover_popup
 from app.components.metric_bar import MetricInline, INDICATOR_FIELDS
 from core.image_cache import get_image_cache_manager
 from core.deckbuilder import MAIN_DECK_SIZE, DIGI_EGG_DECK_MAX
+from core.banlist_manager import RESTRICTION_META
 
-COLS_TARGET_WIDTH = 192
+COLS_TARGET_WIDTH = 232
 IMAGE_BATCH_SIZE = 40
 WIDGET_BATCH_SIZE = 60
 PAGE_SIZE = 120  # caps how many tiles are ever live at once, regardless of catalog size
 SEARCH_DEBOUNCE_MS = 250
+LEVEL_COLUMN_WIDTH = 168
+DECK_TILE_IMG = QSize(64, 90)
 STATUS_META = {
     "LEGAL": ("✅ Válido", "#22C55E"),
-    "INCOMPLETO": ("⚠ Incompleto", "#EAB308"),
+    "INCOMPLETO": ("⚠ Incomplete", "#EAB308"),
     "ILEGAL": ("❌ Ilegal", "#EF4444"),
 }
 
-# Official Digimon TCG card colors — used both for the quick filter chips and
-# for the colored accent on each chip/border (presentational only, not new
-# game data: every card's own `color` field already carries one of these).
-COLOR_CHIPS = [
-    ("Red", "#EF4444"), ("Blue", "#3B82F6"), ("Yellow", "#EAB308"),
-    ("Green", "#22C55E"), ("Black", "#94A3B8"), ("Purple", "#A855F7"),
-    ("White", "#F8FAFC"),
-]
+# Official Digimon TCG card colors — same hex map CardWidget uses for its
+# borders/dots, reused here for the filter chips so both stay visually
+# consistent with a single source of truth (app.components.card_widget).
+COLOR_CHIPS = [(name, hex_code) for name, hex_code in CARD_COLOR_HEX.items() if name != "Colorless"]
 
 # Curated from the real printed effect text (main_effect/source_effect/
 # alt_effect) already collected from digimoncard.io — these are literal
@@ -43,24 +42,31 @@ KEYWORD_CHIPS = [
     "DNA Digivolve", "Burst Digivolve", "Piercing", "Rush",
 ]
 
-# Deck panel: groups the working deck into level-curve columns instead of a
-# flat type list. Each entry is (id, header, predicate over a card dict).
+# Deck Builder columns, grouped by level curve. Each entry is
+# (id, header, sublabel, predicate over a card dict) — level/type are the
+# same real fields the catalog filters already use, nothing new.
 LEVEL_COLUMNS = [
-    ("egg", "Lv.2 · Digi-Ovo", lambda c: c.get("type") == "Digi-Egg"),
-    ("lv3", "Lv.3 · Rookie", lambda c: c.get("level") == 3),
-    ("lv4", "Lv.4 · Champion", lambda c: c.get("level") == 4),
-    ("lv5", "Lv.5 · Ultimate", lambda c: c.get("level") == 5),
-    ("lv67", "Lv.6-7 · Mega", lambda c: c.get("level") in (6, 7)),
-    ("tamer", "Tamers", lambda c: c.get("type") == "Tamer"),
-    ("option", "Options", lambda c: c.get("type") == "Option"),
+    ("egg", "Lv.2", "Digi-Egg", lambda c: c.get("type") == "Digi-Egg"),
+    ("lv3", "Lv.3", "Rookie", lambda c: c.get("level") == 3),
+    ("lv4", "Lv.4", "Champion", lambda c: c.get("level") == 4),
+    ("lv5", "Lv.5", "Ultimate", lambda c: c.get("level") == 5),
+    ("lv67", "Lv.6/7", "Mega", lambda c: c.get("level") in (6, 7)),
+    ("tamer", "Tamers", "", lambda c: c.get("type") == "Tamer"),
+    ("option", "Options", "", lambda c: c.get("type") == "Option"),
 ]
-LEVEL_COLUMN_FALLBACK = ("other", "Outros", lambda c: True)
+LEVEL_COLUMN_FALLBACK = ("other", "Outros", "", lambda c: True)
+LEVEL_COLUMN_COLORS = {
+    "egg": "#FBC02D", "lv3": "#43A047", "lv4": "#1E88E5", "lv5": "#8E44AD",
+    "lv67": "#E53935", "tamer": "#F97316", "option": "#94A3B8", "other": "#475569",
+}
 
 
 class CollectionPage(QWidget):
-    """Coleção + Deck Builder num único workspace: painel de detalhe à
-    esquerda, catálogo pesquisável no centro, deck atual à direita —
-    sobre toda a base de cartas do catálogo.
+    """Digimon TCG Deck Building Workspace: a vertical stack of
+
+        DECK HEADER  (name / counts / progress bar / save state)
+        DECK BUILDER (level-curve columns — the visual priority of the page)
+        CATALOG      (search, color/effect filters, card grid)
 
     Edits to the active deck live in memory only (self._working_cards) until
     the user clicks Salvar — nothing touches the database until then."""
@@ -98,140 +104,205 @@ class CollectionPage(QWidget):
         self._search_debounce.timeout.connect(self._apply_filters)
 
         outer = QVBoxLayout(self)
-        outer.setContentsMargins(24, 20, 24, 24)
+        outer.setContentsMargins(24, 20, 24, 20)
         outer.setSpacing(12)
 
-        get_image_cache_manager().image_ready.connect(self._on_detail_image_ready)
+        get_image_cache_manager().image_ready.connect(self._on_strip_image_ready)
 
-        outer.addWidget(self._build_deck_bar())
+        outer.addWidget(self._build_deck_header())
 
-        splitter = QSplitter(Qt.Horizontal)
+        splitter = QSplitter(Qt.Vertical)
+        splitter.setChildrenCollapsible(False)
         outer.addWidget(splitter, 1)
-        splitter.addWidget(self._build_detail_panel())
-        splitter.addWidget(self._build_catalog_panel())
-        splitter.addWidget(self._build_deck_panel())
-        splitter.setSizes([260, 760, 460])
-        splitter.splitterMoved.connect(lambda *_: self._reflow())
+        splitter.addWidget(self._build_deck_builder_section())
+        splitter.addWidget(self._build_catalog_section())
+        splitter.setSizes([380, 620])
 
-    # ---------- Top: deck context bar ----------
-    def _build_deck_bar(self):
-        bar = QFrame()
-        bar.setObjectName("surface")
-        layout = QHBoxLayout(bar)
-        layout.setContentsMargins(14, 10, 14, 10)
-        layout.setSpacing(12)
+    # ==================================================================
+    # DECK HEADER
+    # ==================================================================
+    def _build_deck_header(self):
+        box = QFrame()
+        box.setObjectName("surface")
+        layout = QVBoxLayout(box)
+        layout.setContentsMargins(16, 12, 16, 12)
+        layout.setSpacing(10)
 
+        row1 = QHBoxLayout()
+        row1.setSpacing(10)
         deck_lbl = QLabel("DECK:")
         deck_lbl.setStyleSheet("color: #64748B; font-size: 10px; font-weight: 700;")
-        layout.addWidget(deck_lbl)
+        row1.addWidget(deck_lbl)
 
         self.deck_combo = QComboBox()
-        self.deck_combo.setMinimumWidth(180)
+        self.deck_combo.setMinimumWidth(220)
         self.deck_combo.currentIndexChanged.connect(self._on_deck_combo_changed)
-        layout.addWidget(self.deck_combo)
+        row1.addWidget(self.deck_combo)
+        row1.addStretch()
 
         new_btn = QPushButton("+ Novo")
         new_btn.clicked.connect(self._create_deck)
-        layout.addWidget(new_btn)
+        row1.addWidget(new_btn)
         rename_btn = QPushButton("Renomear")
         rename_btn.clicked.connect(self._rename_deck)
-        layout.addWidget(rename_btn)
+        row1.addWidget(rename_btn)
         delete_btn = QPushButton("Excluir")
         delete_btn.setObjectName("dangerButton")
         delete_btn.clicked.connect(self._delete_deck)
-        layout.addWidget(delete_btn)
-
+        row1.addWidget(delete_btn)
         self.save_btn = QPushButton("💾 Salvar")
         self.save_btn.setObjectName("primaryButton")
         self.save_btn.setEnabled(False)
         self.save_btn.clicked.connect(self._save_deck)
-        layout.addWidget(self.save_btn)
+        row1.addWidget(self.save_btn)
+        layout.addLayout(row1)
 
-        layout.addSpacing(16)
-        self.counts_label = QLabel("")
-        self.counts_label.setStyleSheet("color: #94A3B8; font-size: 12px; font-weight: 700;")
-        layout.addWidget(self.counts_label)
+        row2 = QHBoxLayout()
+        row2.setSpacing(14)
+
+        self.deck_progress = QProgressBar()
+        self.deck_progress.setObjectName("deckProgress")
+        self.deck_progress.setRange(0, MAIN_DECK_SIZE)
+        self.deck_progress.setValue(0)
+        self.deck_progress.setTextVisible(False)
+        row2.addWidget(self.deck_progress, 1)
+
+        self.counts_label = QLabel("Nenhum deck selecionado")
+        self.counts_label.setObjectName("deckHeaderStat")
+        row2.addWidget(self.counts_label)
 
         self.status_label = QLabel("")
         self.status_label.setStyleSheet("font-weight: 800; font-size: 12px;")
-        layout.addWidget(self.status_label)
+        row2.addWidget(self.status_label)
 
         self.unsaved_label = QLabel("")
         self.unsaved_label.setStyleSheet("color: #F97316; font-weight: 700; font-size: 11px;")
-        layout.addWidget(self.unsaved_label)
+        row2.addWidget(self.unsaved_label)
+        layout.addLayout(row2)
 
-        layout.addStretch()
-        return bar
+        return box
 
-    # ---------- Left: selected card detail ----------
-    def _build_detail_panel(self):
+    # ==================================================================
+    # DECK BUILDER (level curve — the visual priority of the page)
+    # ==================================================================
+    def _build_deck_builder_section(self):
         panel = QFrame()
         panel.setObjectName("surface")
         layout = QVBoxLayout(panel)
-        layout.setContentsMargins(14, 14, 14, 14)
-        layout.setSpacing(8)
-        layout.setAlignment(Qt.AlignTop)
+        layout.setContentsMargins(16, 14, 16, 14)
+        layout.setSpacing(10)
 
-        self.detail_image = QLabel()
-        self.detail_image.setFixedSize(QSize(200, 280))
-        self.detail_image.setAlignment(Qt.AlignCenter)
-        layout.addWidget(self.detail_image, alignment=Qt.AlignCenter)
+        header_row = QHBoxLayout()
+        title = QLabel("DECK BUILDER")
+        title.setObjectName("sectionLabel")
+        header_row.addWidget(title)
+        header_row.addStretch()
+        self.issues_label = QLabel("")
+        self.issues_label.setStyleSheet("color: #F97316; font-size: 10px;")
+        self.issues_label.setWordWrap(True)
+        self.issues_label.setMaximumWidth(420)
+        header_row.addWidget(self.issues_label)
+        layout.addLayout(header_row)
 
-        self.detail_name = QLabel("Selecione uma carta")
-        self.detail_name.setStyleSheet("font-size: 15px; font-weight: 800;")
-        self.detail_name.setWordWrap(True)
-        layout.addWidget(self.detail_name)
+        self.curve_row = QHBoxLayout()
+        self.curve_row.setSpacing(10)
+        layout.addLayout(self.curve_row)
 
-        self.detail_meta = QLabel("")
-        self.detail_meta.setStyleSheet("color: #64748B; font-size: 11px;")
-        self.detail_meta.setWordWrap(True)
-        layout.addWidget(self.detail_meta)
+        columns_scroll = QScrollArea()
+        columns_scroll.setWidgetResizable(True)
+        columns_scroll.setFrameShape(QFrame.NoFrame)
+        columns_scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        columns_inner = QWidget()
+        self.deck_columns_layout = QHBoxLayout(columns_inner)
+        self.deck_columns_layout.setContentsMargins(0, 0, 0, 0)
+        self.deck_columns_layout.setSpacing(10)
+        self.deck_columns_layout.setAlignment(Qt.AlignLeft | Qt.AlignTop)
+        columns_scroll.setWidget(columns_inner)
+        layout.addWidget(columns_scroll, 1)
 
-        self.detail_restriction = QLabel("")
-        self.detail_restriction.setStyleSheet("font-size: 11px; font-weight: 700;")
-        layout.addWidget(self.detail_restriction)
-
-        self.detail_indicators_box = QWidget()
-        self.detail_indicators_layout = QVBoxLayout(self.detail_indicators_box)
-        self.detail_indicators_layout.setContentsMargins(0, 0, 0, 0)
-        self.detail_indicators_layout.setSpacing(2)
-        layout.addWidget(self.detail_indicators_box)
-
-        deck_row = QHBoxLayout()
-        deck_lbl = QLabel("No deck:")
-        deck_lbl.setStyleSheet("color: #94A3B8; font-size: 11px;")
-        deck_minus = QPushButton("−")
-        deck_minus.setFixedSize(28, 26)
-        deck_minus.clicked.connect(lambda: self._adjust_deck_copies(-1))
-        self.deck_qty_label = QLabel("0")
-        self.deck_qty_label.setFixedWidth(24)
-        self.deck_qty_label.setAlignment(Qt.AlignCenter)
-        self.deck_qty_label.setStyleSheet("font-weight: 800; color: #22C55E;")
-        deck_plus = QPushButton("+")
-        deck_plus.setFixedSize(28, 26)
-        deck_plus.clicked.connect(lambda: self._adjust_deck_copies(1))
-        deck_row.addWidget(deck_lbl)
-        deck_row.addStretch()
-        deck_row.addWidget(deck_minus)
-        deck_row.addWidget(self.deck_qty_label)
-        deck_row.addWidget(deck_plus)
-        layout.addLayout(deck_row)
-        self._deck_minus, self._deck_plus = deck_minus, deck_plus
-
-        detail_btn = QPushButton("Ver análise completa / Ban List")
-        detail_btn.clicked.connect(self._open_full_detail)
-        layout.addWidget(detail_btn)
-
-        layout.addStretch()
         return panel
 
-    # ---------- Center: catalog ----------
-    def _build_catalog_panel(self):
+    def _build_deck_level_column(self, header, sublabel, count):
+        col = QFrame()
+        col.setObjectName("levelColumn")
+        col.setFixedWidth(LEVEL_COLUMN_WIDTH)
+        col_layout = QVBoxLayout(col)
+        col_layout.setContentsMargins(8, 10, 8, 8)
+        col_layout.setSpacing(6)
+
+        top_row = QHBoxLayout()
+        h = QLabel(header)
+        h.setObjectName("levelColumnHeader")
+        top_row.addWidget(h)
+        top_row.addStretch()
+        count_lbl = QLabel(str(count))
+        count_lbl.setStyleSheet("color: #2388FF; font-weight: 800; font-size: 13px;")
+        top_row.addWidget(count_lbl)
+        col_layout.addLayout(top_row)
+
+        if sublabel:
+            sub = QLabel(sublabel)
+            sub.setObjectName("sectionHint")
+            col_layout.addWidget(sub)
+
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        scroll.setFrameShape(QFrame.NoFrame)
+        scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        inner = QWidget()
+        tiles_layout = QGridLayout(inner)
+        tiles_layout.setContentsMargins(0, 0, 0, 0)
+        tiles_layout.setSpacing(5)
+        tiles_layout.setAlignment(Qt.AlignTop | Qt.AlignLeft)
+        scroll.setWidget(inner)
+        col_layout.addWidget(scroll, 1)
+
+        return col, tiles_layout
+
+    def _build_curve_block(self, header, count, max_count, color):
+        block = QFrame()
+        block.setFixedWidth(112)
+        block_layout = QVBoxLayout(block)
+        block_layout.setContentsMargins(0, 0, 0, 0)
+        block_layout.setSpacing(3)
+
+        top = QHBoxLayout()
+        top.setSpacing(4)
+        h = QLabel(header)
+        h.setObjectName("curveColumnLabel")
+        top.addWidget(h)
+        top.addStretch()
+        c = QLabel(str(count))
+        c.setObjectName("curveColumnCount")
+        top.addWidget(c)
+        block_layout.addLayout(top)
+
+        bar_bg = QFrame()
+        bar_bg.setFixedHeight(6)
+        bar_bg.setStyleSheet("background-color: #1B2A3A; border-radius: 3px;")
+        bar_fill_layout = QHBoxLayout(bar_bg)
+        bar_fill_layout.setContentsMargins(0, 0, 0, 0)
+        bar_fill_layout.setSpacing(0)
+        pct = int(max(1, count) / max(1, max_count) * 100) if count else 0
+        fill = QFrame()
+        fill.setStyleSheet(f"background-color: {color}; border-radius: 3px;")
+        bar_fill_layout.addWidget(fill, max(pct, 1) if count else 0)
+        bar_fill_layout.addStretch(max(1, 100 - pct))
+        block_layout.addWidget(bar_bg)
+
+        return block
+
+    # ==================================================================
+    # CATALOG
+    # ==================================================================
+    def _build_catalog_section(self):
         panel = QFrame()
         panel.setObjectName("surface")
         layout = QVBoxLayout(panel)
-        layout.setContentsMargins(14, 14, 14, 14)
+        layout.setContentsMargins(16, 14, 16, 14)
         layout.setSpacing(10)
+
+        layout.addWidget(self._build_selected_card_strip())
 
         toolbar = QHBoxLayout()
         toolbar.setSpacing(8)
@@ -287,74 +358,67 @@ class CollectionPage(QWidget):
 
         return panel
 
-    # ---------- Right: current deck ----------
-    def _build_deck_panel(self):
-        panel = QFrame()
-        panel.setObjectName("surface")
-        layout = QVBoxLayout(panel)
-        layout.setContentsMargins(14, 14, 14, 14)
-        layout.setSpacing(8)
+    # ---------- Compact selected-card strip (replaces the old fixed side panel) ----------
+    def _build_selected_card_strip(self):
+        strip = QFrame()
+        strip.setObjectName("selectedCardStrip")
+        strip.setFixedHeight(76)
+        layout = QHBoxLayout(strip)
+        layout.setContentsMargins(10, 8, 14, 8)
+        layout.setSpacing(14)
 
-        title = QLabel("DECK ATUAL")
-        title.setStyleSheet("color: #94A3B8; font-size: 11px; font-weight: 700; letter-spacing: 1px;")
-        layout.addWidget(title)
+        self.strip_image = QLabel()
+        self.strip_image.setFixedSize(QSize(48, 67))
+        self.strip_image.setAlignment(Qt.AlignCenter)
+        layout.addWidget(self.strip_image)
 
-        self.deck_stats_label = QLabel("")
-        self.deck_stats_label.setStyleSheet("color: #F8FAFC; font-size: 12px; font-weight: 700;")
-        layout.addWidget(self.deck_stats_label)
+        info_col = QVBoxLayout()
+        info_col.setSpacing(1)
+        info_col.setAlignment(Qt.AlignVCenter)
+        self.strip_name = QLabel("Nenhuma carta selecionada")
+        self.strip_name.setStyleSheet("font-weight: 800; font-size: 12.5px;")
+        self.strip_name.setWordWrap(True)
+        info_col.addWidget(self.strip_name)
+        self.strip_meta = QLabel("")
+        self.strip_meta.setStyleSheet("color: #64748B; font-size: 10.5px;")
+        info_col.addWidget(self.strip_meta)
+        layout.addLayout(info_col, 1)
 
-        self.deck_curve_bar = QFrame()
-        self.deck_curve_bar.setFixedHeight(8)
-        curve_layout = QHBoxLayout(self.deck_curve_bar)
-        curve_layout.setContentsMargins(0, 0, 0, 0)
-        curve_layout.setSpacing(2)
-        self.deck_curve_layout = curve_layout
-        layout.addWidget(self.deck_curve_bar)
+        self.strip_restriction = QLabel("")
+        layout.addWidget(self.strip_restriction)
 
-        self.issues_label = QLabel("")
-        self.issues_label.setStyleSheet("color: #F97316; font-size: 10px;")
-        self.issues_label.setWordWrap(True)
-        layout.addWidget(self.issues_label)
+        self.strip_indicators_box = QWidget()
+        self.strip_indicators_layout = QHBoxLayout(self.strip_indicators_box)
+        self.strip_indicators_layout.setContentsMargins(0, 0, 0, 0)
+        self.strip_indicators_layout.setSpacing(12)
+        layout.addWidget(self.strip_indicators_box)
 
-        columns_scroll = QScrollArea()
-        columns_scroll.setWidgetResizable(True)
-        columns_scroll.setFrameShape(QFrame.NoFrame)
-        columns_inner = QWidget()
-        self.deck_columns_layout = QHBoxLayout(columns_inner)
-        self.deck_columns_layout.setContentsMargins(0, 0, 0, 0)
-        self.deck_columns_layout.setSpacing(8)
-        self.deck_columns_layout.setAlignment(Qt.AlignLeft | Qt.AlignTop)
-        columns_scroll.setWidget(columns_inner)
-        layout.addWidget(columns_scroll, 1)
+        deck_row = QHBoxLayout()
+        deck_row.setSpacing(6)
+        deck_lbl = QLabel("No deck:")
+        deck_lbl.setStyleSheet("color: #94A3B8; font-size: 10.5px;")
+        deck_minus = QPushButton("−")
+        deck_minus.setFixedSize(26, 24)
+        deck_minus.clicked.connect(lambda: self._adjust_deck_copies(-1))
+        self.deck_qty_label = QLabel("0")
+        self.deck_qty_label.setFixedWidth(20)
+        self.deck_qty_label.setAlignment(Qt.AlignCenter)
+        self.deck_qty_label.setStyleSheet("font-weight: 800; color: #22C55E;")
+        deck_plus = QPushButton("+")
+        deck_plus.setFixedSize(26, 24)
+        deck_plus.clicked.connect(lambda: self._adjust_deck_copies(1))
+        deck_row.addWidget(deck_lbl)
+        deck_row.addWidget(deck_minus)
+        deck_row.addWidget(self.deck_qty_label)
+        deck_row.addWidget(deck_plus)
+        layout.addLayout(deck_row)
+        self._deck_minus, self._deck_plus = deck_minus, deck_plus
 
-        return panel
+        detail_btn = QPushButton("Detalhes")
+        detail_btn.clicked.connect(self._open_full_detail)
+        layout.addWidget(detail_btn)
 
-    def _build_deck_level_column(self, header_text):
-        col = QFrame()
-        col.setObjectName("levelColumn")
-        col.setFixedWidth(96)
-        col_layout = QVBoxLayout(col)
-        col_layout.setContentsMargins(6, 8, 6, 8)
-        col_layout.setSpacing(6)
-
-        header = QLabel(header_text)
-        header.setObjectName("levelColumnHeader")
-        header.setWordWrap(True)
-        header.setAlignment(Qt.AlignCenter)
-        col_layout.addWidget(header)
-
-        scroll = QScrollArea()
-        scroll.setWidgetResizable(True)
-        scroll.setFrameShape(QFrame.NoFrame)
-        inner = QWidget()
-        tiles_layout = QVBoxLayout(inner)
-        tiles_layout.setContentsMargins(0, 0, 0, 0)
-        tiles_layout.setSpacing(6)
-        tiles_layout.setAlignment(Qt.AlignTop)
-        scroll.setWidget(inner)
-        col_layout.addWidget(scroll, 1)
-
-        return col, tiles_layout
+        return strip
 
     def _build_color_chip_row(self):
         row = QFrame()
@@ -367,13 +431,10 @@ class CollectionPage(QWidget):
 
         self._color_chip_buttons = {}
         for color, hex_code in COLOR_CHIPS:
-            btn = QPushButton(color)
+            btn = QPushButton(f"● {color.upper()}")
             btn.setCheckable(True)
-            btn.setProperty("class", "colorChip")
-            btn.setStyleSheet(
-                f'QPushButton {{ border: 1px solid {hex_code}; color: {hex_code}; }}'
-                f'QPushButton:checked {{ background-color: {hex_code}; color: #070B12; }}'
-            )
+            btn.setObjectName("colorFilterChip")
+            btn.setProperty("class", f"color-{color.lower()}")
             btn.clicked.connect(lambda checked, c=color: self._toggle_color_chip(c, checked))
             layout.addWidget(btn)
             self._color_chip_buttons[color] = btn
@@ -463,7 +524,7 @@ class CollectionPage(QWidget):
         self._render_deck_bar_status()
         self._render_deck_panel()
         self._refresh_visible_deck_counts()
-        self._update_detail_panel()
+        self._update_selected_strip()
         self._update_save_button_state()
 
     def _mark_dirty(self):
@@ -472,7 +533,7 @@ class CollectionPage(QWidget):
 
     def _update_save_button_state(self):
         self.save_btn.setEnabled(bool(self.current_deck_id) and self._dirty)
-        self.unsaved_label.setText("● Não salvo" if self._dirty else "")
+        self.unsaved_label.setText("● Não salvo" if self._dirty else ("● Salvo" if self.current_deck_id else ""))
 
     def _save_deck(self):
         if not self.current_deck_id or not self.deckbuilder:
@@ -586,12 +647,15 @@ class CollectionPage(QWidget):
         if not self.current_deck_id or not self.deckbuilder:
             self.counts_label.setText("Nenhum deck selecionado")
             self.status_label.setText("")
+            self.deck_progress.setValue(0)
             return
         validation = self.deckbuilder.validate_cards(self._working_cards_list())
         self.counts_label.setText(
-            f'Principal {validation["main_count"]}/{MAIN_DECK_SIZE}  ·  '
-            f'Digi-Ovo {validation["egg_count"]}/{DIGI_EGG_DECK_MAX}'
+            f'{validation["main_count"]}/{MAIN_DECK_SIZE} CARDS  ·  '
+            f'{validation["egg_count"]}/{DIGI_EGG_DECK_MAX} DIGI-EGGS'
         )
+        self.deck_progress.setMaximum(MAIN_DECK_SIZE)
+        self.deck_progress.setValue(min(MAIN_DECK_SIZE, validation["main_count"]))
         label, color = STATUS_META.get(validation["status"], ("", "#94A3B8"))
         self.status_label.setText(label)
         self.status_label.setStyleSheet(f"font-weight: 800; font-size: 12px; color: {color};")
@@ -746,7 +810,7 @@ class CollectionPage(QWidget):
         if self._populated_filters:
             self._reflow()
 
-    # ---------- Selection / detail panel ----------
+    # ---------- Selection / selected-card strip ----------
     @staticmethod
     def _clear_layout(layout):
         while layout.count():
@@ -761,42 +825,43 @@ class CollectionPage(QWidget):
         self.selected_card_id = card_id
         if card_id in self._widgets:
             self._widgets[card_id].set_selected(True)
-        self._update_detail_panel()
+        self._update_selected_strip()
 
-    def _update_detail_panel(self):
+    def _update_selected_strip(self):
         card = self.repo.card(self.selected_card_id) if self.selected_card_id else None
         if not card:
-            self.detail_image.clear()
-            self.detail_name.setText("Selecione uma carta")
-            self.detail_meta.setText("")
-            self.detail_restriction.setText("")
-            self._clear_layout(self.detail_indicators_layout)
+            self.strip_image.clear()
+            self.strip_name.setText("Nenhuma carta selecionada")
+            self.strip_meta.setText("")
+            self.strip_restriction.setText("")
+            self._clear_layout(self.strip_indicators_layout)
             self.deck_qty_label.setText("0")
             for btn in (self._deck_minus, self._deck_plus):
                 btn.setEnabled(False)
             return
 
-        self.detail_image.setPixmap(load_card_pixmap(self.selected_card_id, QSize(200, 280)))
-        self.detail_name.setText(f'{card.get("name","")}\n{card["card_id"]}')
-        self.detail_meta.setText(
-            f'{card.get("color","")} · Lv.{card.get("level") or "-"} · {card.get("type","")} · '
+        self.strip_image.setPixmap(load_card_pixmap(self.selected_card_id, QSize(48, 67)))
+        self.strip_name.setText(f'{card.get("name","")}  ·  {card["card_id"]}')
+        color_dot = "".join(f'<span style="color:{color_hex(c)};">●</span> ' for c in [card.get("color"), card.get("color2")] if c)
+        self.strip_meta.setTextFormat(Qt.RichText)
+        self.strip_meta.setText(
+            f'{color_dot}{card.get("color","")} · Lv.{card.get("level") or "-"} · {card.get("type","")} · '
             f'{card.get("rarity","")} · {card.get("set","")}'
         )
 
         restriction = self.banlist.restriction_of(card["card_id"])
         if restriction:
-            from core.banlist_manager import RESTRICTION_META
             meta = RESTRICTION_META[restriction]
-            self.detail_restriction.setText(f'{meta["icon"]} {meta["label"]}')
-            self.detail_restriction.setStyleSheet(f'color: {meta["color"]}; font-weight: 700; font-size: 11px;')
+            self.strip_restriction.setText(f'{meta["icon"]} {meta["label"].upper()}')
+            self.strip_restriction.setStyleSheet(f'color: {meta["color"]}; font-weight: 800; font-size: 11px;')
         else:
-            self.detail_restriction.setText("")
+            self.strip_restriction.setText("")
 
-        self._clear_layout(self.detail_indicators_layout)
+        self._clear_layout(self.strip_indicators_layout)
         candidate = self.repo.ban_candidate(card["card_id"])
         if candidate:
             for key, label in INDICATOR_FIELDS:
-                self.detail_indicators_layout.addWidget(MetricInline(label, candidate.get(key, 0.0)))
+                self.strip_indicators_layout.addWidget(MetricInline(label, candidate.get(key, 0.0)))
 
         in_deck = self._working_cards.get(card["card_id"], 0)
         self.deck_qty_label.setText(str(in_deck))
@@ -805,11 +870,11 @@ class CollectionPage(QWidget):
         self._deck_minus.setEnabled(deck_active and in_deck > 0)
         self._deck_plus.setEnabled(deck_active and in_deck < allowed)
 
-    def _on_detail_image_ready(self, card_id: str):
+    def _on_strip_image_ready(self, card_id: str):
         if card_id != self.selected_card_id:
             return
         invalidate_card_pixmap_cache(card_id)
-        self.detail_image.setPixmap(load_card_pixmap(card_id, QSize(200, 280)))
+        self.strip_image.setPixmap(load_card_pixmap(card_id, QSize(48, 67)))
 
     def _catalog_left_click(self, card_id):
         self._select_card(card_id)
@@ -833,7 +898,7 @@ class CollectionPage(QWidget):
             self._working_cards[self.selected_card_id] = new_copies
 
         self._mark_dirty()
-        self._update_detail_panel()
+        self._update_selected_strip()
         self._refresh_visible_deck_counts()
         self._render_deck_bar_status()
         self._render_deck_panel()
@@ -855,36 +920,32 @@ class CollectionPage(QWidget):
         self.deck_combo.setItemText(idx, f'{deck["name"]}{star} ({summary["main_count"]}/{MAIN_DECK_SIZE})')
         self.deck_combo.blockSignals(False)
 
-    # ---------- Right panel: current deck, grouped by level curve ----------
+    # ---------- Deck Builder columns + curve ----------
     def _render_deck_panel(self):
         while self.deck_columns_layout.count():
             item = self.deck_columns_layout.takeAt(0)
             w = item.widget()
             if w:
                 w.deleteLater()
-        while self.deck_curve_layout.count():
-            item = self.deck_curve_layout.takeAt(0)
+        while self.curve_row.count():
+            item = self.curve_row.takeAt(0)
             w = item.widget()
             if w:
                 w.deleteLater()
 
         if not self.current_deck_id or not self.deckbuilder:
-            empty_col, empty_tiles = self._build_deck_level_column("—")
+            empty_col, empty_tiles = self._build_deck_level_column("—", "", 0)
             empty = QLabel("Selecione ou crie um deck para começar a montar.")
-            empty.setStyleSheet("color: #64748B; font-size: 11px;")
+            empty.setObjectName("sectionHint")
             empty.setWordWrap(True)
-            empty_tiles.addWidget(empty)
+            empty_tiles.addWidget(empty, 0, 0, 1, 2)
             self.deck_columns_layout.addWidget(empty_col)
-            self.deck_stats_label.setText("")
+            self.curve_row.addStretch()
             self.issues_label.setText("")
             return
 
         validation = self.deckbuilder.validate_cards(self._working_cards_list())
-        self.issues_label.setText("\n".join(f"• {msg}" for msg in validation["issues"][:5]))
-        self.deck_stats_label.setText(
-            f'{validation["main_count"]}/{MAIN_DECK_SIZE} cartas  ·  '
-            f'{validation["egg_count"]}/{DIGI_EGG_DECK_MAX} Digi-Ovos'
-        )
+        self.issues_label.setText(" · ".join(validation["issues"][:3]))
 
         cards_with_copies = []
         for card_id, copies in self._working_cards.items():
@@ -895,54 +956,49 @@ class CollectionPage(QWidget):
         columns = LEVEL_COLUMNS + [LEVEL_COLUMN_FALLBACK]
         remaining = list(cards_with_copies)
         buckets = []
-        for col_id, header, predicate in columns:
+        for col_id, header, sublabel, predicate in columns:
             matched = [(card, copies) for card, copies in remaining if predicate(card)]
             remaining = [pair for pair in remaining if pair not in matched]
-            buckets.append((header, matched))
+            buckets.append((col_id, header, sublabel, matched))
 
-        total_copies = sum(copies for _, copies in cards_with_copies) or 1
-        for header, group in buckets:
-            count = sum(c for _, c in group)
-            col, tiles_layout = self._build_deck_level_column(f"{header}\n({count})")
+        counts = [sum(c for _, c in group) for _, _, _, group in buckets]
+        max_count = max(counts) if any(counts) else 1
+
+        for (col_id, header, sublabel, group), count in zip(buckets, counts):
+            col, tiles_layout = self._build_deck_level_column(header, sublabel, count)
             group.sort(key=lambda x: x[0]["card_id"])
-            for card, copies in group:
-                tiles_layout.addWidget(self._build_deck_tile(card, copies))
+            for i, (card, copies) in enumerate(group):
+                tiles_layout.addWidget(self._build_deck_tile(card, copies), i // 2, i % 2)
             self.deck_columns_layout.addWidget(col)
 
-            if count:
-                segment = QFrame()
-                segment.setStyleSheet(f"background-color: {self._level_column_color(header)}; border-radius: 2px;")
-                self.deck_curve_layout.addWidget(segment, count)
-        if not any(count for _, group in buckets for count in [sum(c for _, c in group)]):
-            self.deck_curve_layout.addStretch()
-
-    @staticmethod
-    def _level_column_color(header):
-        return {
-            "Lv.2 · Digi-Ovo": "#FACC15", "Lv.3 · Rookie": "#22C55E", "Lv.4 · Champion": "#3B82F6",
-            "Lv.5 · Ultimate": "#A855F7", "Lv.6-7 · Mega": "#EF4444",
-            "Tamers": "#F97316", "Options": "#94A3B8", "Outros": "#475569",
-        }.get(header, "#475569")
+            if col_id != "other" or count:
+                self.curve_row.addWidget(
+                    self._build_curve_block(header, count, max_count, LEVEL_COLUMN_COLORS.get(col_id, "#475569"))
+                )
+        self.curve_row.addStretch()
 
     def _build_deck_tile(self, card, copies):
         frame = QFrame()
+        frame.setObjectName("surface")
+        frame.setProperty("class", "cardWidget")
         frame.setCursor(Qt.PointingHandCursor)
+        frame.setStyleSheet(f"QFrame#surface {{ border: 1px solid {color_hex(card.get('color'))}; border-radius: 8px; }}")
         frame.setToolTip(
             f'{card.get("name","")} ({card["card_id"]}) — clique esquerdo adiciona 1, direito remove 1'
         )
         layout = QVBoxLayout(frame)
-        layout.setContentsMargins(2, 2, 2, 2)
+        layout.setContentsMargins(3, 3, 3, 3)
         layout.setSpacing(2)
 
         img = QLabel()
-        img.setFixedSize(QSize(76, 106))
+        img.setFixedSize(DECK_TILE_IMG)
         img.setAlignment(Qt.AlignCenter)
-        img.setPixmap(load_card_pixmap(card["card_id"], QSize(76, 106)))
+        img.setPixmap(load_card_pixmap(card["card_id"], DECK_TILE_IMG))
         layout.addWidget(img, alignment=Qt.AlignCenter)
 
         qty = QLabel(f"×{copies}")
         qty.setAlignment(Qt.AlignCenter)
-        qty.setStyleSheet("font-weight: 800; color: #22C55E; font-size: 11px;")
+        qty.setStyleSheet("font-weight: 800; color: #22C55E; font-size: 10.5px;")
         layout.addWidget(qty)
 
         frame.mousePressEvent = lambda e, cid=card["card_id"]: self._deck_tile_clicked(e, cid)
@@ -959,9 +1015,12 @@ class CollectionPage(QWidget):
 
     def _deck_tile_hover_enter(self, card):
         indicators = self.repo.ban_candidate(card["card_id"])
+        restriction = self.banlist.restriction_of(card["card_id"])
         self._deck_hover_timer = QTimer(self)
         self._deck_hover_timer.setSingleShot(True)
-        self._deck_hover_timer.timeout.connect(lambda: get_hover_popup().show_for(card, QCursor.pos(), indicators))
+        self._deck_hover_timer.timeout.connect(
+            lambda: get_hover_popup().show_for(card, QCursor.pos(), indicators, restriction)
+        )
         self._deck_hover_timer.start(220)
 
     def _deck_tile_hover_leave(self):

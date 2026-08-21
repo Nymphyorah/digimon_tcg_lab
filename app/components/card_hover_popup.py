@@ -12,6 +12,7 @@ from PySide6.QtWidgets import QFrame, QVBoxLayout, QHBoxLayout, QLabel, QScrollA
 
 from app.components.image_loader import load_card_pixmap
 from app.components.metric_bar import MetricInline, INDICATOR_FIELDS
+from core.banlist_manager import RESTRICTION_META
 
 POPUP_IMG_SIZE = QSize(180, 252)
 
@@ -41,6 +42,10 @@ class CardHoverPopup(QFrame):
         self.meta_label.setObjectName("hoverPopupMeta")
         self.meta_label.setWordWrap(True)
         root.addWidget(self.meta_label)
+
+        self.restriction_label = QLabel()
+        self.restriction_label.setObjectName("hoverPopupRestriction")
+        root.addWidget(self.restriction_label)
 
         stats_row = QHBoxLayout()
         stats_row.setSpacing(10)
@@ -76,13 +81,21 @@ class CardHoverPopup(QFrame):
 
         self.hide()
 
-    def show_for(self, card: dict, global_pos: QPoint, indicators: dict = None):
+    def show_for(self, card: dict, global_pos: QPoint, indicators: dict = None, restriction: str = None):
         self.image_label.setPixmap(load_card_pixmap(card["card_id"], POPUP_IMG_SIZE))
         self.name_label.setText(f'{card.get("name","")}')
         self.meta_label.setText(
             f'{card["card_id"]} · {card.get("color","")} · Lv.{card.get("level") or "-"} · '
             f'{card.get("type","")} · {card.get("rarity","")} · {card.get("set","")}'
         )
+
+        if restriction:
+            meta = RESTRICTION_META[restriction]
+            self.restriction_label.setText(f'{meta["icon"]} {meta["label"].upper()}')
+            self.restriction_label.setStyleSheet(f'color: {meta["color"]}; font-size: 11px; font-weight: 800;')
+            self.restriction_label.setVisible(True)
+        else:
+            self.restriction_label.setVisible(False)
 
         dp = card.get("dp")
         self.dp_label.setText(f"DP {dp}" if dp is not None else "")

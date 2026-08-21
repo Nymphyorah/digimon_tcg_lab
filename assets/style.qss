@@ -105,11 +105,6 @@ QFrame#surface:hover, QWidget#surfaceHoverable:hover {
     background-color: #12202E;
 }
 
-QFrame#surface[class="cardWidget"]:hover {
-    background-color: #12202E;
-    border: 1px solid #2388FF;
-}
-
 QFrame#surfaceRaised, QWidget#surfaceRaised {
     background-color: #101B29;
     border: 1px solid #22374C;
@@ -352,14 +347,43 @@ QSplitter::handle {
     letter-spacing: 0.5px;
 }
 
-/* ---------- Catalog: color chips ---------- */
-QPushButton[class="colorChip"] {
+/* ---------- Catalog: color filter chips ----------
+   Inactive = low-contrast (muted text, colored outline only) so the row
+   doesn't turn into a rainbow before the user touches it; hover previews
+   the full color; checked/active is the only state with a filled
+   background — matches the "discreet until chosen" brief. */
+QPushButton#colorFilterChip {
     background-color: transparent;
     border-radius: 999px;
-    padding: 4px 12px;
+    padding: 4px 14px;
     font-size: 10.5px;
     font-weight: 700;
+    color: #8494A8;
 }
+
+QPushButton[class="color-red"]     { border: 1px solid #E53935; color: #8494A8; }
+QPushButton[class="color-blue"]    { border: 1px solid #1E88E5; color: #8494A8; }
+QPushButton[class="color-yellow"]  { border: 1px solid #FBC02D; color: #8494A8; }
+QPushButton[class="color-green"]   { border: 1px solid #43A047; color: #8494A8; }
+QPushButton[class="color-black"]   { border: 1px solid #455A64; color: #8494A8; }
+QPushButton[class="color-purple"]  { border: 1px solid #8E44AD; color: #8494A8; }
+QPushButton[class="color-white"]   { border: 1px solid #F5F5F5; color: #8494A8; }
+
+QPushButton[class="color-red"]:hover     { color: #E53935; }
+QPushButton[class="color-blue"]:hover    { color: #1E88E5; }
+QPushButton[class="color-yellow"]:hover  { color: #FBC02D; }
+QPushButton[class="color-green"]:hover   { color: #43A047; }
+QPushButton[class="color-black"]:hover   { color: #90A4AE; }
+QPushButton[class="color-purple"]:hover  { color: #8E44AD; }
+QPushButton[class="color-white"]:hover   { color: #F5F5F5; }
+
+QPushButton[class="color-red"]:checked     { background-color: rgba(229, 57, 53, 0.18);  border: 1px solid #E53935; color: #F8FAFC; }
+QPushButton[class="color-blue"]:checked    { background-color: rgba(30, 136, 229, 0.18);  border: 1px solid #1E88E5; color: #F8FAFC; }
+QPushButton[class="color-yellow"]:checked  { background-color: rgba(251, 192, 45, 0.18);  border: 1px solid #FBC02D; color: #F8FAFC; }
+QPushButton[class="color-green"]:checked   { background-color: rgba(67, 160, 71, 0.18);   border: 1px solid #43A047; color: #F8FAFC; }
+QPushButton[class="color-black"]:checked   { background-color: rgba(69, 90, 100, 0.30);   border: 1px solid #90A4AE; color: #F8FAFC; }
+QPushButton[class="color-purple"]:checked  { background-color: rgba(142, 68, 173, 0.18);  border: 1px solid #8E44AD; color: #F8FAFC; }
+QPushButton[class="color-white"]:checked   { background-color: rgba(245, 245, 245, 0.16); border: 1px solid #F5F5F5; color: #F8FAFC; }
 
 /* ---------- Catalog: effect keyword chips ---------- */
 QPushButton#keywordChip {
@@ -370,6 +394,10 @@ QPushButton#keywordChip {
     color: #8494A8;
     font-size: 10.5px;
     font-weight: 700;
+}
+
+QPushButton#keywordChip:hover {
+    border-color: #2388FF;
 }
 
 QPushButton#keywordChip:checked {
@@ -405,4 +433,52 @@ QPushButton#keywordChip:checked {
 #hoverPopupEffect {
     color: #CBD5E1;
     font-size: 11px;
+}
+
+/* ---------- Deck header ---------- */
+#deckHeaderName {
+    color: #F8FAFC;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#deckHeaderStat {
+    color: #94A3B8;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+QProgressBar#deckProgress {
+    background-color: #1B2A3A;
+    border: none;
+    border-radius: 5px;
+    min-height: 10px;
+    max-height: 10px;
+}
+
+QProgressBar#deckProgress::chunk {
+    background-color: #2388FF;
+    border-radius: 5px;
+}
+
+/* ---------- Deck Builder: level curve mini-chart ---------- */
+#curveColumnLabel {
+    color: #6B7F97;
+    font-size: 9.5px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+}
+
+#curveColumnCount {
+    color: #F8FAFC;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* ---------- Selected-card strip (compact, replaces the old fixed side panel) ---------- */
+#selectedCardStrip {
+    background-color: #101B29;
+    border: 1px solid #22374C;
+    border-radius: 12px;
 }

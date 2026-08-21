@@ -7,9 +7,34 @@ from app.components.card_hover_popup import get_hover_popup
 from core.banlist_manager import RESTRICTION_META
 from core.image_cache import get_image_cache_manager
 
-CARD_IMG_SIZE = QSize(154, 216)
+CARD_IMG_SIZE = QSize(180, 252)
 CARD_IMG_SIZE_LARGE = QSize(188, 263)
 HOVER_DELAY_MS = 220
+
+# Official Digimon TCG card colors. This is the single source of truth for
+# color -> hex used across the catalog (card borders/dots), the color filter
+# chips, and the hover popup — every card's own `color` (and `color2` for
+# dual-color cards) field already carries one of these names verbatim.
+CARD_COLOR_HEX = {
+    "Red": "#E53935",
+    "Blue": "#1E88E5",
+    "Yellow": "#FBC02D",
+    "Green": "#43A047",
+    "Black": "#455A64",  # true black (#263238) reads as invisible on the dark theme; this is its visible-on-dark accent
+    "Purple": "#8E44AD",
+    "White": "#F5F5F5",
+    "Colorless": "#5C6B7A",
+}
+
+
+def color_hex(name: str) -> str:
+    return CARD_COLOR_HEX.get(name, CARD_COLOR_HEX["Colorless"])
+
+
+def _rgba_tuple(hex_color: str) -> str:
+    hex_color = hex_color.lstrip("#")
+    r, g, b = (int(hex_color[i:i + 2], 16) for i in (0, 2, 4))
+    return f"{r}, {g}, {b}"
 
 
 class CardWidget(QFrame):
@@ -34,8 +59,12 @@ class CardWidget(QFrame):
         self.draggable = draggable
         self._drag_start = None
         self._image_loaded = False
+        self._selected = selected
+        self._hovered = False
         self.img_size = CARD_IMG_SIZE_LARGE if large else CARD_IMG_SIZE
         self._indicators = indicators
+        self._color_names = [c for c in [card.get("color"), card.get("color2")] if c]
+        self._primary_color_hex = color_hex(self._color_names[0] if self._color_names else None)
         self._hover_timer = QTimer(self)
         self._hover_timer.setSingleShot(True)
         self._hover_timer.setInterval(HOVER_DELAY_MS)
@@ -43,10 +72,9 @@ class CardWidget(QFrame):
 
         self.setObjectName("surface")
         self.setProperty("class", "cardWidget")
-        self.setFixedWidth(212 if large else 176)
+        self.setFixedWidth(232 if large else 208)
         self.setCursor(Qt.PointingHandCursor)
-        if selected:
-            self.setStyleSheet("QFrame#surface { border: 2px solid #2388FF; }")
+        self._apply_frame_style()
 
         layout = QVBoxLayout(self)
         layout.setContentsMargins(11, 11, 11, 11)
@@ -63,9 +91,20 @@ class CardWidget(QFrame):
             self.load_image()
 
         id_row = QHBoxLayout()
+        id_row.setSpacing(6)
         id_label = QLabel(self.card_id)
         id_label.setStyleSheet("color: #94A3B8; font-size: 10px; font-weight: 700;")
         id_row.addWidget(id_label)
+
+        # Color dot(s) — the primary way to recognize a card's color without
+        # reading text; a second dot appears only for genuinely dual-color
+        # cards (card["color2"] is real data, not inferred).
+        for color_name in self._color_names:
+            dot = QLabel("●")
+            dot.setStyleSheet(f"color: {color_hex(color_name)}; font-size: 12px;")
+            dot.setToolTip(color_name)
+            id_row.addWidget(dot)
+
         id_row.addStretch()
         self.restriction_badge = QLabel()
         id_row.addWidget(self.restriction_badge)
@@ -114,26 +153,51 @@ class CardWidget(QFrame):
         self.restriction = restriction
         if restriction:
             meta = RESTRICTION_META[restriction]
-            self.restriction_badge.setText(meta["icon"])
+            self.restriction_badge.setText(meta["label"].upper())
+            self.restriction_badge.setStyleSheet(
+                f'background-color: rgba({_rgba_tuple(meta["color"])}, 0.18); color: {meta["color"]}; '
+                f'border: 1px solid {meta["color"]}; border-radius: 6px; font-size: 8.5px; '
+                f'font-weight: 800; padding: 1px 5px;'
+            )
             self.restriction_badge.setToolTip(meta["label"])
         else:
             self.restriction_badge.setText("")
+            self.restriction_badge.setStyleSheet("")
             self.restriction_badge.setToolTip("")
 
     def set_selected(self, selected: bool):
-        self.setStyleSheet("QFrame#surface { border: 2px solid #2388FF; }" if selected else "")
+        self._selected = selected
+        self._apply_frame_style()
+
+    def _apply_frame_style(self):
+        if self._selected:
+            self.setStyleSheet("QFrame#surface { border: 2px solid #2388FF; }")
+        elif self._hovered:
+            # A discreet glow in the card's own color on hover — not the
+            # generic blue highlight, so color identity stays legible even
+            # while the user is scanning the grid with the mouse.
+            self.setStyleSheet(
+                f"QFrame#surface {{ border: 1px solid {self._primary_color_hex}; "
+                f"background-color: rgba({_rgba_tuple(self._primary_color_hex)}, 0.07); }}"
+            )
+        else:
+            self.setStyleSheet(f"QFrame#surface {{ border: 1px solid {self._primary_color_hex}; }}")
 
     def enterEvent(self, event):
+        self._hovered = True
+        self._apply_frame_style()
         self._hover_timer.start()
         super().enterEvent(event)
 
     def leaveEvent(self, event):
+        self._hovered = False
+        self._apply_frame_style()
         self._hover_timer.stop()
         get_hover_popup().hide()
         super().leaveEvent(event)
 
     def _show_hover_popup(self):
-        get_hover_popup().show_for(self.card, QCursor.pos(), self._indicators)
+        get_hover_popup().show_for(self.card, QCursor.pos(), self._indicators, self.restriction)
 
     def mousePressEvent(self, event: QMouseEvent):
         if event.button() == Qt.LeftButton:
